@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2. Representación de datos | Tema_03_Disseny_logic_Model_Relacional </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Francisco Jav. Jaraba Jurado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-63"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">Tema_03_Disseny_logic_Model_Relacional</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació. Introducció</a></li>
+   <li class="current-page-parent"><a href="programacin_java.html" class="current-page-parent daddy">Programación. Java</a>
+   <ul>
+      <li><a href="1_conceptos_bsicos_de_informtica.html" class="no-ch">1. Conceptos básicos de informática</a></li>
+      <li id="active"><a href="2_representacin_de_datos.html" class="active no-ch">2. Representación de datos</a></li>
+      <li><a href="3_lenguajes_de_programacin.html" class="no-ch">3. Lenguajes de programación</a></li>
+      <li><a href="4_introduccin_a_la_programacin.html" class="no-ch">4. Introducción a la programación</a></li>
+   </ul>
+   </li>
+   <li><a href="programaci_java.html" class="daddy">Programació. Java</a>
+   <ul class="other-section">
+      <li><a href="1_conceptes_bsics_dinformtica.html" class="no-ch">1. Conceptes bàsics d'informàtica</a></li>
+      <li><a href="2_representaci_de_dades.html" class="no-ch">2. Representació de Dades</a></li>
+      <li><a href="3_llenguatges_de_programaci.html" class="no-ch">3. Llenguatges de programació</a></li>
+      <li><a href="4_introducci_a_la_programaci.html" class="no-ch">4. Introducció a la programació</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="1_conceptos_bsicos_de_informtica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_lenguajes_de_programacin.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2. Representación de datos</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id315">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Numeros Binarios</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta315_315_2" class="block iDevice_content">
+<div class="exe-text"><p>La CPU solo entiende números binarios, cuyos dígitos son 0 o 1. Todos los datos se almacenan en la memoria de una computadora como <strong>Dígitos binarios</strong>. Un <strong>bit</strong> contiene un dígito binario. Un <strong>byte</strong> contiene ocho dígitos binarios. Los números binarios se expresan en el sistema de base 2, porque sólo hay 2 valores en ese sistema, 0 y 1. Por el contrario, la mayoría de la gente está acostumbrada al sistema decimal, o de base 10, que utiliza los valores del 0 al 9.</p>
+<p>Existen otros sistemas de numeración, como el sistema octal, o de base 8, que utiliza los dígitos del 0 al 7 y el sistema hexadecimal, o de base 16, que utiliza los dígitos del 0 al 9 y las letras de la A a la F.</p>
+<p>Tal como lo conocemos en el sistema decimal, el número 359 está compuesto por los siguientes tres dígitos:</p>
+<ul>
+<li>3, representando las centenas, o 10<sup>2</sup></li>
+<li>5, representando las decenas, o 10<sup>1</sup></li>
+<li>9, representando los unos, o 10<sup>0</sup></li>
+</ul>
+<p>Por lo tanto, podemos escribir 359 como</p>
+<p style="padding-left: 30px;"><span style="color: #808000;">359 = 3 * 10<sup>2</sup> + 5 * 10<sup>1</sup> + 9 * 10<sup>0</sup></span></p>
+<p>Así, el número decimal 359 se escribe como una combinación lineal de potencias de 10 con coeficientes del alfabeto base 10, es decir, los dígitos del 0 al 9.</p>
+<p>De manera similar, el número binario 11011 se escribe como una combinación lineal de potencias de 2 con coeficientes del alfabeto base 2, es decir, los dígitos 0 y 1.</p>
+<p>Por ejemplo, el número binario 11011 se puede escribir como</p>
+<p style="padding-left: 30px;"><span style="color: #808000;">11011 = 1*2<sup>4</sup> + 1*2<sup>3</sup> + 0*2<sup>2</sup> + 1*2<sup>1</sup> + 1*2<sup>0</sup></span></p>
+<p>La Tabla siguiente enumera los equivalentes binarios para los números decimales del 0 al 8 y enumera los equivalentes decimales de las primeras 15 potencias de 2.</p>
+<p style="text-align: center;"><img src="unidad0_02.png" alt="" width="658" height="473" /></p>
+<p>Observe que a medida que contamos en incrementos de 1 (<em>en decimal</em>), el último dígito (<em>en binario</em>) alterna entre 0 y 1.</p>
+<p>Para convertir un número binario a decimal, multiplique cada dígito del número binario por 2<sup>posición - 1</sup>, considerando la posición más a la derecha<br />como posición 1 y aumentando al desplazarnos hacia la derecha. Luego, sume los productos.</p>
+<p>Usando este método, calculemos el equivalente del número binario 11010 en nuestro sistema decimal.</p>
+<p style="padding-left: 30px;"><span style="font-family: terminal, monaco, monospace; color: #808000;">11010 = <strong>1</strong>*2<sup>4</sup> + <strong>1</strong>*2<sup>3</sup> + <strong>0</strong>*2<sup>2</sup> + <strong>1</strong>*2<sup>1</sup> + <strong>0</strong>*2<sup>0</sup></span><br /><span style="font-family: terminal, monaco, monospace; color: #808000;">      =  16  +  8   +  0  +   2  +  0</span><br /><span style="font-family: terminal, monaco, monospace; color: #808000;">      =      26</span></p>
+<p>Ahora examinemos cómo convertir un número decimal en un número binario.</p>
+<p>Convirtamos el número decimal 359 a su equivalente binario. Un método consiste en sumar las potencias de 2 necesarias para alcanzar 359. La estrategia a seguir consiste en:</p>
+<ol>
+<li>encontrar la mayor potencia de 2 que sea menor o igual que el número decimal.</li>
+<li>Restar ese número al número decimal,</li>
+<li>Repetir el proceso con  el resto, y así sucesivamente, hasta llegar a 0.</li>
+</ol>
+<p>(1) La mayor potencia de 2 menor que 359 es 256, o 2<sup>8</sup> (<em>la siguiente potencia mayor de 2 sería </em><em>512, que es mayor que 359</em>).</p>
+<p>(2) Restar 256 de 359 nos da 103 (359 - 256 = 103), por lo que ahora tenemos 359 = 2<sup>8 </sup>* 1 + 103</p>
+<p>(3) (1) Ahora aplicamos el mismo procedimiento a 103. La mayor potencia de 2 que es menor que 103 es 64, o 2<sup>6</sup>. Eso significa que no hay ningún factor para 2<sup>7</sup>, por lo que el valor de ese dígito es 0.</p>
+<p>(2) Restar 64 de 103 nos da 39. Ahora tenemos</p>
+<p style="padding-left: 30px;"><span style="color: #808000;">359 = 2<sup>8</sup> * 1 + 2<sup>7</sup> * 0 + 2<sup>6</sup> * 1 + 39</span></p>
+<p>(3)(1)(2) Repitiendo el procedimiento para 39, encontramos que la mayor potencia de 2 menor que 39 es 32 o 2<sup>5</sup>. Restar 32 de 39 nos da 7.</p>
+<p>Así que ahora tenemos:      <span style="color: #808000;">359 = 2<sup>8 </sup>* 1 + 2<sup>7 </sup>* 0 + 2<sup>6 </sup>* 1 + 2<sup>5 </sup>* 1 + 7</span></p>
+<p>(3)(1)(2) Repitiendo el procedimiento para 7, la mayor potencia de 2 menor que 7 es 2<sup>2</sup>, o 4. Eso significa que no hay factores para 2<sup>4</sup> o 2<sup>3</sup>, por lo que el valor de cada uno de estos dígitos son 0. Restar 4 de 7 nos da 3, por lo que tenemos:</p>
+<p><span style="color: #808000;">359 = 2<sup>8</sup> * 1 + 2⁷ * 0 + 2⁶ * 1 + 2⁵ * 1 + 2⁴ * 0 + 2³ * 0 + 2² * 1 + 3</span></p>
+<p>Repitiendo el procedimiento para 3, la mayor potencia de 2 menor que 3 es 2, o 2¹, y tenemos:</p>
+<p><span style="color: #808000;">359 = 2<sup>8</sup> * 1 + 2⁷ * 0 + 2⁶ * 1 + 2⁵ * 1 + 2⁴ * 0 + 2³ * 0 + 2² * 1 + 2¹ * 1 + 1</span></p>
+<p>1 es una potencia de 2; es 2⁰, por lo que finalmente tenemos</p>
+<p><span style="color: #808000;">359 = 2<sup>8</sup> * <strong>1</strong> + 2⁷ * <strong>0</strong> + 2⁶ * <strong>1</strong> + 2⁵ *<strong> 1</strong> + 2⁴ *<strong> 0</strong> + 2³ * <strong>0</strong> + 2² * <strong>1</strong> + 2¹ * <strong>1</strong> + 2⁰ * <strong>1</strong></span></p>
+<p>359 se puede representar en el sistema binario como:</p>
+<pre style="padding-left: 30px;"><span style="font-size: 10pt; color: #808000;"><strong>359</strong>  =  1  0  1  1  0  0  1  1  1  </span><br /><span style="font-size: 10pt; color: #808000;">o bien          1 0110 0111</span></pre>
+<p style="text-align: center;"><img src="unidad0_03.png" alt="" width="623" height="257" /></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id357">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Uso de números hexadecimales para representar números binarios</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta357_357_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="unidad0_04.png" width="272" height="639" style="float: right; margin: 0px 30px 0px 30px;" />Como puedes ver, los números binarios pueden llegar a ser bastante largos. Con solo dos valores posibles, 0 y 1, se necesitan 16 dígitos binarios para representar el 32.768. Por esa razón, el sistema hexadecimal, o de base 16, se utiliza a menudocomo representación abreviada de números binarios. El sistema hexadecimal utiliza 16 dígitos: del <strong>0 al 9 y de la A a la F</strong>. Las letras de la A a la F representan los valores 10, 11, 12, 13, 14 y 15.</p>
+<p>El valor máximo que se puede representar en cuatro dígitos binarios es 2⁴ - 1, o 15. El valor máximo de un dígito hexadecimal también es 15, que se representa con la letra F. Por lo tanto, puede reducir el tamaño de un número binario utilizando dígitos hexadecimales para representar cada grupo de cuatro dígitos binarios.</p>
+<p>Para representar un número binario en hexadecimal, simplemente sustituya el dígito hexadecimal apropiado por cada conjunto de cuatro dígitos binarios.</p>
+<pre style="padding-left: 30px;"><span style="font-size: 12pt; color: #808000;">0001 1010 1111 1001 1011 0011 1011 1110</span><br /><span style="font-size: 12pt; color: #808000;"> 1    A    F    9    B    3    B    E</span><br /><br /></pre>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id358">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Representación de caracteres con el conjunto de caracteres Unicode</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta358_358_2" class="block iDevice_content">
+<div class="exe-text"><p>Java representa caracteres mediante el Estándar Mundial de Caracteres Unicode, o simplemente Unicode. Cada carácter Unicode se representa con 16 bits o dos bytes. Esto significa que el conjunto de caracteres Unicode puede codificar <strong>65.536 caracteres</strong>.</p>
+<p>El objetivo de Unicode consorcio es ofrecer compatibilidad con un conjunto de caracteres internacionales, incluyendo los caracteres imprimibles del teclado QWERTY estándar, así como caracteres internacionales como é o λ.</p>
+<p>Muchos lenguajes de programación almacenan caracteres utilizando el conjunto de caracteres ASCII (Código estándar americano para el intercambio de información), que utiliza 7 bits para codificar cada carácter y, por lo tanto, solo puede representar 128 caracteres. Para ser compatibles con el conjunto de caracteres ASCII, los primeros 128 caracteres del conjunto de<br />caracteres Unicode son los mismos que los del conjunto de caracteres ASCII.</p>
+<p>Para obtener más información sobre el conjunto de caracteres Unicode, consulte el Apéndice C o visite el sitio web del Consorcio Unicode en http://www.Unicode.org.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="1_conceptos_bsicos_de_informtica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_lenguajes_de_programacin.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

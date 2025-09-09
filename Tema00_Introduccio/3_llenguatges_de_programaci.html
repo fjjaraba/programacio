@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3. Llenguatges de programació | Tema_03_Disseny_logic_Model_Relacional </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Francisco Jav. Jaraba Jurado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-113"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">Tema_03_Disseny_logic_Model_Relacional</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació. Introducció</a></li>
+   <li><a href="programacin_java.html" class="daddy">Programación. Java</a>
+   <ul class="other-section">
+      <li><a href="1_conceptos_bsicos_de_informtica.html" class="no-ch">1. Conceptos básicos de informática</a></li>
+      <li><a href="2_representacin_de_datos.html" class="no-ch">2. Representación de datos</a></li>
+      <li><a href="3_lenguajes_de_programacin.html" class="no-ch">3. Lenguajes de programación</a></li>
+      <li><a href="4_introduccin_a_la_programacin.html" class="no-ch">4. Introducción a la programación</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="programaci_java.html" class="current-page-parent daddy">Programació. Java</a>
+   <ul>
+      <li><a href="1_conceptes_bsics_dinformtica.html" class="no-ch">1. Conceptes bàsics d'informàtica</a></li>
+      <li><a href="2_representaci_de_dades.html" class="no-ch">2. Representació de Dades</a></li>
+      <li id="active"><a href="3_llenguatges_de_programaci.html" class="active no-ch">3. Llenguatges de programació</a></li>
+      <li><a href="4_introducci_a_la_programaci.html" class="no-ch">4. Introducció a la programació</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="2_representaci_de_dades.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_introducci_a_la_programaci.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3. Llenguatges de programació</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id370">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Llenguatges d'alt i baix nivell</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta370_370_2" class="block iDevice_content">
+<div class="exe-text"><p>Els llenguatges de programació es poden classificar en tres tipus:</p>
+<p style="padding-left: 30px;">■ llenguatge de màquina<br />■ llenguatge assemblador<br />■ llenguatge d'alt nivell</p>
+<p>En els primers dies de la informàtica, els programadors solien utilitzar <strong>llenguatge de màquina</strong> o <strong>llenguatge assemblador</strong>. El <span style="color: #0000ff;">llenguatge de màquina</span> utilitza codis binaris o cadenes de zeros i uns, per a executar el conjunt d'instruccions de la CPU i fer referència a la memòria d'adreces. Aquest mètode de programació és extremadament desafiant i requereix molt de temps. A més, el codi escrit en llenguatge de màquina no és portable a altres arquitectures informàtiques.</p>
+<p>No obstant això, avui en dia rarament utilitzen el llenguatge de màquina. Els llenguatges assembladors estan un pas per sobre del llenguatge de màquina, utilitzant símbols, noms per a adreces de memòria i mnemonics per a instruccions del processador.</p>
+<p>Igual que el llenguatge de màquina, els <span style="color: #0000ff;">llenguatges assembladors</span> també depenen de la CPU i no són portables entre ordinadors amb diferents processadors (<em>per exemple, entre Intel i SPARC</em>). El llenguatge assemblador és més fàcil d'escriure que el llenguatge de màquina, però encara requereix un esforç considerable, per la qual cosa sol usar-se només quan el programa requereix característiques, com l'accés directe al maquinari, que no són compatibles amb un llenguatge d'alt nivell.</p>
+<p>Els <span style="color: #0000ff;">llenguatges d'alt nivell</span>, com Fortran, Pascal, Perl, Objective­C, PHP, C++, Python i Java, s'assemblen més a l'anglès que al llenguatge de màquina, cosa que els fa molt més fàcils d'usar per al desenvolupament de programari i més portables entre arquitectures de CPU. Per aquesta raó, els programadors han adoptat llenguatges d'alt nivell per a cada vegada més aplicacions.</p>
+<p>Els llenguatges d'alt nivell es compilen, s'interpreten o una combinació de tots dos. Un programa escrit en un llenguatge compilat, com <strong>C++</strong>, és convertit per un compilador en codi de màquina, i després el codi de màquina s'executa.</p>
+<p>En canvi, un programa escrit en un llenguatge interpretat, com <strong>Perl</strong>, es llegeix i es converteix a codi de màquina, línia a línia, en temps d'execució. Normalment, un programa escrit en un llenguatge interpretat s'executa més lentament que el seu equivalent escrit en un llenguatge compilat.</p>
+<p>Java utilitza una combinació de compilador i intèrpret. Un programa Java es compila primer en codis de bytes independents del processador; posteriorment, el fitxer de codi de bytes s'interpreta en temps d'execució mitjançant un programari anomenat <span style="color: #0000ff;"><strong>Màquina Virtual de Java</strong></span> (<span style="color: #0000ff;"><em><strong>JVM</strong></em></span>).</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id371">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Introducció a la programació orientada a objectes</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta371_371_2" class="block iDevice_content">
+<div class="exe-text"><p>Els llenguatges inicials d'alt nivell, com Fortran o Pascal, eren <strong>procedimentals</strong>. Normalment, els programadors escrivien codi específic per a cada tasca en procediments o funcions independents, i els invocaven des d'altres seccions del programa per a realitzar diverses tasques. <span style="text-decoration: underline;">Les dades del programa</span> generalment <span style="text-decoration: underline;">es compartien entre els procediments</span>.</p>
+<p>A mitjans de la dècada de 1970, es va introduir Smalltalk, el primer llenguatge de programació orientat a objectes, que permetia als programadors escriure codi amb un enfocament diferent. Mentre que <span style="text-decoration: underline;">els procediments o funcions s'ocupaven principalment de tipus de dades bàsics</span> com enters, nombres reals o caràcters individuals, <strong>Smalltalk</strong> va proporcionar al programador una nova eina: les <span style="text-decoration: underline;">classes i els objectes d'aquestes classes</span>.</p>
+<p>Una <span style="color: #0000ff;"><strong>classe</strong></span> permet al programador encapsular <span style="text-decoration: underline;">dades i les funcions necessàries per a manipular-les en un sol paquet</span>. Una classe defineix essencialment una plantilla, o model, a partir del qual es creen els objectes. La <span style="text-decoration: underline;">creació d'un objecte</span> es denomina <strong>instanciació</strong>. Per tant, els objectes es creen (<em>instancien</em>) segons el disseny de la classe.</p>
+<p>Una classe podria representar alguna cosa real, com una persona. La classe podria tenir diversos <span style="color: #0000ff;"><strong>atributs</strong></span>, com, en l'exemple de la classe "persona", un nom, un cognom i una edat. La classe també proporcionaria codi, anomenat <span style="color: #0000ff;"><strong>mètodes</strong></span>, que permet al creador de l'objecte establir i recuperar els valors dels atributs.</p>
+<p>Un gran avantatge de la programació orientada a objectes és que les <span style="text-decoration: underline;">classes ben escrites poden ser reutilitzades</span> per nous programes, reduint així el temps de desenvolupament futur.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id372">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">El llenguatge Java</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta372_372_2" class="block iDevice_content">
+<div class="exe-text"><p>23 de maig de 1995, Sun Microsystems va presentar <span style="color: #0000ff;"><strong>Java</strong></span>, originalment anomenat <strong>Oak</strong>, com un <span style="text-decoration: underline;">llenguatge lliure i orientat a objectes</span>, dirigit a aplicacions integrades per a dispositius de consum. Immediatament es va incorporar una màquina virtual de Java que es va integrar en el navegador d'Internet Netscape Navigator, i a mesura que Internet creixia, petits programes Java, coneguts com a applets, van començar a aparèixer en les pàgines web en quantitats cada vegada majors. La sintaxi de Java és bàsicament idèntica (<em>amb algunes petites excepcions</em>) a la de C++, i aviat programadors de tot el món van començar a adonar-se dels avantatges d'usar Java. Aquests avantatges inclouen:</p>
+<ul>
+<li>sintaxi idèntica a la de C++</li>
+<li>orientació a objectes</li>
+<li>característiques relacionades amb Internet, com a subprogrames, que són executats pel navegador, i servlets, que són executats pel servidor web</li>
+<li>una amplia biblioteca de classes que poden reutilitzar-se fàcilment, incloent Classes Swing (proveir una interfície gràfica d'usuari) i Java Data-base Connectivity (JDBC) per a comunicar-se amb una base de dades</li>
+<li>portabilitat entre totes les plataformes que admeten una Màquina Virtual Java</li>
+<li>Xarxes integrades</li>
+<li>Disponibilitat de codi obert del Kit de desenvolupament de Java</li>
+</ul>
+<p>Com esmentem anteriorment, un programa Java es compila primer en codis de bytes independents del processador, que després la Màquina Virtual de Java (JVM) interpreta en temps d'execució. Com el seu nom indica, la <span style="color: #0000ff;"><strong>JVM</strong></span> simula un processador virtual amb el seu propi conjunt d'instruccions, registres i punter d'instruccions. Per tant, per a executar un programa Java, només es necessita una JVM. Afortunadament, les JVM estan disponibles en totes les principals plataformes informàtiques.</p>
+<p>Els programes Java es poden escriure com a <strong>applets</strong>, <strong>servlets</strong> o <strong>aplicacions</strong>.</p>
+<p>Els <span style="color: #0000ff;">applets</span> són petits programes dissenyats per a afegir interactivitat a una pàgina web. S'inicien mitjançant un navegador d'Internet; no poden executar-se de forma independent. Quan l'usuari sol·licita una pàgina web que fa servir un applet, aquest es descarrega en el seu ordinador i la JVM del navegador l'executa. No obstant això, a causa d'incompatibilitats dels navegadors, limitacions imposades per les funcions de seguretat i temps de descàrrega lents, els applets han caigut en desús.</p>
+<p>Els <span style="color: #0000ff;"><strong>servlets</strong></span> Java són invocats pel servidor web i s'executen en ell, sense ser descarregats al client. Normalment, els servlets generen contingut web dinàmicament llegint i escrivint en una base de dades mitjançant JDBC (<em>Connectivitat de Base de Dades Java</em>).</p>
+<p>Les <span style="color: #0000ff;"><strong>aplicacions</strong></span> Java s'executen de forma independent en un equip client.</p>
+<p>Oracle Corporation, que va adquirir Sun Microsystems en gener de 2010, ofereix un valuós lloc web sobre Java (<a href="https://www.oracle.com/es/java/" target="_blank" rel="noopener">https://www.oracle.com/es/java/</a>), que conté informació sobre l'ús de les classes, un tutorial sobre Java i molts altres recursos per al programador.</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="2_representaci_de_dades.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_introducci_a_la_programaci.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
