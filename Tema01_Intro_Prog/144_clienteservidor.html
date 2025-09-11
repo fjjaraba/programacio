@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.4.4. Cliente/Servidor | Java_Introducción </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-18"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">Java_Introducción</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació</a></li>
+   <li class="current-page-parent"><a href="1_introduccin_a_la_programacin.html" class="current-page-parent daddy">1. Introducción a la programación</a>
+   <ul>
+      <li><a href="11_algoritmos.html" class="daddy">1.1. Algoritmos</a>
+      <ul class="other-section">
+         <li><a href="111_pseudocdigo.html" class="no-ch">1.1.1. Pseudocódigo</a></li>
+         <li><a href="112_ordinogramas.html" class="no-ch">1.1.2. Ordinogramas</a></li>
+      </ul>
+      </li>
+      <li><a href="12_cdigo_fuente.html" class="no-ch">1.2. Código Fuente</a></li>
+      <li><a href="13_cdigo_objeto.html" class="no-ch">1.3. Código Objeto</a></li>
+      <li class="current-page-parent"><a href="14_clasificacin_de_los_lenguajes_de_programacin.html" class="current-page-parent daddy">1.4. Clasificación de los lenguajes de programación</a>
+      <ul>
+         <li><a href="141_nivel_del_lenguaje.html" class="no-ch">1.4.1. Nivel del lenguaje</a></li>
+         <li><a href="142_forma_de_obtener_el_cdigo_objeto.html" class="no-ch">1.4.2. Forma de obtener el Código objeto</a></li>
+         <li><a href="143_generacin.html" class="no-ch">1.4.3. Generación</a></li>
+         <li id="active"><a href="144_clienteservidor.html" class="active no-ch">1.4.4. Cliente/Servidor</a></li>
+         <li><a href="145_tecnologa_o_paradigma.html" class="no-ch">1.4.5. Tecnología o Paradigma</a></li>
+         <li><a href="146_propsito.html" class="no-ch">1.4.6. Propósito</a></li>
+         <li><a href="147_tipos_de_datos.html" class="no-ch">1.4.7. Tipos de datos</a></li>
+         <li><a href="148_otros.html" class="no-ch">1.4.8. Otros</a></li>
+      </ul>
+      </li>
+      <li><a href="15_herramientas_para_programar.html" class="no-ch">1.5. Herramientas para programar</a></li>
+      <li><a href="16_anexo.html" class="no-ch">1.6. Anexo</a></li>
+   </ul>
+   </li>
+   <li><a href="1_introducci_a_la_programaci.html" class="daddy">1. Introducció a la programació</a>
+   <ul class="other-section">
+      <li><a href="11_algorismes.html" class="daddy">1.1. Algorismes</a>
+      <ul class="other-section">
+         <li><a href="111_pseudocodi.html" class="no-ch">1.1.1. Pseudocodi</a></li>
+         <li><a href="112_ordinogrames.html" class="no-ch">1.1.2. Ordinogrames</a></li>
+      </ul>
+      </li>
+      <li><a href="12_codi_font.html" class="no-ch">1.2. Codi Font</a></li>
+      <li><a href="13_codi_objecte.html" class="no-ch">1.3. Codi Objecte</a></li>
+      <li><a href="14_clasificaci_dels_llenguatges_de_programaci.html" class="daddy">1.4. Clasificació dels llenguatges de programació</a>
+      <ul class="other-section">
+         <li><a href="141_nivel_del_lenguatge.html" class="no-ch">1.4.1. Nivel del lenguatge</a></li>
+         <li><a href="142_manera_dobtindre_el_codi_objecte.html" class="no-ch">1.4.2. Manera d'obtindre el Codi objecte</a></li>
+         <li><a href="143_generaci.html" class="no-ch">1.4.3. Generació</a></li>
+         <li><a href="144_clientservidor.html" class="no-ch">1.4.4. Client/Servidor</a></li>
+         <li><a href="145_tecnologia_o_paradigma.html" class="no-ch">1.4.5. Tecnologia o Paradigma</a></li>
+         <li><a href="146_propsit.html" class="no-ch">1.4.6. Propòsit</a></li>
+         <li><a href="147_tipus_de_dades.html" class="no-ch">1.4.7. Tipus de Dades</a></li>
+         <li><a href="148_altres.html" class="no-ch">1.4.8. Altres</a></li>
+      </ul>
+      </li>
+      <li><a href="15_eines_per_a_programar.html" class="no-ch">1.5. Eines per a programar</a></li>
+      <li><a href="16_annex.html" class="no-ch">1.6. Annex</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="143_generacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="145_tecnologa_o_paradigma.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.4.4. Cliente/Servidor</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id37">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Cliente/Servidor</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta37_122_2" class="block iDevice_content">
+<div class="exe-text"><p>La arquitectura cliente-servidor es una de las más populares en la construcción de aplicaciones en la actualidad. Básicamente se llama así a toda arquitectura en la que participan dos componentes: uno es el cliente que utiliza unos servicios, y otro es el servidor que proporciona esos servicios. Entre ambos se tiene que efectuar una comunicación de red, habitualmente mediante Internet.</p>
+<p>La clasificación de los lenguajes de programación desde el punto de vista <strong>cliente/Servidor</strong> es adecuada para cuando sea necesaria la programación de aplicaciones Cliente/Servidor en la que por una parte habrá una aplicación encargada de servir las peticiones procedentes de aplicaciones clientes. Un ejemplo de este tipo de arquitectura Cliente/Servidor lo tenemos en la mayoría de aplicaciones web en las que un programa servidor, ubicado en un servidor web, tendrá la función de servir las peticiones de cada una de las aplicaciones web clientes que se ejecuten desde cada uno de los navegadores web.</p>
+<table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 33.3333%;"><img src="img0.jpeg" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="282" height="179" /></td>
+<td style="width: 33.3333%; text-align: center;"><img src="img1.png" alt="" width="302" height="167" /></td>
+<td style="width: 33.3333%; text-align: center;"><img src="img2.jpeg" alt="" width="319" height="158" /></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id40">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Lenguajes del lado del cliente</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta40_125_2" class="block iDevice_content">
+<div class="exe-text"><p>Los lenguajes de programación de cliente serán aquellos que en un entorno Cliente/Servidor, se interpretan y ejecutan siempre desde el ordenador cliente. En programación web esta ejecución e interpretación siempre tendrá lugar desde cada uno de los navegadores webs de cada uno de los ordenadores clientes que interactúan con el Servidor web.</p>
+<p>Como ejemplos de lenguajes de programación de cliente tenemos el Javascript y el VBscript.</p>
+<p style="text-align: center;"><img src="js.png" alt="" width="592" height="479" /></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">lenguajes del lado del Servidor</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta41_126_2" class="block iDevice_content">
+<div class="exe-text"><p>Los lenguajes de Servidor son aquellos utilizados en aplicaciones cliente/servidor para el desarrollo de la parte correspondiente al Servidor. La ejecución de las aplicaciones desarrolladas con estos lenguajes se restringe exc lusivamente al servidor.</p>
+<p>Ejemplos de lenguajes de servidor son: Java, PHP, Perl,ASPm nodejs.</p>
+<p style="text-align: center;"><img src="000475250.png" alt="" width="400" height="432" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id63">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Java</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta63_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Los programas Java se pueden escribir como <span style="color: #0000ff;"><strong>applets</strong></span>, <strong><span style="color: #0000ff;">servlets</span></strong> o <span style="color: #0000ff;"><strong>aplicaciones</strong></span>.</p>
+<p>Los <span style="color: #0000ff;"><strong>applets</strong></span> de Java son pequeños programas diseñados para agregar interactividad a una página web. Se inician mediante un navegador de Internet; no pueden funcionar de forma independiente. Cuando el usuario solicita una página web que contiene un <strong>applet</strong>, éste se descarga  en el ordenador del usuario y es ejecutado por la <span style="color: #0000ff;">JVM</span> en el navegador. Los applets se ejecutan en la parte del cliente.</p>
+<p>Los <span style="color: #0000ff;"><strong>servlets</strong></span> Java son invocados por el servidor, donde se ejecutan, sin descargarse al cliente. Normalmente, los <strong>servlets</strong> generan contenido web dinámicamente,  leyendo y escribiendo en una base de datos utilizando <span style="color: #0000ff;">JDBC</span> (<em>Java Data- base Connectivity</em>).</p>
+<p>Las <span style="color: #0000ff;"><strong>aplicaciones</strong></span> Java se ejecutan de forma independiente en un ordenador, al igual que un progrma C, C++, Pascal, etc.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="143_generacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="145_tecnologa_o_paradigma.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
