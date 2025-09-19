@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6. Cadenas | tema2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-7"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">tema2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació</a></li>
+   <li class="current-page-parent"><a href="estructura_de_un_programa_datos_e__s.html" class="current-page-parent daddy">Estructura de un programa. Datos. E / S</a>
+   <ul>
+      <li><a href="1_estructura_de_un_programa.html" class="no-ch">1. Estructura de un programa</a></li>
+      <li><a href="2_tipos_de_datos_variables_y_constantes.html" class="daddy">2. Tipos de datos, variables y constantes</a>
+      <ul class="other-section">
+         <li><a href="21_variables.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constantes.html" class="no-ch">2.2. Constantes</a></li>
+         <li><a href="23_conversin_de_tipos.html" class="no-ch">2.3. Conversión de tipos</a></li>
+         <li><a href="24_variables_y_objetos_valores_primitivos_y_referencia.html" class="no-ch">2.4. Variables y objetos. Valores Primitivos y Referencia</a></li>
+         <li><a href="25_clases_de_envoltura.html" class="no-ch">2.5. Clases de envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expresiones_y_operadores.html" class="no-ch">3. Expresiones y operadores</a></li>
+      <li><a href="4_clases_y_objetos.html" class="daddy">4. Clases y Objetos</a>
+      <ul class="other-section">
+         <li><a href="41_la_clase_principal_y_el_mtodo_main.html" class="no-ch">4.1. La clase principal y el método main</a></li>
+         <li><a href="42_librera_de_clases_java.html" class="no-ch">4.2. Librería de clases Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__salida.html" class="no-ch">5. Entrada / Salida</a></li>
+      <li id="active"><a href="6_cadenas.html" class="active no-ch">6. Cadenas</a></li>
+      <li><a href="7_expresiones_regulares_en_java.html" class="no-ch">7. Expresiones regulares en Java</a></li>
+      <li><a href="8_otras_clases_de_inters.html" class="no-ch">8. Otras clases de interés</a></li>
+   </ul>
+   </li>
+   <li><a href="estructura_dun_programa_dades_e__s.html" class="daddy">Estructura d'un Programa. Dades. E / S</a>
+   <ul class="other-section">
+      <li><a href="1_estructura_dun_programa_java.html" class="no-ch">1. Estructura d'un programa Java</a></li>
+      <li><a href="2_tipus_de_dades_variables_i_constants.html" class="daddy">2. Tipus de dades, variables i constants</a>
+      <ul class="other-section">
+         <li><a href="21_variables0.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constants.html" class="no-ch">2.2. Constants</a></li>
+         <li><a href="23_conversi_de_tipus.html" class="no-ch">2.3. Conversió de tipus</a></li>
+         <li><a href="24_variables_i_objectes_valors_primitius_i_referncia.html" class="no-ch">2.4. Variables i objectes. Valors Primitius i Referència</a></li>
+         <li><a href="25_classes_denvoltura.html" class="no-ch">2.5. Classes d'envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expressions_i_operadors.html" class="no-ch">3. Expressions i operadors</a></li>
+      <li><a href="4_classes_i_objectes.html" class="daddy">4. Classes i Objectes</a>
+      <ul class="other-section">
+         <li><a href="41_la_classe_principal_i_el_mtode_main.html" class="no-ch">4.1. La classe principal i el métode main</a></li>
+         <li><a href="42_llibreria_de_classes_java.html" class="no-ch">4.2. Llibreria de classes Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__eixida.html" class="no-ch">5. Entrada / Eixida</a></li>
+      <li><a href="6_cadenes.html" class="no-ch">6. Cadenes</a></li>
+      <li><a href="7_expressions_regulars_a_java.html" class="no-ch">7. Expressions regulars a Java</a></li>
+      <li><a href="8_altres_classes_dinters.html" class="no-ch">8. Altres classes d'interès</a></li>
+   </ul>
+   </li>
+   <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="5_entrada__salida.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="7_expresiones_regulares_en_java.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6. Cadenas</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id12">
+<div class="iDevice emphasis0" >
+<div id="ta12_122_2" class="block iDevice_content">
+<div class="exe-text"><p>Una cadena es una <em>secuencia de caracteres</em>. Java tiene una clase incorporada en el paquete <strong><span style="color: #008000;">java.lang</span></strong> que encapsula las estructuras de datos de una cadena. Esta clase, llamada <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html" target="_blank" rel="noopener"><strong>String</strong></a>, es la representación como objeto de una matriz de caracteres que no se puede cambiar.</p>
+<p>Podemos crear un objeto de tipo cadena de dos formas diferentes:</p>
+<ul>
+<li>Como una variable de un tipo de dato primitivo.</li>
+</ul>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">String</span> nombre = "Alicia Giménez Bartlett";</span></pre>
+<ul>
+<li>Como un objeto:</li>
+</ul>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">String</span> nombre = <span style="color: #0000ff;">new String</span>("Alicia Giménez Bartlett");</span></pre>
+<p style="padding-left: 30px;">Aunque los dos métodos son válidos se recomienda el primero ya que es más eficiente.</p>
+<p style="padding-left: 30px;">Los literales de cadena van entre comillas: "Ejemplo de cadena", y pueden utilizarse en cualquier lugar que se utilice un objeto de tipo String.<span style="font-size: 10pt;"><span style="color: #808000;"></span></span><br /><br /></p>
+<h3>Uso de cadenas</h3>
+<ul>
+<li><strong>Concatenación</strong>: java permite concatenar cadenas fácilmente utilizando el operador<span style="color: #0000ff;"><strong> +</strong></span>.</li>
+</ul>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">String</span> nom = "Juan";</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">String</span> cognoms = "Lora Gisbert";</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">String</span> nomComplet = cognoms + ", " + nom;</span></pre>
+<ul>
+<li><strong>Métodos de cadenas</strong>: la clase <span style="color: #0000ff;">String</span> tiene una serie de métodos para trabajar con cadenas. Algunos de uso frecuente son:<br /><br />
+<ul>
+<li>.<span style="color: #0000ff;">length</span>(): longitud de la cadena. Devuelve el número de caracteres de una cadena.<br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">String</span> s = "abc";</span><br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">System.out.println</span>(s.<span style="color: #0000ff;">length</span>());    // mostrará 3<br /><br /></span></li>
+<li>.<span style="color: #0000ff;">charAt</span>(<span style="color: #008000;">índice</span>): extracción de caracteres. Extrae un único carácter de una cadena correspondiente con el carácter cuya posición viene indicada por índice. Has de tener en cuenta que la primera posición es el 0.<br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   "abc".<span style="color: #0000ff;">charAt</span>(1);   <span style="color: #808000;"> // devolverá 'b'</span></span><br /><br /></li>
+<li>.<span style="color: #0000ff;">getChars</span>(<span style="color: #008000;"><em>inicio, fin, destino, posdest</em></span>): extrae varios caracteres de la cadena y los añade en destino. Hay que especificar el índice del primer carácter y del último más uno que se desean copiar, además de la <strong>matriz char</strong> donde se desean colocar dichos caracteres.<br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">String</span> s = "Esto no es una canción";</span><br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">char</span> buf[] = new char[2];</span><br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   s.<span style="color: #0000ff;">getChars</span>(5, 7, buf, 0);</span><br /><br /></li>
+<li>.<span style="color: #0000ff;">equals</span>(<span style="color: #008000;"><em>cadena</em></span>): compara con la cadena pasada como parámetro. Devuelve <span style="color: #0000ff;">true</span> si las cadenas son iguales. En caso contrario devuelve false. <br /><br /></li>
+<li>.<span style="color: #0000ff;">equalsIgnoreCase</span> (<em><span style="color: #008000;">cadena</span></em>): igual que la anterior pero sin tener en cuenta las mayúsculas y minúsculas.<br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">String</span> cadena1="Carmen";</span><br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">String</span> cadena2="carmen";</span><br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">System.out.println</span>(cadena1.<span style="color: #0000ff;">equals</span>(cadena2));              <span style="color: #808000;">// false</span></span><br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">System.out.println</span>(cadena1.<span style="color: #0000ff;">equalsIgnoreCase</span>(cadena2));    <span style="color: #808000;">// true</span></span><br />El método <span style="color: #0000ff;"><strong>equals</strong></span> y el operador<span style="color: #0000ff;"><strong> ==</strong> </span>hacen dos pruebas completamente diferentes para la igualdad. Mientras que el método equals compara los caracteres contenidos en una String, el operador<strong><span style="color: #0000ff;"> ==</span></strong> compara dos referencias de objeto para ver si se refieren a la misma instancia. Por tanto, no podemos usar el signo<span style="color: #0000ff;"> ==</span> por que esta sería una comparación binaria de punteros a memoria y no nos devolvería el valor correcto.<br /><br /></li>
+<li><span style="color: #0000ff;">compareTo</span>( <em><span style="color: #008000;">pcadena</span></em> ): compara dos cadenas lexicográficamente y devuelve un valor entero. El valor devuelto es<strong> 0</strong> si ambas cadenas tienen el mismo contenido; es un <span style="text-decoration: underline;"><strong>valor negativo</strong></span> si <span style="color: #008000;"><em>pcadena</em></span> es mayor;  es un <strong><span style="text-decoration: underline;">valor positivo</span></strong> si <span style="color: #008000;"><em>pcadena</em></span> es menor. <br /><span style="font-size: 10pt; font-family: andale mono, monospace;">   <span style="color: #0000ff;">String</span> apellido1 = "Monfort";</span><br /><span style="font-size: 10pt; font-family: andale mono, monospace;">   <span style="color: #0000ff;">String</span> apellido2 = "Rubert";</span><br /><span style="font-size: 10pt; font-family: andale mono, monospace;">   <span style="color: #0000ff;">System.out.println</span>(apellido1.<span style="color: #0000ff;">compareTo</span>(apellido2));   <span style="color: #808000;">// muestra   -5</span></span><br /><br /></li>
+<li>.<span style="color: #0000ff;">toLowerCase</span>(): convierte la cadena a minúsculas.</li>
+<li>.<span style="color: #0000ff;">toUpperCase</span>(): convierte la cadena a mayúsculas.<br /><br /></li>
+<li>.<span style="color: #0000ff;">toString</span>(): convierte un objeto a una cadena o String. Todas las clases heredan <span style="color: #0000ff;">toString</span>() desde la clase <span style="color: #0000ff;">Object</span> y muchas clases del paquete java.lang sobreescriben este método para proporcionar una implementación más acorde con la propia clase. Por ejemplo, las clases Character, Integer, Boolean, etc.. sobreescriben toString() para proporcionar una representación en String de los objetos.<br /><br /></li>
+<li>.<span style="color: #0000ff;">valueOf</span>(): permite convertir variables de diferentes tipos a un String.<br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">System.out.println</span>(String.<span style="color: #0000ff;">valueOf</span>(Math.PI));</span><br /><br /></li>
+<li><span style="color: #0000ff;">substring</span><em>(<span style="color: #008000;">inicio</span>, <span style="color: #008000;">final</span></em>): devuelve parte de una cadena. La cadena devuelta comenzará en la posición inicio y acabará en la posición final. Si final no se indica será el último carácter de la cadena.<br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">String</span> str="El lenguaje Java";</span><br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">String</span> subStr=str.<span style="color: #0000ff;">substring</span>(12);    <span style="color: #808000;">// subStr --&gt; "Java"</span></span><br /><span style="font-family: andale mono, monospace; font-size: 10pt;">   <span style="color: #0000ff;">String</span> subStr=str.<span style="color: #0000ff;">substring</span>(3, 11); <span style="color: #808000;">// subStr --&gt; "lenguaje"</span></span></li>
+</ul>
+</li>
+</ul>
+<p></p>
+<p><img src="funcString.png" alt="" width="1114" height="572" /></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="5_entrada__salida.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="7_expresiones_regulares_en_java.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5. Entrada / Salida | tema2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-6"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">tema2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació</a></li>
+   <li class="current-page-parent"><a href="estructura_de_un_programa_datos_e__s.html" class="current-page-parent daddy">Estructura de un programa. Datos. E / S</a>
+   <ul>
+      <li><a href="1_estructura_de_un_programa.html" class="no-ch">1. Estructura de un programa</a></li>
+      <li><a href="2_tipos_de_datos_variables_y_constantes.html" class="daddy">2. Tipos de datos, variables y constantes</a>
+      <ul class="other-section">
+         <li><a href="21_variables.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constantes.html" class="no-ch">2.2. Constantes</a></li>
+         <li><a href="23_conversin_de_tipos.html" class="no-ch">2.3. Conversión de tipos</a></li>
+         <li><a href="24_variables_y_objetos_valores_primitivos_y_referencia.html" class="no-ch">2.4. Variables y objetos. Valores Primitivos y Referencia</a></li>
+         <li><a href="25_clases_de_envoltura.html" class="no-ch">2.5. Clases de envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expresiones_y_operadores.html" class="no-ch">3. Expresiones y operadores</a></li>
+      <li><a href="4_clases_y_objetos.html" class="daddy">4. Clases y Objetos</a>
+      <ul class="other-section">
+         <li><a href="41_la_clase_principal_y_el_mtodo_main.html" class="no-ch">4.1. La clase principal y el método main</a></li>
+         <li><a href="42_librera_de_clases_java.html" class="no-ch">4.2. Librería de clases Java</a></li>
+      </ul>
+      </li>
+      <li id="active"><a href="5_entrada__salida.html" class="active no-ch">5. Entrada / Salida</a></li>
+      <li><a href="6_cadenas.html" class="no-ch">6. Cadenas</a></li>
+      <li><a href="7_expresiones_regulares_en_java.html" class="no-ch">7. Expresiones regulares en Java</a></li>
+      <li><a href="8_otras_clases_de_inters.html" class="no-ch">8. Otras clases de interés</a></li>
+   </ul>
+   </li>
+   <li><a href="estructura_dun_programa_dades_e__s.html" class="daddy">Estructura d'un Programa. Dades. E / S</a>
+   <ul class="other-section">
+      <li><a href="1_estructura_dun_programa_java.html" class="no-ch">1. Estructura d'un programa Java</a></li>
+      <li><a href="2_tipus_de_dades_variables_i_constants.html" class="daddy">2. Tipus de dades, variables i constants</a>
+      <ul class="other-section">
+         <li><a href="21_variables0.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constants.html" class="no-ch">2.2. Constants</a></li>
+         <li><a href="23_conversi_de_tipus.html" class="no-ch">2.3. Conversió de tipus</a></li>
+         <li><a href="24_variables_i_objectes_valors_primitius_i_referncia.html" class="no-ch">2.4. Variables i objectes. Valors Primitius i Referència</a></li>
+         <li><a href="25_classes_denvoltura.html" class="no-ch">2.5. Classes d'envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expressions_i_operadors.html" class="no-ch">3. Expressions i operadors</a></li>
+      <li><a href="4_classes_i_objectes.html" class="daddy">4. Classes i Objectes</a>
+      <ul class="other-section">
+         <li><a href="41_la_classe_principal_i_el_mtode_main.html" class="no-ch">4.1. La classe principal i el métode main</a></li>
+         <li><a href="42_llibreria_de_classes_java.html" class="no-ch">4.2. Llibreria de classes Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__eixida.html" class="no-ch">5. Entrada / Eixida</a></li>
+      <li><a href="6_cadenes.html" class="no-ch">6. Cadenes</a></li>
+      <li><a href="7_expressions_regulars_a_java.html" class="no-ch">7. Expressions regulars a Java</a></li>
+      <li><a href="8_altres_classes_dinters.html" class="no-ch">8. Altres classes d'interès</a></li>
+   </ul>
+   </li>
+   <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="42_librera_de_clases_java.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="6_cadenas.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5. Entrada / Salida</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id11">
+<div class="iDevice emphasis0" >
+<div id="ta11_121_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="i_o_02.png" alt="" style="float: right; margin-right: 10px; margin-left: 10px;" width="326" height="203" />En la mayoría de aplicaciones, se presenta la posibilidad al usuario de introducir datos al programa (<em>entrada</em>), el cual los procesará y empleará para realizar determinadas acciones que finalmente aportarán unos resultados los cuales serán mostrados (<em>salida</em>) al usuario de la aplicación.</p>
+<p style="text-align: center;"><img src="i_o_01.png" alt="" width="462" height="82" /></p>
+<p>La entrada de datos a un programa, se puede obtener de diferentes formas:</p>
+<ul>
+<li>A partir de los valores insertados <strong>desde la consola</strong> por parte del usuario del programa.</li>
+<li>A partir de los valores insertados <strong>desde un formulario</strong> por parte del usuario del programa.</li>
+<li>Desde un <strong>fichero</strong></li>
+<li>Desde una <strong>base de datos</strong></li>
+<li>A partir de los datos obtenidos por <strong>un sensor</strong> (<em>sensor de movimiento, infrarrojos, ultrasonidos, humedad, etc</em>.)</li>
+</ul>
+<p>En Java se define el concepto de <span style="color: #0000ff;"><strong>stream</strong></span> (<em><span style="color: #0000ff;">flujo</span></em>), que es una abstracción para tratar la comunicación de información entre el programa y el exterior.  Los <span style="color: #0000ff;">streams</span> son <span style="text-decoration: underline;">flujos secuenciales de bytes</span>.</p>
+<ul>
+<li>Para que un programa pueda <strong>leer datos</strong> de alguna fuente, debe <strong>crear</strong> un <span style="color: #0000ff;">stream de entrada</span> conectado a ésta (<em>teclado, fichero, ...</em>).</li>
+<li>Para <strong>escribir datos</strong> hacia un destino, debe crear un <span style="color: #0000ff;">stream de salida</span> conectado a éste (<em>pantalla, fichero</em>, ...).</li>
+<li>Java proporciona distintas <strong>clases</strong> para el manejo de estos flujos de información, todas ellas contenidas en el paquete <span style="color: #0000ff;"><strong>java.io</strong></span></li>
+</ul>
+<p> Los flujos actúan como interfaz con el dispositivo o clase asociada. Las ventajas de interpretar la E/S así son:</p>
+<ul>
+<li> <span style="text-decoration: underline;">Operación independiente del tipo de datos y del dispositivo</span></li>
+<li> <span style="text-decoration: underline;">Mayor flexibilidad</span> (<em>p.e. redirección, combinación</em>)</li>
+<li> <span style="text-decoration: underline;">Diversidad de dispositivos</span> (<em>fichero, pantalla, teclado, red</em>, …)</li>
+<li> <span style="text-decoration: underline;">Diversidad de formas de comunicación</span>
+<ul>
+<li>Modo de acceso: secuencial, aleatorio</li>
+<li>Información intercambiada: binaria, caracteres, líneas</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: center;"><img src="i_o_03.png" alt="" width="900" height="157" /></p>
+<p>En Java tenemos:</p>
+<ul>
+<li><strong><span style="color: #0000ff;">System.in</span></strong> -&gt; Entrada estándar ( <em>objeto de la clase <span style="color: #008000;"><a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html" target="_blank" rel="noopener" style="color: #008000;">InputStream</a></span> ).</em></li>
+</ul>
+<p style="padding-left: 30px;">Por defecto la entrada estándar está asociada al teclado. Algunos métodos útiles son:</p>
+<p style="padding-left: 60px;">• <strong><span style="color: #0000ff;">read</span></strong>() -&gt; permite leer un byte de la entrada como entero<br />• <span style="color: #0000ff;"><strong>skip</strong></span>( n ) -&gt; ignora n bytes de la entrada<br />• <strong><span style="color: #0000ff;">available</span></strong>() -&gt; número de bytes disponibles para leer en la entrada</p>
+<ul>
+<li><span style="color: #0000ff;"><strong>System.out</strong></span> -&gt; Salida estándar ( objeto de la clase <a href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html" target="_blank" rel="noopener">PrintStream</a> ).</li>
+</ul>
+<p style="padding-left: 30px;">Por defecto la Salida estándar está asociada a la pantalla. Algunos métodos útiles son:</p>
+<p style="padding-left: 60px;">• <span style="color: #0000ff;">print</span>(<span style="color: #808000;"><em>parámetro</em></span>) -&gt; Escribe en pantalla el contenido de parámetro. Al finalizar la impresión el cursor se queda en la misma línea.<br />• <span style="color: #0000ff;">println</span>(<span style="color: #808000;"><em>parámetro</em></span>) -&gt; Escribe en pantalla el contenido de parámetro. Al finalizar cambia de línea.<br />• <span style="color: #0000ff;">flush</span>() -&gt; vacía el buffer de salida escribiendo su contenido</p>
+<ul>
+<li> <span style="color: #0000ff;"><strong>System.err</strong></span> -&gt;Salida de error ( objeto de la clase <a href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html" target="_blank" rel="noopener">PrintStream</a> ).</li>
+</ul>
+<p style="padding-left: 30px;">Se utiliza para enviar mensajes de error. Es habitual que se encuentre asociado por defecto a la consola.</p>
+<pre style="padding-left: 30px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">import</span> <span style="color: #008000;">java.io.*</span>;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">class</span> LecturaDeLinea {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">   public static void</span> main( <span style="color: #0000ff;">String</span> args[] ) <span style="color: #0000ff;">throws</span> IOException {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      int</span> c;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      int</span> contador = 0;</span><br /><span style="font-size: 10pt; color: #808000;">      // se lee hasta encontrar el fin de línea</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      while</span>( (c = System.in.read() ) != '\n' ) </span><span style="font-size: 10pt;">{</span><br /><span style="font-size: 10pt;">            contador++;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">            System.out.print</span>( (char) c );</span><br /><span style="font-size: 10pt;">      }</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      System.out.println</span>();              <span style="color: #808000;">// Se escribe el fin de línea</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      System.err.println</span> ( "Contados "+ contador +" bytes en total." );</span><br /><span style="font-size: 10pt;">   }</span><br /><span style="font-size: 10pt;">}</span></pre>
+<p>Observa que para la clase System no se crean objetos. De hecho no se pueden crear objetos de la clase System. Para acceder a sus atributos o métodos se pone el nombre de la clase seguido de un punto y el nombre del atributo  o método.</p>
+<h3>Entrada por consola utilizando Scanner</h3>
+<p>Leer byte a byte no es precisamente cómodo, por ese motivo se creó la clase <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html" target="_blank" rel="noopener"><span style="color: #0000ff;"><strong>Scanner</strong></span></a>, dentro del paquete <span style="color: #0000ff;">java.util</span>, que proporciona métodos para leer tipos de datos byte, short, int, long, float, double y String desde la consola Java.</p>
+<p>Lo primero que debemos hacer es <strong>importar la clase Scanner</strong> a nuestro programa:   <span style="color: #0000ff;">import</span> java.util.Scanner;</p>
+<p>A continuación hay que <strong>crear un objeto de tipo Scanner</strong> y <strong>asociarlo a una entrada de datos</strong>, por ejemplo la entrada estándar:  <br />    Scanner sc = <span style="color: #0000ff;">new</span> Scanner(<span style="color: #0000ff;">System.in</span>);</p>
+<p>Algunos métodos de la clase Scanner son:</p>
+<table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 39.3372%; text-align: center; background-color: #c4f5f4;"><strong>Método</strong></td>
+<td style="width: 60.6628%; text-align: center; background-color: #c4f5f4;"><strong>Explicación</strong></td>
+</tr>
+<tr>
+<td style="width: 39.3372%; padding-left: 30px;"><strong>boolean <span style="color: #0000ff;">nextBoolean</span>()</strong></td>
+<td style="width: 60.6628%;">
+<p>Lee valores lógicos boléanos introducidos por el usuario.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 39.3372%; padding-left: 30px;"><strong>byte <span style="color: #0000ff;">nextByte</span>()</strong></td>
+<td style="width: 60.6628%;">Lee valores byte introducidos por el usuario.</td>
+</tr>
+<tr>
+<td style="width: 39.3372%;">
+<p style="padding-left: 30px;"><strong>short <span style="color: #0000ff;">nextShort</span>()</strong></p>
+<p style="padding-left: 30px;"><strong>int <span style="color: #0000ff;">nextInt</span>()</strong></p>
+<p style="padding-left: 30px;"><strong>long <span style="color: #0000ff;">nextLong</span>()</strong></p>
+<p style="padding-left: 30px;"><strong>float <span style="color: #0000ff;">nextFloat</span>()</strong></p>
+<p style="padding-left: 30px;"><strong>double <span style="color: #0000ff;">nextDouble</span>()</strong></p>
+<p style="padding-left: 30px;"><strong>String <span style="color: #0000ff;">nextLine</span>()<br /><br /></strong></p>
+<p style="padding-left: 30px;"><strong>char <span style="color: #0000ff;">next</span>().<span style="color: #0000ff;">chartAt</span>(<span style="color: #008000;">indice</span>)</strong></p>
+<p style="padding-left: 30px;"><strong>void <span style="color: #0000ff;">close</span>()</strong></p>
+</td>
+<td style="width: 60.6628%;">
+<p>Lee valores short introducidos por el usuario.</p>
+<p>Lee valores int introducidos por el usuario.</p>
+<p>Lee valores long introducidos por el usuario.</p>
+<p>Lee valores float introducidos por el usuario.</p>
+<p>Lee valores double introducidos por el usuario.</p>
+<p>Lee valores String introducidos por el usuario. También limpia el buffer después de leer un valor numérico para no tener problemas si a continuación se lee una cadena.</p>
+<p>Lee una cadena y devuelve el carácter indicado por la posición de índice.  <strong> .next().chartAt(0) </strong> --&gt; lee un carácter</p>
+<p>Cierra el flujo de entrada</p>
+</td>
+</tr>
+</tbody>
+</table>
+<pre style="padding-left: 30px;"><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">import</span> java.util.Scanner;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">public class</span> EntradaSalidaConsola {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">   public static void</span> main(<span style="color: #0000ff;">String</span>[] args) {</span><br /><span style="font-size: 10pt;">      // Crear una instancia de Scanner para leer la entrada</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      Scanner</span> scanner = <span style="color: #0000ff;">new</span> Scanner(System.in);</span><br /><span style="font-size: 10pt;">      </span><span style="font-size: 10pt;"><span style="color: #0000ff;">System.out.print</span>("Ingresa un número entero: ");     <span style="color: #808000;">// Leer un entero</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      int</span> numero = scanner.<span style="color: #0000ff;">nextInt</span>();<br />      <span style="color: #0000ff;">String</span> nombre = scanner.<span style="color: #0000ff;">nextLine</span>();<br />      </span><span style="font-size: 10pt;"><span style="color: #0000ff;">System.out.print</span>("Ingresa tu nombre: ");            <span style="color: #808000;">// Leer una cadena de caracteres</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      String</span> nombre = scanner.<span style="color: #0000ff;">nextLine</span>();</span><br /><span style="font-size: 10pt;">      </span><span style="font-size: 10pt;"><span style="color: #0000ff;">System.out.println</span>("Número ingresado: " + numero);  <span style="color: #808000;">// Imprimir los valores leídos</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      System.out.println</span>("Nombre ingresado: " + nombre);</span><br />        <span style="font-size: 10pt;">scanner.<span style="color: #0000ff;">close</span>();</span><br /><span style="font-size: 10pt;">}</span></pre>
+<p>Puede ser que el usuario en lugar de introducir un entero introduzca un double o una cadena o un long. En ese caso se produciría un error. En este tipo de situaciones debemos <strong>verificar</strong> si el valor que leemos corresponde al tipo de datos esperado por la clase Scanner. Para eso nos ayudaremos de los siguientes métodos que devolverán true si los datos tienen el formato adecuado.</p>
+<p style="text-align: center;"><img src="i_o_04.png" alt="" width="796" height="435" /></p>
+<h3>Entrada y salida con ventanas emergentes</h3>
+<p>Si en lugar de hacer uso de la consola de nuestro IDE se prefiere realizar la entrada de datos o la salida mediante ventanas puedes utilizar la clase <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JOptionPane.html" target="_blank" rel="noopener"><span style="color: #0000ff;"><strong>JOptionPane</strong></span></a> de la biblioteca <span style="color: #0000ff;">javax.swing</span>. A continuación, se muestra un ejemplo:</p>
+<pre style="padding-left: 30px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">import</span> javax.swing.<span style="color: #0000ff;">JOptionPane</span>;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">public class</span> EntradaSalidaVentanasEmergentes {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">   public static void</span> main(String[] args) {</span><br /><span style="font-size: 10pt; color: #808000;">      // Entrada de texto</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      String</span> nombre = JOptionPane.<span style="color: #0000ff;">showInputDialog</span>(null, "Ingrese su nombre:");</span><br /><span style="font-size: 10pt; color: #808000;">      // Mostrar el nombre ingresado</span><br /><span style="font-size: 10pt;">      JOptionPane.<span style="color: #0000ff;">showMessageDialog</span>(null, "Hola, " + nombre + "!");</span><br /><span style="font-size: 10pt;">   }</span><br /><span style="font-size: 10pt;">}</span></pre>
+<p>En este ejemplo, la ventana emergente <span style="color: #0000ff;">showInputDialog</span> se utiliza para solicitar al usuario que ingrese su nombre. El valor ingresado se guarda en la variable nombre. Luego, se muestra un mensaje emergente <span style="color: #0000ff;">showMessageDialog</span> que muestra un saludo con el nombre ingresado.</p>
+<p style="text-align: center;"><img src="i_o_05.png" alt="" width="620" height="567" /></p>
+<p style="text-align: left;">Los métodos más frecuentes son:</p>
+<ul>
+<li style="text-align: left;">static int <strong><span style="color: #0000ff;">showConfirmDialog</span></strong>(Component compPadre, Object msj)  --&gt;  Abre un cuadro de diálogo con las opciones <strong>Sí</strong>, <strong>No</strong> y <strong>Cancelar</strong>;  con el mensaje msj. En otras versiones permite modificar el texto de la barra de título, los botones que aparecen y el icono de la parte superior izquierda.</li>
+<li style="text-align: left;">static String <strong><span style="color: #0000ff;">showInputDialog</span></strong>(Component parentComponent, Object message) --&gt;  abre un cuadro de diálogo solicitando al usuario que introduzca una información.</li>
+<li style="text-align: left;">static void <strong><span style="color: #0000ff;">showMessageDialog</span></strong>(Component parentComponent, Object message)  --&gt;   informa al usuario sobre algo que ha sucedido.</li>
+<li style="text-align: left;">static int <strong><span style="color: #0000ff;">showOptionDialog</span></strong>(Component componentePadre, Object msj, String titulo, int optionType, int msjType, Icon icon, Object[] options, Object initialValue)  --&gt;  Abre un cuadro de diálogo con un icono específico, donde la opción inicial está determinada por el parámetro initialValue y la cantidad de opciones está determinada por el parámetro optionType (DEFAULT_OPTION, YES_NO_OPTION, YES_NO_CANCEL_OPTION, OK_CANCEL_OPTION). El parámetro msjType  designa el tipo de mensaje que es, utilizado principalmente para determinar el ícono del aspecto (ERROR_MESSAGE, INFORMATION_MESSAGE, WARNING_MESSAGE, QUESTION_MESSAGE,  PLAIN_MESSAGE).  La gran unificación de los tres anteriores.</li>
+</ul>
+<p><img src="joptionpane01.png" alt="" width="881" height="192" /></p>
+<p>Ejemplos:</p>
+<ul>
+<li>JOptionPane.<span style="color: #0000ff;">showMessageDialog</span>(null, "alert", "alert", JOptionPane.ERROR_MESSAGE); <br /><br /></li>
+<li>JOptionPane.<span style="color: #0000ff;">showInternalMessageDialog</span>(null, "information", "information", JOptionPane.INFORMATION_MESSAGE);<br /><br /></li>
+<li>JOptionPane.<span style="color: #0000ff;">showConfirmDialog</span>(null, "choose one", "choose one", JOptionPane.YES_NO_OPTION);<br /><br /></li>
+<li>JOptionPane.<span style="color: #0000ff;">showInternalConfirmDialog</span>(null, "please choose one", "information", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE);<br /><br /></li>
+<li>Object[] options = { "OK", "CANCEL" };<br />JOptionPane.<span style="color: #0000ff;">showOptionDialog</span>(null, "Click OK to continue", "Warning", JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);<br /><br /></li>
+<li>String inputValue = JOptionPane.<span style="color: #0000ff;">showInputDialog</span>("Please input a value"); <br /><br /></li>
+<li>Object[] possibleValues = { "First", "Second", "Third" };<br />Object selectedValue = JOptionPane.<span style="color: #0000ff;">showInputDialog</span>(null, "Choose one", "Input", JOptionPane.INFORMATION_MESSAGE, null, possibleValues, possibleValues[0]);</li>
+</ul>
+<p>El resultado sería:</p>
+<p><img src="joptionpane02.png" alt="" width="1170" height="330" /></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id51">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Clase System</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta51_122_2" class="block iDevice_content">
+<div class="exe-text"><p>La clase <strong>System</strong> contiene varios campos y métodos de clase útiles. <strong>No se puede crear una instancia</strong> de ella.</p>
+<p>Entre las funciones que ofrece la clase System se encuentran las <strong>entradas estándar</strong>, las <strong>salidas estándar</strong> y los <strong>flujos de salida de errores</strong>; acceso a <strong>propiedades definidas externamente</strong> y <strong>variables de entorno</strong>; un <strong>medio para cargar archivos</strong> y bibliotecas; y un <strong>método de utilidad para copiar rápidamente una parte de una matriz</strong>.</p>
+<p><strong>Atributos</strong>:</p>
+<ul>
+<li>static PrintStream <span style="color: #008000;">err</span>;       <span style="color: #808000;">//  salida de error estandar</span></li>
+<li>static InputStream <span style="color: #008000;">in</span>;       <span style="color: #808000;">//  entrada estandar</span></li>
+<li><span style="color: #808000;">static PrintStream out      </span> // salida  estandar;</li>
+</ul>
+<p><strong>Métodos</strong>:</p>
+<ul>
+<li>static void <span style="color: #0000ff;">arraycopy</span>(Object src, int srcPos, Object dest, int destPos, int length)  --&gt;  copia del array src comenzando en la posición srcPos  a partir de la posición destPos en el array de destino dest. El número de elementos copiados será length.</li>
+<li>static String <span style="color: #0000ff;">clearProperty</span>(String key)   --&gt;  elimina la propiedad del sistema.</li>
+<li>static Console <span style="color: #0000ff;">console</span>()  --&gt;  devuelve el objeto Consola asociado con la JVM.</li>
+<li>static long <span style="color: #0000ff;">currentTimeMillis</span>()  --&gt;  devuelve la hora actual en milisegundos. Devuelve la diferencia, medida en milisegundos, entre la hora actual y la medianoche del 1 de enero de 1970 UTC.</li>
+<li>static void <span style="color: #0000ff;">exit</span>(int status)  --&gt;  finaliza la ejecución del programa.</li>
+<li>static void <span style="color: #0000ff;">gc</span>()  --&gt;  ejecuta el garbage collector (eliminación de basura para liberar espacio en la memoria).</li>
+<li>static String <span style="color: #0000ff;">getenv</span>(String name)  --&gt;  obtiene el valor de la variable del entorno especificada.</li>
+<li>static Properties <span style="color: #0000ff;">getProperties</span>()  --&gt;   obtiene las propiedades actuales del sistema.</li>
+<li>static String <span style="color: #0000ff;">getProperty</span>(String key)  --&gt;  obtiene el valor de la propiedad indicada.</li>
+<li>static String <span style="color: #0000ff;">getProperty</span>(String key, String def)  --&gt;  obtiene el valor de la propiedad indicada.</li>
+<li>static <span style="color: #0000ff;">SecurityManager</span> getSecurityManager()  --&gt;  obtiene la interfaz de seguridad del sistema.</li>
+<li>static int <span style="color: #0000ff;">identityHashCode</span>(Object x)  --&gt;  devuelve el hashcode.</li>
+<li>static String <span style="color: #0000ff;">lineSeparator</span>()  --&gt;  devuelve el caracter separador del sistema. En linux "/".</li>
+<li>static void <span style="color: #0000ff;">load</span>(String filename)  --&gt;  Carga la biblioteca nativa especificada por el argumento filename.</li>
+<li>static void <span style="color: #0000ff;">loadLibrary</span>(String libname)</li>
+<li>static long <span style="color: #0000ff;">nanoTime</span>()  --&gt;  Devuelve el valor actual de la fuente de tiempo de alta resolución de la JVM en ejecución, en nanosegundos.</li>
+<li>static void <span style="color: #0000ff;">runFinalization</span>()  --&gt;  Ejecuta los métodos de finalización de cualquier objeto pendiente de finalización.</li>
+<li>static void setErr(PrintStream err)  --&gt;  reasigna la salida de error estandar a un nuevo objeto.</li>
+<li>static void setIn(InputStream in)  --&gt;  reasigna la entrada estandar.</li>
+<li>static void setOut(PrintStream out)  --&gt;  reasigna la salida estándar.</li>
+<li>static void setProperties(Properties props)  --&gt;  Establece las propiedades del sistema en el argumento props.</li>
+<li>static String setProperty(String key, String value)  --&gt;  establece un nuevo valor para la propiedad especificada.</li>
+<li>static void setSecurityManager(SecurityManager s)  --&gt;  establece el valor para el sistema de seguridad.</li>
+</ul>
+<p>Ejemplo:</p>
+<pre style="padding-left: 30px;"><span style="font-size: 10pt;">import java.text.SimpleDateFormat;</span><br /><span style="font-size: 10pt;">import java.sql.*;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">public class</span> App {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">  public static void</span> main(String[] args) throws Exception {</span><br /><span style="font-size: 10pt; color: #808000;">    // muestra la hora actual e información del sistema.</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">    long</span> horaMilisegundos = System.<strong><span style="color: #0000ff;">currentTimeMillis</span></strong>(); </span><br /><span style="font-size: 10pt;">    SimpleDateFormat formatoFecha = <span style="color: #0000ff;">new</span> SimpleDateFormat("dd MMMM yyyy - HH:mm"); </span><br /><span style="font-size: 10pt;">    Date fecha = <span style="color: #0000ff;">new</span> Date(horaMilisegundos);</span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>(horaMilisegundos + " = " + formatoFecha.<span style="color: #0000ff;">format</span>(fecha));</span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>("Codificación Salida estándar: " + System.<span style="color: #0000ff;">getProperty</span>("stdout.encoding"));</span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>("Codificación en archivos: " + System.<span style="color: #0000ff;">getProperty</span>("file.encoding"));</span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>("Versión de Java: " + System.<span style="color: #0000ff;">getProperty</span>("java.specification.version"));<br />    <span style="color: #808000;">//</span>System.<span style="color: #808000;">exit</span>(1); <span style="color: #808000;">// finaliza la ejecución del programa</span></span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>("Sistema Operativo: " + System.<span style="color: #0000ff;">getProperty</span>("os.name"));</span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>("Usuario: " + System.<span style="color: #0000ff;">getProperty</span>("user.name"));</span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>("Carpeta de Usuario: " + System.<span style="color: #0000ff;">getProperty</span>("user.home"));</span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>("Separador de archivos: " + System.<span style="color: #0000ff;">getProperty</span>("file.separator")); </span><br /><span style="font-size: 10pt;">  }</span><br /><span style="font-size: 10pt;">}</span></pre>
+<p>System.exit(1); está comentado por lo que no se ejecuta. Si se eliminan las <span style="color: #808000;">//</span> de delante el programa finalizará al ejecutar dicha sentencia, quedando el resto de sentencias que se encuentran por debajo sin ejecutar.</p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="42_librera_de_clases_java.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="6_cadenas.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

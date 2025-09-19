@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4. Clases y Objetos | tema2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-22"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">tema2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació</a></li>
+   <li class="current-page-parent"><a href="estructura_de_un_programa_datos_e__s.html" class="current-page-parent daddy">Estructura de un programa. Datos. E / S</a>
+   <ul>
+      <li><a href="1_estructura_de_un_programa.html" class="no-ch">1. Estructura de un programa</a></li>
+      <li><a href="2_tipos_de_datos_variables_y_constantes.html" class="daddy">2. Tipos de datos, variables y constantes</a>
+      <ul class="other-section">
+         <li><a href="21_variables.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constantes.html" class="no-ch">2.2. Constantes</a></li>
+         <li><a href="23_conversin_de_tipos.html" class="no-ch">2.3. Conversión de tipos</a></li>
+         <li><a href="24_variables_y_objetos_valores_primitivos_y_referencia.html" class="no-ch">2.4. Variables y objetos. Valores Primitivos y Referencia</a></li>
+         <li><a href="25_clases_de_envoltura.html" class="no-ch">2.5. Clases de envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expresiones_y_operadores.html" class="no-ch">3. Expresiones y operadores</a></li>
+      <li id="active"><a href="4_clases_y_objetos.html" class="active daddy">4. Clases y Objetos</a>
+      <ul>
+         <li><a href="41_la_clase_principal_y_el_mtodo_main.html" class="no-ch">4.1. La clase principal y el método main</a></li>
+         <li><a href="42_librera_de_clases_java.html" class="no-ch">4.2. Librería de clases Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__salida.html" class="no-ch">5. Entrada / Salida</a></li>
+      <li><a href="6_cadenas.html" class="no-ch">6. Cadenas</a></li>
+      <li><a href="7_expresiones_regulares_en_java.html" class="no-ch">7. Expresiones regulares en Java</a></li>
+      <li><a href="8_otras_clases_de_inters.html" class="no-ch">8. Otras clases de interés</a></li>
+   </ul>
+   </li>
+   <li><a href="estructura_dun_programa_dades_e__s.html" class="daddy">Estructura d'un Programa. Dades. E / S</a>
+   <ul class="other-section">
+      <li><a href="1_estructura_dun_programa_java.html" class="no-ch">1. Estructura d'un programa Java</a></li>
+      <li><a href="2_tipus_de_dades_variables_i_constants.html" class="daddy">2. Tipus de dades, variables i constants</a>
+      <ul class="other-section">
+         <li><a href="21_variables0.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constants.html" class="no-ch">2.2. Constants</a></li>
+         <li><a href="23_conversi_de_tipus.html" class="no-ch">2.3. Conversió de tipus</a></li>
+         <li><a href="24_variables_i_objectes_valors_primitius_i_referncia.html" class="no-ch">2.4. Variables i objectes. Valors Primitius i Referència</a></li>
+         <li><a href="25_classes_denvoltura.html" class="no-ch">2.5. Classes d'envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expressions_i_operadors.html" class="no-ch">3. Expressions i operadors</a></li>
+      <li><a href="4_classes_i_objectes.html" class="daddy">4. Classes i Objectes</a>
+      <ul class="other-section">
+         <li><a href="41_la_classe_principal_i_el_mtode_main.html" class="no-ch">4.1. La classe principal i el métode main</a></li>
+         <li><a href="42_llibreria_de_classes_java.html" class="no-ch">4.2. Llibreria de classes Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__eixida.html" class="no-ch">5. Entrada / Eixida</a></li>
+      <li><a href="6_cadenes.html" class="no-ch">6. Cadenes</a></li>
+      <li><a href="7_expressions_regulars_a_java.html" class="no-ch">7. Expressions regulars a Java</a></li>
+      <li><a href="8_altres_classes_dinters.html" class="no-ch">8. Altres classes d'interès</a></li>
+   </ul>
+   </li>
+   <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="3_expresiones_y_operadores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="41_la_clase_principal_y_el_mtodo_main.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4. Clases y Objetos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id27">
+<div class="iDevice emphasis0" >
+<div id="ta27_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Escribir programas que usen <span style="color: #0000ff;"><strong>clases</strong></span> y <strong><span style="color: #0000ff;">objetos</span></strong> se llama <strong><span style="color: #0000ff;">P</span>rogramación <span style="color: #0000ff;">O</span>rientada a <span style="color: #0000ff;">O</span>bjetos</strong> (<em><strong>POO - OOP</strong></em>).  Todo programa Java consta de al menos una clase.</p>
+<p>La <strong>POO</strong>  orientada a objetos trata de amoldarse al modo de pensar del ser humano y no al de la máquina. El elemento básico de este paradigma de programación es un ente denominado <strong>objeto</strong> (<em>representa entidades del mundo real</em>). Un <strong>objeto</strong> es la <span style="text-decoration: underline;">representación de un concepto</span> para un programa, y contiene toda la información necesaria para abstraer dicho concepto:</p>
+<ul>
+<li><strong>los datos</strong> que describen su estado y</li>
+<li><strong>las operaciones</strong> que pueden modificar dicho estado, y determinan las capacidades del objeto.</li>
+</ul>
+<p>En Java, la programación orientada a objetos gira sobre algunos conceptos clave: <span style="color: #0000ff;"><strong>clases</strong></span>, <span style="color: #0000ff;"><strong>objetos</strong></span>, <strong><span style="color: #0000ff;">atributos</span></strong>, <strong><span style="color: #0000ff;">métodos</span></strong> y <strong><span style="color: #0000ff;">herencia</span></strong>.</p>
+<ul>
+<li><img src="i_o_18.png" alt="" style="float: right; margin-right: 10px; margin-left: 10px;" width="317" height="312" />Una <span style="color: #0000ff;"><strong>clase</strong></span> es una plantilla desde la que se pueden crear objetos. Una clase es un tipo de datos no primitivo y creado por programador. Una clase es una <strong>abstracción</strong> de una entidad del mundo real en la que se definen las propiedades que tiene dicha entidad (<em>atributos</em>) y las acciones que es capaz de realizar (<em>métodos</em>).</li>
+</ul>
+<p style="padding-left: 30px;">Seguro que si digo la palabra "<em>coche</em>" en tu cabeza se forma una idea de lo que es un coche. Pues esta idea, esta abstracción, es la clase "coche". </p>
+<p style="padding-left: 30px;">Toda clase tiene una serie de propiedades (<strong><em>atributos</em></strong>): número de ruedas, velocidad máxima, potencia del motor, tipo de combustible, color de pintura, largo, ancho, alto, número de puertas, número de plazas, capacidad del maletero, etc.</p>
+<p style="padding-left: 30px;">Toda clase tiene una serie de acciones que puede realizar (<em><strong>métodos</strong></em>): avanzar, retroceder, abrir la puerta, arrancar, parar, poner el freno de mano, aparcar, encender la luz, apagar la luz, poner el intermitente, etc.</p>
+<p style="padding-left: 30px;">Así, una <strong>clase</strong> es una <span style="text-decoration: underline;">abstracción de algo del mundo real</span> en la que se definen sus <strong>atributos</strong> y sus <strong>métodos</strong>.</p>
+<p style="padding-left: 30px;">No todos los atributos ni métodos están accesibles desde fuera de la clase (<em><strong>encapsulación</strong></em>). Desde fuera solo se podrá acceder a una parte a la que se le denomina <strong>Interfaz de la clase</strong> y que es lo que debemos conocer para utilizar dicha clase. Así, en la clase Coche, no necesitas saber qué hace cuando utilizas el método Arrancar, pero sí debes saber que al llamarlo, el coche se pondrá en marcha. Lo habitual es que solo unos cuantos métodos sean accesibles (<em>algunos métodos especiales se denominan <strong>constructores</strong></em>), ocultando el resto.</p>
+<ul>
+<li>Un <strong><span style="color: #0000ff;">objeto</span></strong> es una <strong>instancia</strong> de una clase, al igual que una variable es una instancia de un tipo de dato. Podemos decir que una clase es como una plantilla a partir de la cual podremos crear (<em>instanciar</em>) objetos. Así, el <strong>Renault Scenic e-Tech iconic</strong> con matrícula 0001-NAA es un objeto concreto y único de la clase COCHE.  Los objetos tienen valores concretos para los atributos definidos en la clase y podrán realizar las acciones definidas en los métodos.<br /><img src="i_o_19.png" alt="" width="500" height="353" /></li>
+<li><span style="color: #0000ff;"><strong>Atributo</strong></span><strong>: es una variable que forman parte de una clase. Una clase puede contener tantos atributos como se desee y pueden ser de cualquier tipo, incluso objetos de otra clase. <br /></strong></li>
+<li><strong><span style="color: #0000ff;">Método</span>: es una función construida en una clase u objeto. </strong><br /><br /></li>
+</ul>
+<p><span style="text-decoration: underline;"><strong>Creación de objetos: Instanciación</strong></span></p>
+<p style="padding-left: 30px;">Un objeto debe ser instanciado antes de que pueda ser utilizado. Para entender cómo instanciar un objeto de una clase y cómo llamar a los métodos de la clase, debe conocer la Interfaz de la clase (<em>API de la clase</em>), que los creadores de la clase hacen pública. A continuación muestro la interfaz de clase de la clase Fecha creada por mi:</p>
+<p style="padding-left: 30px;"><strong>Constructores</strong>:</p>
+<ul>
+<li><span style="color: #0000ff;">Fecha</span>()  --&gt;  crea un objeto Fecha con fecha inicial 1 del 1 de 2000.</li>
+<li><span style="color: #0000ff;">Fecha</span> (<span style="color: #0000ff;">int</span> <span style="color: #008000;">dd</span>, <span style="color: #0000ff;">int</span> <span style="color: #008000;">mm</span>, <span style="color: #0000ff;">int</span> <span style="color: #008000;">aaaa</span>)  --&gt;  crea un objeto Fecha con fecha dd / mm / aaaa</li>
+</ul>
+<p style="padding-left: 30px;"><strong>Métodos</strong>:</p>
+<ul>
+<li><span style="color: #0000ff;">int getMes</span>()  --&gt;  devuelve el número del mes</li>
+<li><span style="color: #0000ff;">int getDia</span>()  --&gt;  devuelve el número del día</li>
+<li><span style="color: #0000ff;">int getAnyo</span>()  --&gt;  devuelve el número del año</li>
+<li><span style="color: #0000ff;">boolean setDia</span>(int <span style="color: #008000;">dd</span>)  --&gt; establece el día del objeto Fecha a dd. Si dd es un valor inválido para el mes de la fecha, no cambia la fecha y devuelve false.</li>
+<li><span style="color: #0000ff;">boolean setMes</span>( int <span style="color: #008000;">mm</span> )  --&gt;  establece el mes del objeto a mm. Si mm es un valor inválido, no cambia nada y devuelve false</li>
+<li><span style="color: #0000ff;">void setAnyo</span>( int <span style="color: #008000;">aaaa</span> ) --&gt;  cambia a aaaa el año del objeto Fecha.</li>
+<li><span style="color: #0000ff;">String toString</span>()  --&gt;  devuelve un objeto de tipo String que contiene una cadena con el formato: "25 de marzo de 2017".</li>
+<li><span style="color: #0000ff;">boolean equals</span>(Object <span style="color: #008000;">obj</span>)  --&gt;  compara el objeto Fecha con otro objeto Fecha pasado como parámetro.</li>
+</ul>
+<p style="padding-left: 30px;">La <strong>instanciación</strong> de un objeto consiste en <strong>definir una referencia de objeto</strong> (<em>que mantendrá la dirección del objeto en la memoria</em>) y llamar a un <strong>método especial</strong> de la clase llamado <strong>constructor</strong>, que tiene el mismo nombre que la clase. El trabajo del constructor es asignar valores iniciales a los datos de la clase. La sintaxis para la instanciación de un objeto es:</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;"><strong><span style="color: #008000;">Clase</span></strong> nombreObjeto = <strong><span style="color: #0000ff;">new</span></strong> <strong><span style="color: #008000;">ConstructorClase</span></strong>(<em>parámetros</em>);</span></pre>
+<p style="padding-left: 30px;"><img src="objetofecha.png" style="float: right; margin-right: 20px; margin-left: 20px;" width="380" height="346" />Como la clase Fecha tiene dos constructores, podemos crear objetos de tipo Fecha de dos formas distintas:</p>
+<ul>
+<li>Fecha fecha2 = <span style="color: #0000ff;">new</span> Fecha();                           // crea el objeto fecha1 con valores iniciales 01/01/2000</li>
+<li>Fecha fecha1 = <span style="color: #0000ff;">new</span> Fecha(15, 05, 2012);     // crea el objeto fecha2 con los valores 15/05/2012</li>
+</ul>
+<p style="padding-left: 30px;">Al <strong>instanciar</strong> un objeto se declara el objeto y se le hace <strong>apuntar</strong> a una zona de memoria donde se almacena el objeto. Diremos que fecha1 y fecha2 son referencias a los objetos de Fecha, ya que fecha1 y fecha2 no contienen los datos en sí mismos, sino que <strong>hacen referencia</strong> al lugar de la memoria donde se encuentran.</p>
+<p style="padding-left: 30px;">Un objeto se instancia utilizando el constructor de la clase. Una clase puede tener varios constructores.</p>
+<p style="padding-left: 30px;">Es importante comprender que una referencia de un objeto y un objeto son cosas distintas. El objeto son los datos almacenados en una posición de memoria. La referencia es un elemento que apunta al objeto.</p>
+<p><span style="text-decoration: underline;"><strong>Llamada a métodos</strong></span></p>
+<p style="padding-left: 30px;">Una vez que se crea una instancia de un objeto, podemos utilizarlo llamando a sus métodos. Un método puede devolver o no un valor del tipo que indica la palabra que va delante del nombre del método. La palabra <span style="color: #0000ff;"><strong>void</strong></span> significa que no devuelve ningún valor. Para llamar a un método se utiliza la notación:</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;">nombreObjeto.<span style="color: #0000ff;">nombreMétodo</span>(<span style="color: #008000;">arg1</span>, <span style="color: #008000;">arg2</span>, ...);</span></pre>
+<p style="padding-left: 30px;">donde primero aparece el nombre del objeto, seguido de un punto y el nombre del método, añadiendo entre paréntesis los valores adecuados para los argumentos que tenga.</p>
+<p style="padding-left: 30px;">Así, si queremos cambiar el año del objeto fecha2, haremos la siguiente llamada al método setAnyo(int aaaa):</p>
+<p style="padding-left: 30px;">fecha2.setAnyo(2020);</p>
+<p style="padding-left: 30px;">Si quiero mostrar por pantalla el día del objeto fecha1 llamaré al método getDia(), que devuelve un entero:</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;"><span style="color: #808000;">System.out.prinln("Día = " + fecha1.getDia()); </span>  // muestra:   Dia = 15</span></pre>
+<p style="padding-left: 30px;">Y si quiero mostrar la fecha completa:</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;">System.out.<span style="color: #0000ff;">println</span>("Fecha: " + fecha1.<span style="color: #0000ff;">toString</span>());       <span style="color: #808000;">  // muestra:  Fecha: 15 de mayo de 2012</span></span></pre>
+<p style="padding-left: 30px;"></p>
+<p><span style="text-decoration: underline;"><strong>Referencias no instanciadas</strong></span></p>
+<p style="padding-left: 30px;">Si una referencia no es instanciada, su valor es <span style="color: #0000ff;">null</span>. Hay que tener cuidado con las referencias no instanciadas pues puede dar problemas.</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;">Fecha fecha3;           <span style="color: #808000;">// referencia no instanciada. Su valor es null. No hace referencia a ningún objeto<br /></span>fecha3.<span style="color: #0000ff;">setDia</span>(23);   <span style="color: #808000;">   // genera un error de compilación</span></span></pre>
+<p><span style="text-decoration: underline;"><strong>Eliminación de objetos</strong></span></p>
+<p style="padding-left: 30px;"><img src="objetofecha2.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="374" height="223" />Java no ofrece soporte para eliminar explícitamente un objeto. En Java existe una herramienta (<span style="color: #008000;"><em>garbage collector</em></span>) que se encarga de liberar memoria de forma automática de los objetos que no van a volver a ser utilizados. En el siguiente ejemplo, la referencia fecha2 referenciará al mismo objeto que fecha1, por lo tanto el objeto obj2 ya no está siendo referenciado y no podrá utilizarse. Java libera de forma automática la memoria que ocupa dicho objeto de forma que podrá ser utilizada para otras cosas.</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;">fecha2 = fecha1;     <span style="color: #808000;">// ahora fecha2 referencia al mismo objeto que fecha1.</span></span></pre>
+<p style="padding-left: 30px;"></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id48">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Fundamentos de la POO</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta48_120_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><span style="color: #008000;"><strong><img src="gatito.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="267" height="174" />Abstracción</strong></span>:  consiste en simplificar la complejidad de un sistema mediante la identificación de las partes esenciales y la omisión de los detalles no esenciales. En POO, los objetos actúan como abstracciones que modelan entidades del mundo real y sus interacciones. La <strong>POO</strong> <strong>busca modelar los objetos</strong>, busca atraerse y simplificar un objeto de la vida real con solo los atributos imprescindibles. En otras palabras, buscaremos transformar un objeto de la vida real en atributos (<em>características</em>) y sus acciones (<em>métodos</em>). Consiste en encontrar las partes fundamentales de un sistema para describirlas de manera simple y precisa.<br /><br /></li>
+<li><span style="color: #008000;"><strong><img src="pildora.jpg" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="186" height="93" />Encapsulamiento</strong></span>:  es la capacidad de decidir qué partes de una clase (<em>atributos y métodos</em>) serán expuestas hacia otras entidades y cuáles se mantendrán ocultas. Este pilar busca controlar la visibilidad y accesibilidad de los detalles internos de una clase. las clases son como una caja cerrada, todos los métodos y las variables están dentro y toda la información solo puede ser accedido por medio de sus sistemas propios, esto hace que sea de verdad como una caja cerrada, su información solo entra y sale por las formas y de la forma en que la clase quiera. Puede incluso no importante como funciona por dentro, todo lo que necesitas saber es que funciona.<br /><br /></li>
+<li><span style="color: #008000;"><strong>Polimorfismo</strong></span>:  permite que un objeto tome muchas formas. En el contexto de la POO, se refiere a la capacidad de objetos de diferentes clases de responder a un mismo mensaje de manera única. Esto facilita la flexibilidad y la adaptabilidad del código. Este pilar apunta a cambiar el comportamiento de un objeto por sobrecarga o por sobrescritura de métodos.<br /><br /></li>
+<li><span style="color: #008000;"><strong>Herencia</strong></span>: Es la capacidad de transferir características propias como atributos y métodos de una objeto a otro. Este pilar apunta a la reutilización de código existente.</li>
+</ul>
+<p>En Java ya existen multitud de clases que podemos utilizar en nuestros programas sin necesidad de volver a crearlas. Además, estas clases, al estar probadas, podemos estar seguros de que funcionan correctamente, lo que nos permitirá escriibir programas más seguros y fiables.</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id34">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Herencia</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta34_120_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="color: #0000ff;"><strong>Herencia</strong></span> es el proceso que consiste en <strong>derivar una clase</strong>, llamada <strong>clase derivada o hija</strong>, <strong>de otra</strong>, llamada <strong>clase base o padre</strong>, y se pueden utilizar los atributos y métodos de la clase base en la clase derivada sin necesidad de volverlos a definir. Así, la clase Coche puede heredar de la clase Vehículos_A_Motor, sin necesidad de volver a definir todos los atributos y métodos.</p>
+<p>La <span style="color: #008000;"><strong>herencia</strong></span> permite que se puedan definir nuevas clases basadas en clases existentes, lo cual facilita reutilizar código previamente desarrollado. Si una clase deriva de otra (<span style="color: #0000ff;"><strong>extends</strong></span>) hereda todas sus variables y métodos.  La <strong>clase derivada</strong> <strong>puede añadir</strong> nuevas variables y métodos y/o redefinir las variables y métodos heredados.</p>
+<p>En Java, una clase sólo puede derivar de una única clase ( no existe la herencia múltiple). Además, todas las clases heredan directa o indirectamente de la clase <span style="color: #008000;"><strong>Object</strong></span>.</p>
+<p><br /><img src="i_o_20.png" alt="" width="600" height="319" /></p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id35">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Interface</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta35_121_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="i_o_21.png" alt="" style="float: right; margin-right: 10px; margin-left: 10px;" width="581" height="361" />Una <span style="color: #008000;"><strong>interface</strong></span> es un <strong>conjunto de declaraciones de funciones</strong>. Si <strong>una clase implementa</strong> (<strong><span style="color: #0000ff;">implements</span></strong>) una interface, debe <strong>definir todas las funciones especificadas por la interface</strong>. Una clase puede implementar más de una interface, representando una forma alternativa de la herencia múltiple. </p>
+<p>A su vez, una interface puede derivar de otra o incluso de varias interfaces, en cuyo caso incorpora todos los métodos de las interfaces de las que deriva.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id37">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Concepto de Package</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta37_123_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="i_o_23.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="381" height="509" />Un <span style="color: #0000ff;"><strong>package</strong></span> es una <strong>agrupación de clases</strong>. Existen una serie de packages incluidos en el lenguaje (<em><a href="https://docs.oracle.com/javase/8/docs/api/overview-summary.html#overview.description" target="_blank" rel="noopener">ver jerarquía de clases que aparece en el API de Java</a></em>). Además el usuario puede crear sus propios packages. Lo habitual es juntar en packages las clases que estén relacionadas. Todas las clases que formen parte de un package deben estar en el mismo directorio.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id36">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Jerarquía de clases de Java (API)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta36_122_2" class="block iDevice_content">
+<div class="exe-text"><p>Durante la generación de código en Java, es recomendable y casi necesario tener siempre a la vista la <strong>documentación online del API de Java</strong>. En dicha documentación es posible ver tanto la <strong>jerarquía de clases</strong>, es decir la relación de herencia entre clases, como la información de los distintos <strong>packages</strong> que componen las librerías base de Java.</p>
+<p>Es importante <strong>distinguir</strong> entre lo que significa <strong>herencia</strong> y <strong>package</strong>. Un <strong>package</strong> es una <span style="text-decoration: underline;">agrupación arbitraria de clases</span>, una forma de organizar las clases. La <strong>herencia</strong> sin embargo consiste  en <span style="text-decoration: underline;">crear nuevas clases en base a otras ya existentes</span>. Las clases incluidas en un package no derivan por lo general de una única clase.</p>
+<p>En la documentación on-line se presentan ambas visiones: “<a href="https://docs.oracle.com/javase/8/docs/api/" target="_blank" rel="noopener">Package Index</a>” y “<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/package-tree.html" target="_blank" rel="noopener">Class Hierarchy</a>”. La primera presenta la estructura del API de Java agrupada por packages, mientras que en la segunda aparece la jerarquía de clases. Todas las clases en Java son derivadas de la clase <strong>java.lang.<span style="color: #0000ff;">Object</span></strong>, por lo que heredan todos los métodos y variables de ésta. Si se <strong>selecciona una clase</strong> en particular, la documentación muestra una <strong>descripción</strong> detallada de <strong>todos los métodos y atributos</strong> de la clase. A su vez muestra <strong>su herencia completa</strong> (<em>partiendo de la clase java.lang.Object</em>).</p>
+<p><img src="i_o_22.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="494" height="246" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="3_expresiones_y_operadores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="41_la_clase_principal_y_el_mtodo_main.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

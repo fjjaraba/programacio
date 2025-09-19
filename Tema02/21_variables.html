@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.1. Variables | tema2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">tema2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació</a></li>
+   <li class="current-page-parent"><a href="estructura_de_un_programa_datos_e__s.html" class="current-page-parent daddy">Estructura de un programa. Datos. E / S</a>
+   <ul>
+      <li><a href="1_estructura_de_un_programa.html" class="no-ch">1. Estructura de un programa</a></li>
+      <li class="current-page-parent"><a href="2_tipos_de_datos_variables_y_constantes.html" class="current-page-parent daddy">2. Tipos de datos, variables y constantes</a>
+      <ul>
+         <li id="active"><a href="21_variables.html" class="active no-ch">2.1. Variables</a></li>
+         <li><a href="22_constantes.html" class="no-ch">2.2. Constantes</a></li>
+         <li><a href="23_conversin_de_tipos.html" class="no-ch">2.3. Conversión de tipos</a></li>
+         <li><a href="24_variables_y_objetos_valores_primitivos_y_referencia.html" class="no-ch">2.4. Variables y objetos. Valores Primitivos y Referencia</a></li>
+         <li><a href="25_clases_de_envoltura.html" class="no-ch">2.5. Clases de envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expresiones_y_operadores.html" class="no-ch">3. Expresiones y operadores</a></li>
+      <li><a href="4_clases_y_objetos.html" class="daddy">4. Clases y Objetos</a>
+      <ul class="other-section">
+         <li><a href="41_la_clase_principal_y_el_mtodo_main.html" class="no-ch">4.1. La clase principal y el método main</a></li>
+         <li><a href="42_librera_de_clases_java.html" class="no-ch">4.2. Librería de clases Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__salida.html" class="no-ch">5. Entrada / Salida</a></li>
+      <li><a href="6_cadenas.html" class="no-ch">6. Cadenas</a></li>
+      <li><a href="7_expresiones_regulares_en_java.html" class="no-ch">7. Expresiones regulares en Java</a></li>
+      <li><a href="8_otras_clases_de_inters.html" class="no-ch">8. Otras clases de interés</a></li>
+   </ul>
+   </li>
+   <li><a href="estructura_dun_programa_dades_e__s.html" class="daddy">Estructura d'un Programa. Dades. E / S</a>
+   <ul class="other-section">
+      <li><a href="1_estructura_dun_programa_java.html" class="no-ch">1. Estructura d'un programa Java</a></li>
+      <li><a href="2_tipus_de_dades_variables_i_constants.html" class="daddy">2. Tipus de dades, variables i constants</a>
+      <ul class="other-section">
+         <li><a href="21_variables0.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constants.html" class="no-ch">2.2. Constants</a></li>
+         <li><a href="23_conversi_de_tipus.html" class="no-ch">2.3. Conversió de tipus</a></li>
+         <li><a href="24_variables_i_objectes_valors_primitius_i_referncia.html" class="no-ch">2.4. Variables i objectes. Valors Primitius i Referència</a></li>
+         <li><a href="25_classes_denvoltura.html" class="no-ch">2.5. Classes d'envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expressions_i_operadors.html" class="no-ch">3. Expressions i operadors</a></li>
+      <li><a href="4_classes_i_objectes.html" class="daddy">4. Classes i Objectes</a>
+      <ul class="other-section">
+         <li><a href="41_la_classe_principal_i_el_mtode_main.html" class="no-ch">4.1. La classe principal i el métode main</a></li>
+         <li><a href="42_llibreria_de_classes_java.html" class="no-ch">4.2. Llibreria de classes Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__eixida.html" class="no-ch">5. Entrada / Eixida</a></li>
+      <li><a href="6_cadenes.html" class="no-ch">6. Cadenes</a></li>
+      <li><a href="7_expressions_regulars_a_java.html" class="no-ch">7. Expressions regulars a Java</a></li>
+      <li><a href="8_altres_classes_dinters.html" class="no-ch">8. Altres classes d'interès</a></li>
+   </ul>
+   </li>
+   <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="2_tipos_de_datos_variables_y_constantes.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="22_constantes.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.1. Variables</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id4">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Variables</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta4_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Una <span style="color: #0000ff;"><strong>Variable</strong></span> es un contenedor de datos que <span style="text-decoration: underline;">almacena los valores de los datos durante la ejecución del programa Java</span>. El valor de una variable puede cambiar durante la ejecución del programa. Cuando se necesite el valor de una variable basta con poner el nombre de la variable en una expresión. A cada variable se le asigna un <strong>tipo de datos</strong> que designa el tipo y la cantidad de valor que puede contener. La variable <strong>es un nombre de ubicación de memoria de los datos</strong>. Las variables Java tienen principalmente <strong>tres tipos</strong>: <span style="text-decoration: underline;">Local</span>, <span style="text-decoration: underline;">Instancia</span> y <span style="text-decoration: underline;">Estática</span>.</p>
+<p>Para utilizar una variable en un programa es necesario realizar 2 pasos</p>
+<ul>
+<li>
+<h3><strong>Declaración de variable</strong></h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">Una variable debe ser declarada antes de poderla usar y solo puede declararse una única vez. Para declarar una variable, debe <strong>especificar el tipo de datos y darle a la variable un nombre único</strong>.</p>
+<p style="padding-left: 30px; text-align: center;"><img src="variables01.png" style="float: right; margin-right: 10px; margin-left: 10px;" width="300" height="135" /></p>
+<p style="padding-left: 30px;">Ejemplos de  declaraciones válidas son:</p>
+<pre style="padding-left: 30px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">byte</span> a;<br /><span style="color: #0000ff;">short</span> b;<br /><span style="color: #0000ff;">int</span> c;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">float</span> pi;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">double</span> d;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">char</span> nom;<br /><span style="color: #0000ff;">boolean</span> isnumero, isletra, isdigito;          <span style="color: #808000;">// declaración múltiple</span>    <br /><br /></span></pre>
+<p style="padding-left: 30px;">Una vez que se declara un tipo de datos para una variable, el compilador monitoreará su uso de ese elemento de datos. Si intenta realizar operaciones que no están permitidas para ese tipo o que no son compatibles con ese tipo, el compilador generará un error. Debido a que el compilador de Java monitorea las operaciones en cada elemento de datos, a Java se le llama <strong>lenguaje fuertemente tipado</strong>.</p>
+<ul>
+<li>
+<h3>Inicialización de una variable</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;"><img src="variables02.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="400" height="238" />Para inicializar una variable, debe asignarle un valor válido. Ejemplos de inicializaciones válidas son:</p>
+<pre style="padding-left: 30px;"><span style="font-size: 10pt;">    a = 15;</span><br /><span style="font-size: 10pt;">    b =-22;</span><br /><span style="font-size: 10pt;">    c = 14365;</span><br /><span style="font-size: 10pt;">    pi = 3.14;</span><br /><span style="font-size: 10pt;">    nom = "M";</span></pre>
+<p style="padding-left: 30px;">Se puede <strong>combinar declaración e inicialización</strong> de variables. Ejemplo:</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">byte</span> a=2,b=4,c=6;<br /></span><span style="font-size: 10pt;"><span style="color: #0000ff;">float</span> pi=3.14f;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">char</span> a=’M’;</span></pre>
+<p style="padding-left: 30px; text-align: center;"><img src="variables03.png" width="400" height="305" /></p>
+<ul>
+<li>
+<h3>Tipos de variables</h3>
+<ul>
+<li><strong>Variables <span style="color: #0000ff;">locales</span></strong>:  se declaran dentro de un método o  bloque y solo son accesibles dentro de ese método o bloque.</li>
+</ul>
+<pre style="padding-left: 90px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">class</span> VariableTest {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">   public</span> <span style="color: #0000ff;">static void</span> <span style="color: #008000;">main</span>(String[] args) {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      int</span> myInt = - 5;                      <span style="color: #808000;">// entero</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      float</span> myFloat = 2.718281828459045f;   // real - punto flotante</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      char</span> myLetter = 'a';                  <span style="color: #808000;">// caracter</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      boolean</span> myBool;                       <span style="color: #808000;">// boolean</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      String</span> myText = "Hero";               <span style="color: #808000;">// String</span></span><br /><span style="font-size: 10pt;">      System.out.println(myInt + " " +</span><br /><span style="font-size: 10pt;">      myFloat +" " + myLetter + " " + myBool + " " + myText);</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      Student</span> myStudent = <span style="color: #0000ff;">new</span> Student("Walker","Johnny", "Kyle", null);</span><br /><br /><span style="font-size: 10pt;">   }</span><br /><span style="font-size: 10pt;">}</span></pre>
+<ul>
+<li style="list-style-type: none;">
+<pre><span style="font-size: 10pt;"><span style="color: #0000ff;">        class</span> Guru99 {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">           static int</span> a = 1;     <span style="color: #808000;">//static variable </span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">           int</span> data = 99;       <span style="color: #808000;"> //instance variable </span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">           void</span> method() {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">              int</span> b = 90;       <span style="color: #808000;">//local variable</span> </span><br /><span style="font-size: 10pt;">           }</span><br /><span style="font-size: 10pt;">        }</span></pre>
+</li>
+<li><strong>Variables <span style="color: #0000ff;">estáticas</span></strong> (<strong><em>variables de clase</em></strong>): se inicializan sólo una vez, al inicio de la ejecución del programa. Estas variables deben inicializarse primero, antes de la inicialización de cualquier variable de instancia. Se definen igual que las variables de instancia pero su valor es común para todas las instancias de una clase. Se declaran con la palabra clave <span style="color: #0000ff;">static</span>.<br /><br /></li>
+<li><strong>Variables de <span style="color: #0000ff;">instancia</span></strong>: se definen <strong>sin</strong> la palabra clave <span style="color: #0000ff;">static</span>. Se definen fuera de una declaración de método pero dentro de una clase. Son específicas del objeto, es decir, se crean cuando se crea un objeto y son propias de ese objeto. Cada objeto tendrá sus propias variables de instancia (<em><strong>atributos</strong></em>).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo</strong>:</p>
+<p style="padding-left: 30px;">A continuación se muestra un programa completo con declaración de variables y asignación de un literal como valor inicial a cada variable.</p>
+<pre style="padding-left: 30px;"><span style="color: #808000;"><span style="font-size: 10pt;">   /* Variables Class. </span><span style="font-size: 10pt;">Anderson, Franceschi   </span><span style="font-size: 10pt;">*/</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">   public class</span> Variables</span><br /><span style="font-size: 10pt;">   {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      public static void</span> main( <span style="color: #0000ff;">String</span> [ ] args )</span><br /><span style="font-size: 10pt;">      {                    </span><span style="font-size: 10pt; color: #808000;">  // This example shows how to declare and initialize variables</span><br />      <span style="font-size: 10pt;"><span style="color: #0000ff;">    int</span> testGrade = 100;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         long</span> cityPopulation = 425612340L;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         byte</span> ageInYears = 19;</span><br />           <span style="font-size: 10pt;"><span style="color: #0000ff;"> float</span> salesTax = .05F;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         double</span> interestRate = 0.725;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         double</span> avogadroNumber = +6.022E23;</span><br /><span style="font-size: 10pt; color: #808000;">         // avogadroNumber está representado en notación científica</span><br /><span style="font-size: 10pt; color: #808000;">         // su valor es  6.022 x 10 elevado a 23</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         char</span> finalGrade = ‘A’;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         boolean</span> isEmpty = true;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         System</span>.out.println( “testGrade is “ + testGrade );</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         System</span>.out.println( “cityPopulation is “ + cityPopulation );</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         System</span>.out.println( “ageInYears is “ + ageInYears );</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         System.out.println</span>( “salesTax is “ + salesTax );</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         System.out.println</span>( “interestRate is “ + interestRate );</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         System.out.println</span>( “avogadroNumber is “ + avogadroNumber );</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         System.out.println</span>( “finalGrade is “ + finalGrade );</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         System.out.println</span>( “isEmpty is “ + isEmpty );</span><br /><span style="font-size: 10pt;">      }</span><br /><span style="font-size: 10pt;">   }</span></pre>
+<p style="text-align: center;"><img src="Tipos_de_datos_y_variables_en_Java.png" width="1201" height="401" /></p>
+<h2>Convenciones de nomenclatura</h2>
+<p>A la hora de dar nombre a los identificadores y de escribir el código fuente de un programa, se puede seguir el método que se desee, aunque se aconseja utilizar uno de los sistemas existentes. La comunidad Java, suele utilizar el método conocido como "Camel case". Si todos los programadores utilizan las mismas normas, la lectura del programa resulta más fácil.</p>
+<ol>
+<li>Los nombres de las <strong>variables</strong> deben ser sustantivos y <span style="text-decoration: underline;">comenzar con una letra minúscula</span>. Si el nombre consta de <strong>varias palabras</strong>, se utiliza el estilo <strong>Camel Case</strong>, en el cual la primera letra de cada palabra después de la primera se escribe en mayúscula, sin espacios ni guiones bajos. (miVariable; nombreDeUsuario).</li>
+<li>Los <strong>nombres de clase</strong> e <strong>interfaz</strong> deben ser sustantivos, <span style="text-decoration: underline;">comenzando con una letra mayúscula</span> (<em>UpperCamelCase</em>).</li>
+<li>Los nombres de los <strong>métodos</strong> deben ser verbos, comenzando con una letra minúscula (Camel case).</li>
+<li>No utilizar nombres de una sola letra para nombrar una variable a no ser que dichas variables sean utilizadas en un contador de un bucle: <br />    <span style="color: #0000ff;">int</span> <span style="color: #008000;">i</span>; <br />    <span style="color: #0000ff;">for</span>(<span style="color: #008000;">i </span>= 0; <span style="color: #008000;">i</span> &lt; 10; <span style="color: #008000;">i</span>++)</li>
+<li>Se recomienda nombrar las <strong>variables booleanas</strong> o lógicas (<em>true o false</em>) anteponiendo a su nombre el prefijo "<span style="color: #0000ff;">is</span>": iscasado, iscorrecto, etc.</li>
+<li>Los nombres de las <strong>constantes</strong> se escriben en <strong>mayúsculas</strong> y se separan con guiones bajos (SCREAMING_SNAKE_CASE). Ejemplo: MI_CONSTANTE, VALOR_MAXIMO.</li>
+<li>Si una variable es miembro de una clase o una instancia, es común utilizar el prefijo <span style="color: #0000ff;">this</span> para distinguirlo. Ejemplo: <span style="color: #0000ff;">this</span>.miVariable, <span style="color: #0000ff;">this</span>.nombreDeUsuario.</li>
+<li>Si una variable es una constante y estática, es común utilizar el prefijo <strong>final</strong> para indicarlo. Ejemplo: <span style="color: #0000ff;">static final</span> int MI_CONSTANTE = 10.</li>
+</ol>
+<p>Es importante tener en cuenta que estas son convenciones sugeridas y no reglas estrictas. La consistencia y la legibilidad son fundamentales, así que asegúrate de seguir un estilo de nomenclatura coherente en todo tu código.</p>
+<div style="background-color: cyan; border: 1px solid black; padding: 10px 30px;">
+<p><strong>Importante</strong>:</p>
+<ul>
+<li>Una variable debe ser declarada e instanciada (<em>se le debe asignar un valor</em>) antes de poder ser utilizada en una línea de código.</li>
+<li>Solo se declara una vez ( en su ámbito ).</li>
+<li>Una vez declarada no es posible cambiarle el tipo.</li>
+</ul>
+</div>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="2_tipos_de_datos_variables_y_constantes.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="22_constantes.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

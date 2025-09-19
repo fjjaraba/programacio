@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3. Expressions i operadors | tema2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-15"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">tema2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació</a></li>
+   <li><a href="estructura_de_un_programa_datos_e__s.html" class="daddy">Estructura de un programa. Datos. E / S</a>
+   <ul class="other-section">
+      <li><a href="1_estructura_de_un_programa.html" class="no-ch">1. Estructura de un programa</a></li>
+      <li><a href="2_tipos_de_datos_variables_y_constantes.html" class="daddy">2. Tipos de datos, variables y constantes</a>
+      <ul class="other-section">
+         <li><a href="21_variables.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constantes.html" class="no-ch">2.2. Constantes</a></li>
+         <li><a href="23_conversin_de_tipos.html" class="no-ch">2.3. Conversión de tipos</a></li>
+         <li><a href="24_variables_y_objetos_valores_primitivos_y_referencia.html" class="no-ch">2.4. Variables y objetos. Valores Primitivos y Referencia</a></li>
+         <li><a href="25_clases_de_envoltura.html" class="no-ch">2.5. Clases de envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expresiones_y_operadores.html" class="no-ch">3. Expresiones y operadores</a></li>
+      <li><a href="4_clases_y_objetos.html" class="daddy">4. Clases y Objetos</a>
+      <ul class="other-section">
+         <li><a href="41_la_clase_principal_y_el_mtodo_main.html" class="no-ch">4.1. La clase principal y el método main</a></li>
+         <li><a href="42_librera_de_clases_java.html" class="no-ch">4.2. Librería de clases Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__salida.html" class="no-ch">5. Entrada / Salida</a></li>
+      <li><a href="6_cadenas.html" class="no-ch">6. Cadenas</a></li>
+      <li><a href="7_expresiones_regulares_en_java.html" class="no-ch">7. Expresiones regulares en Java</a></li>
+      <li><a href="8_otras_clases_de_inters.html" class="no-ch">8. Otras clases de interés</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="estructura_dun_programa_dades_e__s.html" class="current-page-parent daddy">Estructura d'un Programa. Dades. E / S</a>
+   <ul>
+      <li><a href="1_estructura_dun_programa_java.html" class="no-ch">1. Estructura d'un programa Java</a></li>
+      <li><a href="2_tipus_de_dades_variables_i_constants.html" class="daddy">2. Tipus de dades, variables i constants</a>
+      <ul class="other-section">
+         <li><a href="21_variables0.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constants.html" class="no-ch">2.2. Constants</a></li>
+         <li><a href="23_conversi_de_tipus.html" class="no-ch">2.3. Conversió de tipus</a></li>
+         <li><a href="24_variables_i_objectes_valors_primitius_i_referncia.html" class="no-ch">2.4. Variables i objectes. Valors Primitius i Referència</a></li>
+         <li><a href="25_classes_denvoltura.html" class="no-ch">2.5. Classes d'envoltura</a></li>
+      </ul>
+      </li>
+      <li id="active"><a href="3_expressions_i_operadors.html" class="active no-ch">3. Expressions i operadors</a></li>
+      <li><a href="4_classes_i_objectes.html" class="daddy">4. Classes i Objectes</a>
+      <ul class="other-section">
+         <li><a href="41_la_classe_principal_i_el_mtode_main.html" class="no-ch">4.1. La classe principal i el métode main</a></li>
+         <li><a href="42_llibreria_de_classes_java.html" class="no-ch">4.2. Llibreria de classes Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__eixida.html" class="no-ch">5. Entrada / Eixida</a></li>
+      <li><a href="6_cadenes.html" class="no-ch">6. Cadenes</a></li>
+      <li><a href="7_expressions_regulars_a_java.html" class="no-ch">7. Expressions regulars a Java</a></li>
+      <li><a href="8_altres_classes_dinters.html" class="no-ch">8. Altres classes d'interès</a></li>
+   </ul>
+   </li>
+   <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="25_classes_denvoltura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_classes_i_objectes.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3. Expressions i operadors</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id22">
+<div class="iDevice emphasis0" >
+<div id="ta22_123_2" class="block iDevice_content">
+<div class="exe-text"><h2>Expressions</h2>
+<p>Una <strong>expressió</strong> consta d'operadors i operands ( <em>valors, variables, operadors i invocacions de mètodes</em>) que s'avaluen com un únic valor. Les expressions es poden utilitzar en diversos contextos, com en assignacions, declaracions condicionals i bucles.</p>
+<h2>Operadors</h2>
+<p>Los <strong>operadores</strong> son elementos que <span style="text-decoration: underline;">permiten realizar diversas operaciones y manipulaciones</span> en datos y variables. Estas operaciones pueden abarcar desde simples cálculos matemáticos hasta evaluaciones de condiciones lógicas y manipulación de datos a nivel de bits. Son <strong>símbolos o palabras clave</strong> que se utilizan para llevar a cabo estas acciones de manera eficiente. Veamos algunos de los operadores más importantes:</p>
+<ul>
+<li>
+<h3>Operadores Aritméticos</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">Són símbols especials que s'utilitzen per a <span style="text-decoration: underline;">realitzar operacions matemàtiques</span> en variables numèriques. Sempre <span style="text-decoration: underline;">requereixen dos operands</span> pel que tots són <strong>operadors binaris</strong>.</p>
+<table style="width: 99.9984%; height: 156px;" border="1">
+<tbody>
+<tr style="height: 26px;">
+<td style="width: 7.62877%; text-align: center; background-color: #a6e8f5; height: 26px;"><strong>Operador</strong></td>
+<td style="width: 12.4964%; background-color: #a6e8f5; height: 26px; text-align: center;"><strong>Nom</strong></td>
+<td style="width: 63.208%; background-color: #a6e8f5; height: 26px; text-align: center;"><strong>Funció</strong></td>
+<td style="width: 16.6666%; background-color: #a6e8f5; height: 26px; text-align: center;"><strong>Exemple</strong></td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 7.62877%; text-align: center; height: 26px;"><strong><span style="color: #0000ff;">+</span></strong></td>
+<td style="width: 12.4964%; height: 26px;">Suma</td>
+<td style="width: 63.208%; height: 26px;">Retorna el resultat de sumar els dos operands.</td>
+<td style="width: 16.6666%; height: 26px; text-align: center;">5 + 3</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 7.62877%; text-align: center; height: 26px;"><strong><span style="color: #0000ff;">-</span></strong></td>
+<td style="width: 12.4964%; height: 26px;">Resta</td>
+<td style="width: 63.208%; height: 26px;">Retorna el resultat de restar a l'operand de l'esquerra l'operand de la dreta.</td>
+<td style="width: 16.6666%; height: 26px; text-align: center;">15 - 12</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 7.62877%; text-align: center; height: 26px;"><strong><span style="color: #0000ff;">*</span></strong></td>
+<td style="width: 12.4964%; height: 26px;">Multiplicació</td>
+<td style="width: 63.208%; height: 26px;">Retorna el resultado de multiplicar els dos operands.</td>
+<td style="width: 16.6666%; height: 26px; text-align: center;">3 * 9</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 7.62877%; text-align: center; height: 26px;"><strong><span style="color: #0000ff;">/</span></strong></td>
+<td style="width: 12.4964%; height: 26px;">Divisió</td>
+<td style="width: 63.208%; height: 26px;">Retorna el quocient resultant de dividir l'operand de l'esquerra entre l'operand de la dreta. Si els dos operands són sencers, el resultat també serà sencer.</td>
+<td style="width: 16.6666%; height: 26px; text-align: center;">12 / 5</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 7.62877%; text-align: center; height: 26px;"><strong><span style="color: #0000ff;">%</span></strong></td>
+<td style="width: 12.4964%; height: 26px;">Mòdul</td>
+<td style="width: 63.208%; height: 26px;">
+<p>Retorna la resta de la divisió entre enters en dividir l'operand esquerre entre el dret. Si l'operador mòdul es utiiza amb operand reals retornarà també retorna la resta. El quocient de la divisió, en utilitzar l'operador %, sempre és un nombre enter.</p>
+</td>
+<td style="width: 16.6666%; height: 26px; text-align: center;">12 % 5</td>
+</tr>
+</tbody>
+</table>
+<p>Exemple:</p>
+<pre style="padding-left: 30px;"><span style="color: #808000;"><span style="font-size: 10pt;">/* Operadors aritmètics </span><span style="font-size: 10pt;"> */</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">public class</span> ArithmeticOperators </span><span style="font-size: 10pt;"> {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">  public static void</span> main( String [] args )  </span><span style="font-size: 10pt;"> {</span><span style="font-size: 10pt;">    </span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">    double</span> salad = 5.95;              <span style="color: #808000;">// calculate the cost of lunch</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">    double</span> water = .89;</span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>( “The cost of lunch is $” </span><span style="font-size: 10pt;"><span style="color: #ff6600;"><strong> +</strong> </span>( salad<strong><span style="color: #0000ff;"> +</span></strong> water ) );</span><span style="font-size: 10pt;">  </span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">    int</span> targetYear = 2011;         <span style="color: #808000;"> // calculate your age as of a certain year</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">    int</span> birthYear = 1993;</span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>( “Your age in “ + targetYear + “ is “ </span><span style="font-size: 10pt;"> + ( targetYear <strong><span style="color: #0000ff;">-</span></strong> birthYear ) );</span><br /><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">    int</span> caloriesPerApple = 127;    <span style="color: #808000;"> // calculate the total calories of apples</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">    int</span> numberOfApples = 3;</span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>( “The calories in “ + numberOfApples </span><span style="font-size: 10pt;"> + “ apples is “ + </span><span style="font-size: 10pt;"> ( caloriesPerApple <strong><span style="color: #0000ff;">*</span></strong> numberOfApples ) );</span><br /><span style="font-size: 10pt;">   </span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">    double</span> miles = 426.8;         <span style="color: #808000;">// calculate miles per gallon</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">    double</span> gallons = 15.2;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">    double</span> mileage = miles <span style="color: #0000ff;"><strong>/</strong></span> gallons;</span><br /><span style="font-size: 10pt;">    System.out.<span style="color: #0000ff;">println</span>( “The mileage is “ </span><span style="font-size: 10pt;"> + mileage + “ miles per gallon.” );</span><br /><span style="font-size: 10pt;">  }</span><br /><span style="font-size: 10pt;">}</span></pre>
+<ul>
+<li>
+<h3>Operadors d'assignació</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">Són fonamentals a Java ja que permeten assignar valors a variables. A través d'aquests operadors, es pot emmagatzemar informació en variables per al seu posterior ús en el programa. L'operador més comunament utilitzat és el signe igual (<strong><span style="color: #0000ff;"> =</span> </strong>), que assigna el valor de la dreta a la variable de l'esquerra. Per exemple,     <span style="color: #0000ff;">int</span> x = 10;       assigna el valor 10 a la variable x.</p>
+<p style="padding-left: 30px;">A l'esquerra de l'operador d'assignació sempre ha d'haver-hi una variable o constant. També es permeten assignacions múltiples com les següents:</p>
+<pre style="padding-left: 30px;"><span style="font-size: 10pt;">    c = a = b;          <span style="color: #808000;">//equivalent a        c=(a=b);</span><br /></span><span style="font-size: 10pt;">    c = a = b = 321;    <span style="color: #808000;">//asigna 321 a a, b y c</span></span></pre>
+<p style="padding-left: 30px;">L'operador assignació es pot combinar amb els operadors aritmètics (entre altres), permetent modificar el valor de la variable al mateix temps que li assigna dita nova valor.</p>
+<table style="width: 88.4997%; height: 156px;" border="1">
+<tbody>
+<tr style="height: 26px;">
+<td style="width: 50%; height: 26px; background-color: #b2f7f6; text-align: center;" colspan="2"><strong>Operador asignación compuesto</strong></td>
+<td style="height: 26px; background-color: #b2f7f6; text-align: center; width: 56.8378%;"><strong>Equivalente</strong></td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 25%; height: 26px; text-align: center;"><strong><span style="color: #0000ff;">+=</span></strong></td>
+<td style="width: 25%; text-align: center; height: 26px;">v += 3;</td>
+<td style="width: 56.8378%; height: 26px; text-align: center;">v = v + 3;</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 25%; height: 26px; text-align: center;"><strong><span style="color: #0000ff;">-=</span></strong></td>
+<td style="width: 25%; text-align: center; height: 26px;">v -= 3;</td>
+<td style="width: 56.8378%; height: 26px; text-align: center;">v = v - 3</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 25%; height: 26px; text-align: center;"><strong><span style="color: #0000ff;">*=</span></strong></td>
+<td style="width: 25%; text-align: center; height: 26px;">v *= 5;</td>
+<td style="width: 56.8378%; height: 26px; text-align: center;">v = v * 5;</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 25%; height: 26px; text-align: center;"><strong><span style="color: #0000ff;">/=</span></strong></td>
+<td style="width: 25%; text-align: center; height: 26px;">v /= 2;</td>
+<td style="width: 56.8378%; height: 26px; text-align: center;">v = v / 2;</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 25%; height: 26px; text-align: center;"><strong><span style="color: #0000ff;">%=</span></strong></td>
+<td style="width: 25%; text-align: center; height: 26px;">v %= 5;</td>
+<td style="width: 56.8378%; height: 26px; text-align: center;">v = v % 5;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<h3>Operadors de comparació</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">Són essencials per a avaluar condicions en programes Java. <span style="text-decoration: underline;">Comparen dos valors i retornen un resultat booleà</span>, és a dir, <strong><span style="color: #0000ff;">true</span></strong> si la comparació és vertadera i <strong><span style="color: #0000ff;">false</span></strong> si és falsa.</p>
+<table style="width: 100%; height: 182px;" border="1">
+<tbody>
+<tr style="height: 26px;">
+<td style="width: 33.3333%; background-color: #a4e5ed; text-align: center; height: 26px;"><strong>Operador</strong></td>
+<td style="width: 33.3333%; background-color: #a4e5ed; text-align: center; height: 26px;"><strong>Nom</strong></td>
+<td style="width: 33.3333%; background-color: #a4e5ed; text-align: center; height: 26px;"><strong>Exemple</strong></td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 33.3333%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>==</strong></span></td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">Igualtat</td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">a == b</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 33.3333%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>!=</strong></span></td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">Diferent</td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">a != b</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 33.3333%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>&gt;</strong></span></td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">Major que</td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">a &gt; b</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 33.3333%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>&lt;</strong></span></td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">Menor que</td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">a &lt; b</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 33.3333%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>&gt;=</strong></span></td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">Major o igual que</td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">a &gt;= 20 * 2</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 33.3333%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>&lt;=</strong></span></td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">Menor o igual que</td>
+<td style="width: 33.3333%; height: 26px; text-align: center;">edat &lt;= 17</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<h3>Operadors lògics</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;"><span style="text-decoration: underline;">Permeten combinar o invertir condicions lògiques</span> en un programa Java. Els operadors lògics més comuns són <strong><span style="color: #0000ff;">&amp;&amp;</span></strong> (<em><strong>AND</strong> lògic</em>),   <span style="color: #0000ff;"><strong> ||</strong></span> (<em><strong>OR</strong> lògic</em>) i <span style="color: #0000ff;"><strong>!</strong> </span>(<em><strong>NOT</strong> lògic</em>).</p>
+<p style="padding-left: 30px; text-align: center;"><img src="tipos15.png" alt="" width="669" height="205" /></p>
+<p style="padding-left: 30px;">En la taula anterior A i B són dues expressions que poden ser avaluada com true o false. Podem observar que:</p>
+<ul>
+<li>L'operador <span style="color: #0000ff;"><strong>&amp;&amp;</strong></span>  retorna  <span style="color: #0000ff;">true</span> si totes dues condicions són vertaderes.</li>
+<li>L'operador<span style="color: #0000ff;"><strong> ||</strong>    </span>retorna   <span style="color: #0000ff;">true</span> si almenys una condició és vertadera.</li>
+<li>L'operador   <span style="color: #0000ff;"><strong>!</strong></span>   inverteix el valor d'una condició, és a dir, canvia <span style="color: #0000ff;">true</span> a <span style="color: #0000ff;">false</span> y viceversa.</li>
+<li>
+<h3>Operadors d'increment i decrement</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">Els operadors d'increment ( <span style="color: #0000ff;"><strong>++</strong> </span>) i decrement  ( <span style="color: #0000ff;"><strong>--</strong></span>)  són útils per a <span style="text-decoration: underline;">modificar el valor d'una variable en una unitat</span>. L'operador d'increment augmenta el valor de la variable en 1, mentre que l'operador de decrement el disminueix en 1. Aquests operadors són <strong>unaris</strong> perquè treballen amb un sol operant que ha de ser una variable, mai un literal o una constant.</p>
+<p style="padding-left: 30px;">És molt important el lloc en el qual es col·loca l'operador:</p>
+<p style="padding-left: 30px;">- <span style="text-decoration: underline;"><strong>Davant de l'operant</strong></span></p>
+<p style="padding-left: 60px;"><span style="text-decoration: underline;">Primer modifica el valor de la variable</span> i després retorna el valor resultant perquè puga ser utilitzada en el càlcul de l'expressió. Exemple:</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;">a = 15;</span><br /><span style="font-size: 10pt;">b = ++a;        <span style="color: #808000;">// a -&gt; 16;   b -&gt; 16</span></span><br /><span style="font-size: 10pt;">c = 2 * ++a;    <span style="color: #808000;">// a -&gt; 17;   c -&gt; 34</span></span></pre>
+<p style="padding-left: 60px;">En finalitzar l'execució de les tres línies, <span style="color: #008000;">a</span> tindrà el valor <strong>17</strong>;    <span style="color: #008000;">b</span> tindrà el valor <strong>16</strong>   i   <span style="color: #008000;">c</span> tindrà el valor <strong>34</strong>.</p>
+<p style="padding-left: 30px;">- <span style="text-decoration: underline;"><strong>Darrere de l'operant</strong></span></p>
+<p style="padding-left: 60px;">Primer es retorna el valor de la variable perquè puga ser utilitzat en el càlcul de l'expressió i <span style="text-decoration: underline;">finalment es modifica el valor de la variable</span>. Exemple:</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;">a = 15;</span><br /><span style="font-size: 10pt;">b = a--;</span><br /><span style="font-size: 10pt;">c = 2 * a--;</span></pre>
+<p style="padding-left: 60px;">En finalitzar l'execució de les tres línies,  <span style="color: #008000;">a</span>  tindrà el valor <strong>13</strong>;   <span style="color: #008000;">b</span> tindrà el valor <strong>15</strong> i    <span style="color: #008000;">c</span> tindrà el valor <strong>28</strong> (<em> 2 * 14</em>).</p>
+<ul>
+<li>
+<h3>Operadors de concatenació</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">En el context de cadenes de text (<strong><span style="color: #0000ff;"><em>String</em></span></strong>), Java proporciona l'operador  <strong><span style="color: #0000ff;">+</span></strong>  per a la concatenació de cadenes. Aquest operador s'utilitza per a unir dos o més cadenes de text en una sola cadena.</p>
+<pre style="padding-left: 30px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">String</span> nom = "Juan";</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">String</span> cognom = "Pérez";</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">String</span> nomSencer = nom <span style="color: #0000ff;"><strong>+</strong></span> " " <span style="color: #0000ff;"><strong>+</strong></span> cognom;      <span style="color: #808000;">// nomSencer -&gt; "Juan Pérez"</span></span></pre>
+<p style="padding-left: 30px;">També es pot utilitzar el mètode <span style="color: #008000;">concat</span>() de la classe <span style="color: #0000ff;">String</span> per a concatenar cadenes.</p>
+<ul>
+<li>
+<h3><img src="i_o_17.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="114" height="148" />Operadors de bits</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">S'utilitzen per a realitzar <span style="text-decoration: underline;">operacions a nivell de bits</span> en valors sencers. Aquests operadors permeten manipular dades binàries i realitzar operacions de desplaçament de bits. Exemples d'operadors de bits inclouen  <strong><span style="color: #0000ff;">&amp;</span></strong>  (<em><strong>AND</strong> a nivell de bits</em>),  <span style="color: #0000ff;"><strong>| </strong></span> (<em><strong>OR</strong> a nivell de bits</em>),  <strong><span style="color: #0000ff;">^</span></strong>  (<em><strong>XOR</strong> a nivell de bits</em>), &lt;&lt; (<em>desplaçament a l'esquerra</em>) i &gt;&gt; (<em>desplaçament a la dreta</em>).</p>
+<table style="width: 99.9985%; height: 235px;" border="1">
+<tbody>
+<tr style="height: 53px;">
+<td style="width: 6.66663%; height: 53px; text-align: center; background-color: #befaf8;">Operador</td>
+<td style="width: 20.5761%; height: 53px; text-align: center; background-color: #befaf8;">Nom</td>
+<td style="width: 36.3786%; height: 53px; text-align: center; background-color: #befaf8;">Funció</td>
+<td style="width: 36.3786%; text-align: center; background-color: #befaf8;">Exemple</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 6.66663%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>&amp;</strong></span></td>
+<td style="width: 20.5761%; text-align: center; height: 26px;">
+<p><em>AND bit a bit</em><br />(<em>binari</em>)</p>
+</td>
+<td style="width: 36.3786%; height: 26px;">
+<p>Realitza una operació <strong>AND bit-a-bit</strong> entre dos números. Per a cada posició del valor binari realitza un <strong>AND</strong> amb els dos bits de la mateixa posició dels operands.</p>
+</td>
+<td style="width: 36.3786%;">
+<pre><span style="font-size: 10pt;">   10  -&gt;  0 0 0 0 1 0 1 0</span><br /><span style="font-size: 10pt;">   67  -&gt;  0 1 0 0 0 0 1 1<br />10 <span style="color: #0000ff;"><strong>&amp;</strong></span> 67 -&gt; 0 0 0 0 0 0 1 0 -&gt; 2<br /></span></pre>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 6.66663%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>|</strong></span></td>
+<td style="width: 20.5761%; text-align: center; height: 26px;">OR bit a bit<br />(<em>binari</em>)</td>
+<td style="width: 36.3786%; height: 26px;">
+<p>Realitza una operació <strong>OR bit-a-bit</strong> entre dos números. Per a cada posició del valor binari realitza un <strong>OR</strong> amb els dos bits de la mateixa posició dels operands.</p>
+</td>
+<td style="width: 36.3786%;">
+<pre><span style="font-size: 10pt;">   10  -&gt;  0 0 0 0 1 0 1 0</span><br /><span style="font-size: 10pt;">   67  -&gt;  0 1 0 0 0 0 1 1</span><br /><span style="font-size: 10pt;">10 <strong><span style="color: #0000ff;">|</span></strong> 67 -&gt; 0 1 0 0 1 0 1 1 -&gt; 75</span></pre>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 6.66663%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>^</strong></span></td>
+<td style="width: 20.5761%; text-align: center; height: 26px;">XOR bit a bit<br />(<em>binari</em>)</td>
+<td style="width: 36.3786%; height: 26px;">
+<p>Realitza una operació <strong>XOR bit-a-bit</strong> entre dos números. El resultat és <span style="color: #0000ff;">true</span> només quan els dos operands són diferents (<em>un <span style="color: #0000ff;">true</span> i l'altre <span style="color: #0000ff;">false</span></em>). Per a cada posició del valor binari realitza un <strong>XOR</strong> amb els dos bits de la mateixa posició dels operands</p>
+</td>
+<td style="width: 36.3786%;">
+<pre><span style="font-size: 10pt;">   10  -&gt;  0 0 0 0 1 0 1 0<br />   67  -&gt;  0 1 0 0 0 0 1 1<br />10 <strong><span style="color: #0000ff;">^</span></strong> 67 -&gt; 0 1 0 0 1 0 0 1 -&gt; 73  </span></pre>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 6.66663%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>~</strong></span></td>
+<td style="width: 20.5761%; text-align: center; height: 26px;">Complement a un<br />(<em>unari</em>)</td>
+<td style="width: 36.3786%; height: 26px;">Inverteix tots els bits d'un número. Afecta al signe (<em>complement a 1</em>).</td>
+<td style="width: 36.3786%;">
+<pre><span style="font-size: 10pt;">  10 -&gt; 0 0 0 0 1 0 1 0<br /> ~10 -&gt; 1 1 1 1 0 1 0 1 -&gt; -11  </span></pre>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 6.66663%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>&lt;&lt;</strong></span></td>
+<td style="width: 20.5761%; text-align: center; height: 26px;">Desplaçament esquerra<br />(<em>binari</em>)</td>
+<td style="width: 36.3786%; height: 26px;">Desplaça cap a l'esquerra els bits de l'operand de l'esquerra tants llocs com indique l'operand de la dreta. El farciment per la dreta es fa amb zeros.<br /><strong>     valor_desplaçar &lt;&lt; num_posicions</strong></td>
+<td style="width: 36.3786%;">
+<pre><span style="font-size: 10pt;">     10 -&gt; 0 0 0 0 1 0 1 0<br />10 &lt;&lt; 2 -&gt; 0 0 1 0 1 0 0 0 -&gt; 40  </span></pre>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 6.66663%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>&gt;&gt;</strong></span></td>
+<td style="width: 20.5761%; text-align: center; height: 26px;">
+<p>Desplaçament dreta<br />(<em>binari</em>)</p>
+</td>
+<td style="width: 36.3786%; height: 26px;">Desplaça cap a la dreta els bits del operands de la esquerra tants llocs com indique l'operand de la dreta. <br />     <strong>valor_desplaçar &gt;&gt; num_posicions</strong></td>
+<td style="width: 36.3786%;">
+<pre><span style="font-size: 10pt;">     10 -&gt; 0 0 0 0 1 0 1 0<br />10 &gt;&gt; 2 -&gt; 0 0 0 0 0 0 1 0 -&gt; 2  </span></pre>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 6.66663%; text-align: center; height: 26px;"><span style="color: #0000ff;"><strong>&gt;&gt;&gt;</strong></span></td>
+<td style="width: 20.5761%; text-align: center; height: 26px;">Desplazamiento derecha sin signo</td>
+<td style="width: 36.3786%; height: 26px;">Similar a l'operador <strong><span style="color: #0000ff;">&gt;&gt;</span></strong> (<em>desplaçament a la dreta</em>), però sempre agrega un 0 a l'esquerra en lloc del bit de signe. Això significa que, independentment del signe del número, es realitza el desplaçament de bits a la dreta.</td>
+<td style="width: 36.3786%;">
+<pre><span style="font-size: 10pt;"><span style="color: #0000ff;"> int</span> a = -10;<br /> <span style="color: #0000ff;">int</span> b = a &gt;&gt;&gt; 2;   <span style="color: #808000;">// b -&gt; 1073741821</span><br /></span></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Els operadors de bits pot unir-se amb el d'assignació:    &amp;=;   |=;    ^=;  ~= ;   &lt;&lt;= ;  &gt;&gt;= ;  &gt;&gt;&gt;= .</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id23">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Precedència i Asociativitat</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta23_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Quan en una expressió hi ha diversos operadors és important saber quin s'executa primer. Vegem algun exemple:</p>
+<p><span style="color: #008000;"><strong>2 * 3 + 5</strong></span></p>
+<ul>
+<li>Si primer es fa la suma el resultat és 16 (2 * 8).</li>
+<li>Si primer es fa la multiplicació, el resultat és 11 (6 + 11).</li>
+</ul>
+<p>La <span style="color: #0000ff;"><strong>precedència</strong></span> és la prioritat a executar-se. <span style="text-decoration: underline;">Cada operador té un valor de precedència</span>. Quan en una expressió hi ha operadors diferents, s'executa primer el de major precedència. En el cas anterior, la multiplicació té un nivell de precedència major que la suma, per la qual cosa el resultat serà 11. Vegem un altre exemple.</p>
+<p><span style="color: #008000;">32 / 8 / 2</span></p>
+<ul>
+<li>Si primer s'executa la divisió 8 / 2 i a continuació 32 / 4, el resultat serà 8.</li>
+<li>Si primer s'executa la divisió 32 / 8 i a continuació 4 / 2, el resultat serà 2</li>
+</ul>
+<p>La <strong><span style="color: #0000ff;">asociativitat</span></strong> és la direcció (<em>de izq -&gt;der o de der -&gt; izq</em>) en la qual s'executen els operadors del mateix nivell en una expressió. El més freqüent és d'esquerra a dreta. En el cas anterior el resultat serà 2.</p>
+<p>En la següent taula, els operadors que es troben més amunt tenen un nivell major precedència i els que es troben en la mateixa fila tenen la mateixa.</p>
+<table style="width: 100%; height: 416px;" border="1">
+<tbody>
+<tr style="height: 26px;">
+<td style="width: 50%; height: 26px; text-align: center; background-color: #95f5f2;"><strong>Operador</strong></td>
+<td style="width: 50%; height: 26px; text-align: center; background-color: #95f5f2;"><strong>Notes</strong></td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; padding-left: 30px; height: 26px;">
+<pre><span style="font-size: 10pt; color: #0000ff;">.   []   () </span></pre>
+</td>
+<td style="width: 50%; height: 26px;">Els claudàtors s'utilitzen per als arreglos</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; padding-left: 30px; height: 26px;">
+<pre><span style="font-size: 10pt; color: #0000ff;">++   --   !   ~  </span></pre>
+</td>
+<td style="width: 50%; height: 26px;"><span style="color: #0000ff;">!</span> es el NOT lògic i <span style="color: #0000ff;">~</span> es el complement de bits</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; padding-left: 30px; height: 26px;"><span style="color: #0000ff;">new (</span>tipo<span style="color: #0000ff;">)</span></td>
+<td style="width: 50%; height: 26px;"> <span style="color: #0000ff;">new</span> s'utilitza per a crear instàncies de classes</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; padding-left: 30px; height: 26px;">
+<pre><span style="font-size: 10pt; color: #0000ff;">*   /   %</span></pre>
+</td>
+<td style="width: 50%; height: 26px;">Multiplicatius</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; padding-left: 30px; height: 26px;">
+<pre><span style="font-size: 10pt; color: #0000ff;">+   - </span></pre>
+</td>
+<td style="width: 50%; height: 26px;">Additius</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; padding-left: 30px; height: 26px;">
+<pre><span style="font-size: 10pt; color: #0000ff;">&lt;&lt;   &gt;&gt;   &gt;&gt;&gt;</span></pre>
+</td>
+<td style="width: 50%; height: 26px;">Desplaçament de bits</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; padding-left: 30px; height: 26px;">
+<pre><span style="font-size: 10pt; color: #0000ff;">&lt;   &gt;   &lt;=   &gt;=</span></pre>
+</td>
+<td style="width: 50%; height: 26px;">Relacionals</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; padding-left: 30px; height: 26px;">
+<pre><span style="font-size: 10pt; color: #0000ff;">==   !=</span></pre>
+</td>
+<td style="width: 50%; height: 26px;">Igualtat</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; padding-left: 30px; height: 26px;"><span style="font-size: 10pt; color: #0000ff;">&amp;</span></td>
+<td style="width: 50%; height: 26px;">AND (entre bits)</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; padding-left: 30px; height: 26px;"><span style="font-size: 10pt; color: #0000ff;">^</span></td>
+<td style="width: 50%; height: 26px;">OR exclusiu (entre bits)</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; padding-left: 30px; height: 26px;"><span style="font-size: 10pt; color: #0000ff;">|</span></td>
+<td style="width: 50%; height: 26px;">OR inclusiu (entre bits)</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; height: 26px; padding-left: 30px;"><span style="font-size: 10pt; color: #0000ff;">&amp;&amp;</span></td>
+<td style="width: 50%; height: 26px;">AND lògic</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; height: 26px; padding-left: 30px;"><span style="font-size: 10pt; color: #0000ff;">||</span></td>
+<td style="width: 50%; height: 26px;">OR lògic</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; height: 26px; padding-left: 30px;"><span style="font-size: 10pt; color: #0000ff;">? :</span></td>
+<td style="width: 50%; height: 26px;">Condicional</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; height: 26px; padding-left: 30px;">
+<pre><span style="font-size: 10pt; color: #0000ff;">=   +=   -=   *=   /=   %= </span></pre>
+<pre><span style="font-size: 10pt; color: #0000ff;">&amp;=   ^=   |=   &lt;&lt;=  &gt;&gt;=  &gt;&gt;&gt;=</span></pre>
+</td>
+<td style="width: 50%; height: 26px;">Asignació</td>
+</tr>
+</tbody>
+</table>
+<p>En la columna de la dreta s'indica la associativitat.</p>
+<p style="text-align: center;"><img src="tipos16.png" alt="" width="591" height="583" /></p>
+<p>Podem utilitzar parèntesi perquè les operacions s'executen en l'ordre que desitgem.</p>
+<pre><span style="font-size: 10pt;"><span style="color: #0000ff;">   int</span> a = ( 3 + 5 ) * 2;            <span style="color: #808000;">// resultat 16</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">   int</span> k = 1 + (h = 3);              <span style="color: #808000;">// h -&gt; 3; k -&gt; 4.  Sense parèntesis dona error.</span></span></pre>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="25_classes_denvoltura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_classes_i_objectes.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4. Classes i Objectes | tema2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-24"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">tema2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació</a></li>
+   <li><a href="estructura_de_un_programa_datos_e__s.html" class="daddy">Estructura de un programa. Datos. E / S</a>
+   <ul class="other-section">
+      <li><a href="1_estructura_de_un_programa.html" class="no-ch">1. Estructura de un programa</a></li>
+      <li><a href="2_tipos_de_datos_variables_y_constantes.html" class="daddy">2. Tipos de datos, variables y constantes</a>
+      <ul class="other-section">
+         <li><a href="21_variables.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constantes.html" class="no-ch">2.2. Constantes</a></li>
+         <li><a href="23_conversin_de_tipos.html" class="no-ch">2.3. Conversión de tipos</a></li>
+         <li><a href="24_variables_y_objetos_valores_primitivos_y_referencia.html" class="no-ch">2.4. Variables y objetos. Valores Primitivos y Referencia</a></li>
+         <li><a href="25_clases_de_envoltura.html" class="no-ch">2.5. Clases de envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expresiones_y_operadores.html" class="no-ch">3. Expresiones y operadores</a></li>
+      <li><a href="4_clases_y_objetos.html" class="daddy">4. Clases y Objetos</a>
+      <ul class="other-section">
+         <li><a href="41_la_clase_principal_y_el_mtodo_main.html" class="no-ch">4.1. La clase principal y el método main</a></li>
+         <li><a href="42_librera_de_clases_java.html" class="no-ch">4.2. Librería de clases Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__salida.html" class="no-ch">5. Entrada / Salida</a></li>
+      <li><a href="6_cadenas.html" class="no-ch">6. Cadenas</a></li>
+      <li><a href="7_expresiones_regulares_en_java.html" class="no-ch">7. Expresiones regulares en Java</a></li>
+      <li><a href="8_otras_clases_de_inters.html" class="no-ch">8. Otras clases de interés</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="estructura_dun_programa_dades_e__s.html" class="current-page-parent daddy">Estructura d'un Programa. Dades. E / S</a>
+   <ul>
+      <li><a href="1_estructura_dun_programa_java.html" class="no-ch">1. Estructura d'un programa Java</a></li>
+      <li><a href="2_tipus_de_dades_variables_i_constants.html" class="daddy">2. Tipus de dades, variables i constants</a>
+      <ul class="other-section">
+         <li><a href="21_variables0.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constants.html" class="no-ch">2.2. Constants</a></li>
+         <li><a href="23_conversi_de_tipus.html" class="no-ch">2.3. Conversió de tipus</a></li>
+         <li><a href="24_variables_i_objectes_valors_primitius_i_referncia.html" class="no-ch">2.4. Variables i objectes. Valors Primitius i Referència</a></li>
+         <li><a href="25_classes_denvoltura.html" class="no-ch">2.5. Classes d'envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expressions_i_operadors.html" class="no-ch">3. Expressions i operadors</a></li>
+      <li id="active"><a href="4_classes_i_objectes.html" class="active daddy">4. Classes i Objectes</a>
+      <ul>
+         <li><a href="41_la_classe_principal_i_el_mtode_main.html" class="no-ch">4.1. La classe principal i el métode main</a></li>
+         <li><a href="42_llibreria_de_classes_java.html" class="no-ch">4.2. Llibreria de classes Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__eixida.html" class="no-ch">5. Entrada / Eixida</a></li>
+      <li><a href="6_cadenes.html" class="no-ch">6. Cadenes</a></li>
+      <li><a href="7_expressions_regulars_a_java.html" class="no-ch">7. Expressions regulars a Java</a></li>
+      <li><a href="8_altres_classes_dinters.html" class="no-ch">8. Altres classes d'interès</a></li>
+   </ul>
+   </li>
+   <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="3_expressions_i_operadors.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="41_la_classe_principal_i_el_mtode_main.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4. Classes i Objectes</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id29">
+<div class="iDevice emphasis0" >
+<div id="ta29_122_2" class="block iDevice_content">
+<div class="exe-text"><p>Escriure programes que usen <strong><span style="color: #0000ff;">classes</span></strong> i <strong><span style="color: #0000ff;">objectes</span></strong> es diu <strong><span style="color: #0000ff;">P</span>rogramació <span style="color: #0000ff;">O</span>rientada a <span style="color: #0000ff;">O</span>bjectes</strong> (<span style="color: #0000ff;">POO</span> - <span style="color: #0000ff;">OOP</span>). Tot programa Java consta d'almenys una classe.</p>
+<p>La <strong>POO</strong> orientada a objectes tracta adaptar-se al mode de pensar de l'esser humà i no al de la màquina. L'element bàsic d'aquest paradigma de programació és una entitat denominada <strong>objecte</strong> (<em>representa entitats del món real</em>). Un <strong>objecte</strong> és la <span style="text-decoration: underline;">representació d'un concepte</span> per a un programa, i conté tota la informació necessària per a <strong>abstraure</strong> aquest concepte.</p>
+<ul>
+<li><strong>les dades</strong> que descriuen el seu estat i</li>
+<li><strong>les operacions</strong> que poden modificar aquest estat, i determinen les capacitats de l'objecte.</li>
+</ul>
+<p>En Java, la programació orientada a objectes gira sobre alguns conceptes clau:  <span style="color: #0000ff;"><strong>classes</strong></span>, <span style="color: #0000ff;"><strong>objectes</strong></span>, <strong><span style="color: #0000ff;">atributs</span></strong>, <strong><span style="color: #0000ff;">mètodes</span></strong> i <strong><span style="color: #0000ff;">herència</span></strong>.</p>
+<ul>
+<li><img src="i_o_18.png" alt="" style="float: right; margin-right: 10px; margin-left: 10px;" width="317" height="312" />Una <span style="color: #0000ff;"><strong>classe</strong></span> és una plantilla des de la qual es poden crear objectes. Una classe és un tipus de dades no primitiu i creat per programador. Una classe és una <strong>abstracció</strong> d'una entitat del món real en la qual es defineixen les propietats que té aquesta entitat (<em>atributs</em>) i les accions que és capaç de realitzar (<em>mètodes</em>).</li>
+</ul>
+<p style="padding-left: 30px;">Segur que si dic la paraula "<em>cotxe</em>" al teu cap es forma una idea del que és un cotxe. Perquè aquesta idea, aquesta <strong>abstracció</strong>, és la classe "cotxe".</p>
+<p style="padding-left: 30px;">Tota classe té una sèrie de propietats (<em>atributs</em>): nombre de rodes, velocitat màxima, potència del motor, tipus de combustible, color de pintura, llarg, ample, alt, nombre de portes, nombre de places, capacitat del maleter, etc.</p>
+<p style="padding-left: 30px;">Tota classe té una sèrie d'accions que pot realitzar (<em>mètodes</em>): avançar, retrocedir, obrir la porta, arrancar, parar, posar el fre de mà, aparcar, encendre la llum, apagar la llum, posar l'intermitent, etc.</p>
+<p style="padding-left: 30px;">Així, una classe és una <span style="text-decoration: underline;">abstracció d'alguna cosa del món</span> real en la qual es defineixen els seus <strong>atributs</strong> i els seus <strong>mètodes</strong>.</p>
+<ul>
+<li>Un <span style="color: #0000ff;"><strong>objecte</strong></span> és una instància d'una classe, igual que una variable és una instància d'una mena de dada. Podem dir que una classe és com una plantilla a partir de la qual podrem crear (<em>instanciar</em>) objectes. Així, el <strong>Renault Scenic e-Tech iconic</strong> amb matrícula 0001-NAA és un objecte concret i únic de la classe COTXE. Els objectes tenen valors concrets per als atributs definits en la classe i podran realitzar les accions definides en els mètodes.<br /><img src="i_o_19.png" alt="" width="500" height="353" /></li>
+<li><strong><span style="color: #0000ff;">tribut</span>: </strong>és una <strong>variable que forme part d'una classe</strong>. Una classe pot contindre tants atributs com es desitge i poden ser de qualsevol tipus, fins i tot objectes d'una altra classe. <strong><br /></strong></li>
+<li><strong><span style="color: #0000ff;">Método</span>: es una función construida en una clase u objeto</strong></li>
+<li><span style="color: #0000ff;"><strong>Mètode</strong></span>: és una <strong>funció construïda en una classe</strong>.</li>
+<li><span style="color: #0000ff;"><strong>Herència</strong></span> és el procés que consisteix a derivar una classe, anomenada classe derivada o filla, d'una altra, anomenada classe base o pare, i es poden utilitzar els atributs i mètodes de la classe base en la classe derivada sense necessitat de tornar-los a definir. Així, la classe Cotxe pot heretar de la classe Vehicles_De_Motor, sense necessitat de tornar a definir tots els atributs i mètodes.<br /><img src="i_o_20.png" alt="" width="600" height="319" /></li>
+</ul>
+<p></p>
+<p><span style="text-decoration: underline;"><strong>Creació d'objectes: Instanciació</strong></span></p>
+<p style="padding-left: 30px;">Un objecte ha de ser instanciat abans que puga ser utilitzat. Per a entendre com instanciar un objecte d'una classe i com anomenar als mètodes de la classe, ha de conéixer la Interfície de la classe (<em>API de la classe</em>), que els creadors de la classe fan pública. A continuació mostre la interfície de classe de la classe <strong>Data</strong> creada per mi:</p>
+<p style="padding-left: 30px;"><strong>Constructors</strong>:</p>
+<ul>
+<li><span style="color: #0000ff;">Data</span>()  --&gt;  crea un objecte Data amb data inicial 1 del 1 de 2000.</li>
+<li><span style="color: #0000ff;">Data</span> (<span style="color: #0000ff;">int</span> <span style="color: #008000;">dd</span>, <span style="color: #0000ff;">int</span> <span style="color: #008000;">mm</span>, <span style="color: #0000ff;">int</span> <span style="color: #008000;">aaaa</span>)  --&gt;  crea un object Data amb data   dd / mm / aaaa</li>
+</ul>
+<p style="padding-left: 30px;"><strong>Mètodes</strong>:</p>
+<ul>
+<li><span style="color: #0000ff;">int getMes</span>()  --&gt;  torna el número del mes</li>
+<li><span style="color: #0000ff;">int getDia</span>()  --&gt;  torna el número del dia</li>
+<li><span style="color: #0000ff;">int getAny</span>()  --&gt;  torna el número de l'any</li>
+<li><span style="color: #0000ff;">boolean setDia</span>(int <span style="color: #008000;">dd</span>)  --&gt; fica el dia de l'object Data a dd. Si dd és un valor no vàlid per al mes de la data, no canvia la data i torna false.</li>
+<li><span style="color: #0000ff;">boolean setMes</span>( int <span style="color: #008000;">mm</span> )  --&gt;  fica el mes de l'object a mm. Si mm no és vàlid, no canvia res i torna false</li>
+<li><span style="color: #0000ff;">void setAny</span>( int <span style="color: #008000;">aaaa</span> ) --&gt;  canvia a aaaa l'any de l'objecte Data</li>
+<li><span style="color: #0000ff;">String toString</span>()  --&gt;  torna un objecte de tipus String que conté una cadena amb el format: "25 de abril de 2017".</li>
+<li><span style="color: #0000ff;">boolean equals</span>(Object <span style="color: #008000;">obj</span>)  --&gt;  compara l'objecte Data amb altre objecte Data passat com paràmetre.</li>
+</ul>
+<p style="padding-left: 30px;">La <strong>instanciació</strong> d'un objecte consisteix en <strong>definir una referencia d'objecte</strong> (<em>que mantindrà la direcció de l'objecte en la memòria</em>)  i cridar a un  <strong>mètode especial</strong> de la classe anomenat <strong>constructor</strong>, que té el mateix nom que la classe. El treball del constructor és assignar valors inicials a les dades de classe. La sintaxi per a la instanciació d'un objecte és:</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;"><strong><span style="color: #008000;">Classe</span></strong> nomObjecte = <strong><span style="color: #0000ff;">new</span></strong> <strong><span style="color: #008000;">ConstructorClasse</span></strong>(<em>paràmetres</em>);</span></pre>
+<p style="padding-left: 30px;"><img src="objetofecha.png" style="float: right; margin-right: 20px; margin-left: 20px;" width="380" height="346" />Com la classe Data té dos constructors, podem crear objectes de tipus Data de dues formes diferents:</p>
+<ul>
+<li>Data fecha2 = <span style="color: #0000ff;">new</span> Data();                          <span style="color: #808000;"> // crea l'objecte data1 amb valors inicials    01/01/2000</span></li>
+<li>Data fecha1 = <span style="color: #0000ff;">new</span> Data(15, 05, 2012);    <span style="color: #808000;"> // crea l'objecte data2 amb els valors   15/05/2012</span></li>
+</ul>
+<p style="padding-left: 30px;">Al <strong>instanciar</strong> un objecte es declara l'objecte i se li fa <strong>apuntar</strong> a una zona de memòria on s'emmagatzema l'objecte. Direm que fecha1 i fecha2 són referències als objectes de Data, ja que fecha1 i fecha2 no contenen les dades en si mateixos, sinó que <strong>fan referència</strong> al lloc de la memòria on es troben.</p>
+<p style="padding-left: 30px;">Un objecte s'instància utilitzant el constructor de la classe. Una classe pot tindre diversos constructors.</p>
+<p style="padding-left: 30px;">És important comprendre que una <strong>referència d'un objecte</strong> i un <strong>objecte</strong> són <strong>coses distintes</strong>. L'objecte són les dades emmagatzemades en una posició de memòria. La referència és un element que apunta a l'objecte.</p>
+<p><span style="text-decoration: underline;"><strong>Crida a mètodes</strong></span></p>
+<p style="padding-left: 30px;">Quan es crea una instància d'un objecte, podem utilitzar-lo trucant als seus mètodes. Un <strong>mètode</strong> pot <strong>tornar o no un valor</strong> del tipus que indica la paraula que va davant del nom del mètode. La paraula <span style="color: #0000ff;">void</span> significa que <strong>no torna cap valor</strong>. Per trucar a un mètode s'utilitza la notació:</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;">nomObjecte.<span style="color: #0000ff;">nomMètode</span>(<span style="color: #008000;">arg1</span>, <span style="color: #008000;">arg2</span>, ...);</span></pre>
+<p style="padding-left: 30px;">on primer apareix el <strong>nom de lobjecte</strong>, <strong>seguit d'un punt</strong> i el <strong>nom del mètode</strong>, afegint entre parèntesis els valors adequats per als arguments que tingui.</p>
+<p style="padding-left: 30px;">Així, si volem canviar l'any de l'objecte fecha2, farem la trucada següent al mètode <span style="color: #0000ff;">setAny</span>(int aaaa):</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;">fecha2.<span style="color: #0000ff;">setAny</span>(2020);</span></pre>
+<p style="padding-left: 30px;">Si vull mostrar per pantalla el dia de l'objecte fecha1 trucaré al mètode <span style="color: #0000ff;">getDia</span>(), que torna un enter:</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;"><span style="color: #808000;">System.out.prinln("Dia = " + fecha1.getDia()); </span>  // mostra:   Dia = 15</span></pre>
+<p style="padding-left: 30px;">I si vull mostrar la data completa:</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;">System.out.<span style="color: #0000ff;">println</span>("Data: " + fecha1.<span style="color: #0000ff;">toString</span>());       <span style="color: #808000;">  // mostra:  Data: 15 de maig de 2012</span></span></pre>
+<p style="padding-left: 30px;"></p>
+<p><span style="text-decoration: underline;"><strong>Referències no instanciades</strong></span></p>
+<p style="padding-left: 30px;">Si una <strong>referència</strong> <strong>no</strong> és <strong>instanciada</strong>, el valor és <strong><span style="color: #0000ff;">null</span></strong>. Cal anar amb compte amb les referències no instanciades ja que pot donar problemes. </p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;">Data data3;            <span style="color: #808000;">// referència no instanciada. El seu valor es null. No fa referencia a ningú objecte<br /></span>data3.<span style="color: #0000ff;">setDia</span>(23);   <span style="color: #808000;">   // genera un error de compilació</span></span></pre>
+<p><span style="text-decoration: underline;"><strong>Eliminació d'objectes</strong></span></p>
+<p style="padding-left: 30px;">Java <strong>no ofereix suport per eliminar explícitament un objecte</strong>. A Java hi ha una eina (<strong><em>garbage collector</em></strong>) que s'encarrega d'alliberar memòria de forma automàtica dels objectes que no es tornaran a utilitzar. En el següent exemple, la referència fecha2 referenciarà el mateix objecte que fecha1, per tant l'objecte obj2 ja no és referenciat i no es podrà utilitzar. Java allibera de forma automàtica la memòria que ocupa aquest objecte de manera que podrà ser utilitzada per a altres coses.</p>
+<p style="padding-left: 30px;"><img src="objetofecha2.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="374" height="223" /></p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;">fecha2 = fecha1;     <span style="color: #808000;">// ara fecha2 referencia al mateix objecte que fecha1.</span></span></pre>
+<p style="padding-left: 30px;"></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id57">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Fundaments de POO</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta57_120_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><span style="color: #008000;"><strong><img src="gatito.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="267" height="174" /></strong></span><strong><span style="color: #008000;">Abstracció</span></strong>: consisteix a <strong>simplificar</strong> la complexitat d'un sistema mitjançant la identificació de les <strong>parts essencials</strong> i l'omissió dels detalls no essencials. A POO, els objectes actuen com a abstraccions que modelen entitats del món real i les seves interaccions. La <strong>POO busca modelar els objectes</strong>, busca <strong>abstreure's i simplificar</strong> un objecte de la vida real només amb els <strong>atributs imprescindibles</strong>. En altres paraules, cercarem transformar un objecte de la vida real en atributs (<em>característiques</em>) i les seves accions (<em>mètodes</em>). Consisteix a trobar les parts fonamentals d'un sistema per descriure'l de manera senzilla i precisa.<br /><br /></li>
+<li><span style="color: #008000;"><strong><img src="pildora.jpg" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="186" height="93" />E</strong></span><strong><span style="color: #008000;">ncapsulament</span></strong>: és la capacitat de decidir <strong>quines parts d'una classe</strong> (<strong><em>atributs i mètodes</em></strong>) <strong>seran exposades a altres entitats i quines es mantindran ocultes</strong>. Aquest pilar cerca <strong>controlar la visibilitat</strong> i<strong> l'accessibilitat</strong> dels detalls interns d'una classe. les classes són com una caixa tancada, tots els mètodes i les variables estan dins i tota la informació només pot ser accedit per mitjà dels seus sistemes propis, això fa que sigui de debò com una caixa tancada, la seva informació només entra i surt per les formes i de la manera com la classe vulgui. Pot fins i tot no important com funciona per dins, tot el que cal saber és que funciona.<br /><br /></li>
+<li><span style="color: #008000;"><strong>Polimorfisme</strong></span>: permet que <strong>un objecte prengui moltes formes</strong>. En el context de la POO, fa referència a la <strong>capacitat d'objectes de diferents classes de respondre a un mateix missatge de manera única</strong>. Això facilita la flexibilitat i adaptabilitat del codi. Aquest pilar apunta a canviar el comportament d'un objecte per sobrecàrrega o per sobreescriptura de mètodes<br /><br /></li>
+<li><span style="color: #008000;"><strong>H</strong></span><strong><span style="color: #008000;">erència</span></strong>: és la <strong>capacitat de transferir característiques</strong> pròpies com a atributs i mètodes <strong>d'un objecte a un altre</strong>. Aquest pilar apunta a la <strong>reutilització de codi</strong> existent.</li>
+</ul>
+<p>A Java ja hi ha <strong>multitud de classes que podem utilitzar</strong> als nostres programes sense necessitat de tornar a crear-les. A més, aquestes classes, en estar provades, podem estar segurs que funcionen correctament, cosa que ens permetrà escriure programes més segurs i fiables.</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id38">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Herència</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta38_124_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="color: #008000;"><strong>Herència</strong></span> és el procés que consisteix a <strong>derivar una classe</strong>, anomenada <strong>classe derivada, subclasse o filla</strong>, d'una altra, anomenada <strong>classe base, superclasse o pare</strong>, i es poden utilitzar els atributs i mètodes de la classe base en la classe derivada sense necessitat de tornar-los a definir. Així, la classe Cotxe pot heretar de la classe Vehicles_De_Motor, sense necessitat de tornar a definir tots els atributs i mètodes.</p>
+<p><strong><span style="color: #008000;">L'herència</span></strong> permet que es puguen definir noves classes basades en classes existents, la qual cosa facilita <strong>reutilitzar codi prèviament desenvolupat</strong>. Si una classe deriva d'una altra (<strong><em><span style="color: #0000ff;">extends</span></em></strong>) hereta totes les seues variables i mètodes. La <strong>classe derivada</strong> pot <strong>afegir noves variables i mètodes</strong> i/o <strong>redefinir</strong> les variables i mètodes heretats.</p>
+<p>A Java una classe només pot derivar d'una única classe</p>
+<p>A Java, una classe només pot derivar d'una única classe ( no existeix l'herència múltiple). A més, totes les classes hereten, directa o indirectament de la classe Object.Object.</p>
+<p><br /><img src="i_o_20.png" alt="" width="600" height="319" /></p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id39">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Interface</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta39_125_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="i_o_21.png" alt="" style="float: right; margin-right: 10px; margin-left: 10px;" width="581" height="361" /></p>
+<p>Una <span style="color: #008000;"><strong>interface</strong></span> és un <strong>conjunt de declaracions de métodes</strong>. Si una classe implementa (<em><strong><span style="color: #0000ff;">implements</span></strong></em>) una interface, ha de <strong>definir totes les funcions especificades per la interface</strong>. Una classe pot <strong>implementar més d'una interface</strong>, representant una forma alternativa de<strong> l'herència múltiple</strong>.</p>
+<p>Al seu torn, una interface pot derivar d'una altra o fins i tot de diverses interfícies, i en aquest cas incorpora tots els mètodes de les interfícies de les quals deriva.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id40">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Concepte de Package</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta40_126_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="i_o_23.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="381" height="509" />Un <span style="color: #0000ff;"><strong>package</strong></span> és una <strong>agrupació de classes</strong>. Existeixen una sèrie de packages inclosos en el llenguatge (<em><a href="https://docs.oracle.com/javase/8/docs/api/overview-summary.html#overview.description" target="_blank" rel="noopener">vure jerarquia de classes que apareix  a l'API de Java</a></em>). A més l'usuari pot crear els seus propis packages. L'habitual és <strong>ajuntar en packages les classes que estiguen relacionades</strong>. Totes les classes que formen part d'un package han d'estar <strong>en el mateix directori</strong>.</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Jerarquía de clases de Java (API)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta41_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Durant la generació de codi a Java, és recomanable i quasi necessari <strong>tindre sempre a la vista la documentació en línia del API de Java</strong>. En aquesta documentació és possible veure tant la <strong>jerarquia de classes</strong>, és a dir la relació d'herència entre classes, com la informació dels distints <strong>packages</strong> que componen les llibreries base de Java.</p>
+<p>És important <strong>distingir</strong> entre el que significa <strong>herència i package</strong>. Un <strong>package</strong> és una <span style="text-decoration: underline;">agrupació arbitrària de classes</span>, una manera d'organitzar les classes. <strong>L'herència</strong> no obstant això consisteix a <span style="text-decoration: underline;">crear noves classes sobre la base d'unes altres ja existents</span>. Les classes incloses en un package no deriven en general d'una única classe.</p>
+<p>En la documentació en línia es presenten totes dues visions:  “<a href="https://docs.oracle.com/javase/8/docs/api/" target="_blank" rel="noopener">Package Index</a>” i “<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/package-tree.html" target="_blank" rel="noopener">Class Hierarchy</a>”. La primera presenta <strong>l'estructura del API</strong> de Java agrupada per <strong>packages</strong>, mentre que en la segona apareix la <strong>jerarquia de classes</strong>. <span style="text-decoration: underline;">Totes les classes a Java són derivades de la classe java.lang.<span style="color: #0000ff; text-decoration: underline;"><strong>Object</strong></span></span>, per la qual cosa hereten tots els mètodes i variables d'aquesta. Si se selecciona una classe en particular, la documentació mostra una descripció detallada de tots els mètodes i atributs de la classe. Al seu torn mostra la seua herència completa (<em>partint de la classe java.lang.Object</em>).</p>
+<p><img src="i_o_22.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="494" height="246" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="3_expressions_i_operadors.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="41_la_classe_principal_i_el_mtode_main.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

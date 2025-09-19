@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2. Tipus de dades, variables i constants | tema2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-14"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">tema2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació</a></li>
+   <li><a href="estructura_de_un_programa_datos_e__s.html" class="daddy">Estructura de un programa. Datos. E / S</a>
+   <ul class="other-section">
+      <li><a href="1_estructura_de_un_programa.html" class="no-ch">1. Estructura de un programa</a></li>
+      <li><a href="2_tipos_de_datos_variables_y_constantes.html" class="daddy">2. Tipos de datos, variables y constantes</a>
+      <ul class="other-section">
+         <li><a href="21_variables.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constantes.html" class="no-ch">2.2. Constantes</a></li>
+         <li><a href="23_conversin_de_tipos.html" class="no-ch">2.3. Conversión de tipos</a></li>
+         <li><a href="24_variables_y_objetos_valores_primitivos_y_referencia.html" class="no-ch">2.4. Variables y objetos. Valores Primitivos y Referencia</a></li>
+         <li><a href="25_clases_de_envoltura.html" class="no-ch">2.5. Clases de envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expresiones_y_operadores.html" class="no-ch">3. Expresiones y operadores</a></li>
+      <li><a href="4_clases_y_objetos.html" class="daddy">4. Clases y Objetos</a>
+      <ul class="other-section">
+         <li><a href="41_la_clase_principal_y_el_mtodo_main.html" class="no-ch">4.1. La clase principal y el método main</a></li>
+         <li><a href="42_librera_de_clases_java.html" class="no-ch">4.2. Librería de clases Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__salida.html" class="no-ch">5. Entrada / Salida</a></li>
+      <li><a href="6_cadenas.html" class="no-ch">6. Cadenas</a></li>
+      <li><a href="7_expresiones_regulares_en_java.html" class="no-ch">7. Expresiones regulares en Java</a></li>
+      <li><a href="8_otras_clases_de_inters.html" class="no-ch">8. Otras clases de interés</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="estructura_dun_programa_dades_e__s.html" class="current-page-parent daddy">Estructura d'un Programa. Dades. E / S</a>
+   <ul>
+      <li><a href="1_estructura_dun_programa_java.html" class="no-ch">1. Estructura d'un programa Java</a></li>
+      <li id="active"><a href="2_tipus_de_dades_variables_i_constants.html" class="active daddy">2. Tipus de dades, variables i constants</a>
+      <ul>
+         <li><a href="21_variables0.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constants.html" class="no-ch">2.2. Constants</a></li>
+         <li><a href="23_conversi_de_tipus.html" class="no-ch">2.3. Conversió de tipus</a></li>
+         <li><a href="24_variables_i_objectes_valors_primitius_i_referncia.html" class="no-ch">2.4. Variables i objectes. Valors Primitius i Referència</a></li>
+         <li><a href="25_classes_denvoltura.html" class="no-ch">2.5. Classes d'envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expressions_i_operadors.html" class="no-ch">3. Expressions i operadors</a></li>
+      <li><a href="4_classes_i_objectes.html" class="daddy">4. Classes i Objectes</a>
+      <ul class="other-section">
+         <li><a href="41_la_classe_principal_i_el_mtode_main.html" class="no-ch">4.1. La classe principal i el métode main</a></li>
+         <li><a href="42_llibreria_de_classes_java.html" class="no-ch">4.2. Llibreria de classes Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__eixida.html" class="no-ch">5. Entrada / Eixida</a></li>
+      <li><a href="6_cadenes.html" class="no-ch">6. Cadenes</a></li>
+      <li><a href="7_expressions_regulars_a_java.html" class="no-ch">7. Expressions regulars a Java</a></li>
+      <li><a href="8_altres_classes_dinters.html" class="no-ch">8. Altres classes d'interès</a></li>
+   </ul>
+   </li>
+   <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="1_estructura_dun_programa_java.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="21_variables0.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2. Tipus de dades, variables i constants</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id18">
+<div class="iDevice emphasis0" >
+<div id="ta18_120_2" class="block iDevice_content">
+<div class="exe-text"><p>En un ordinador tota la informació s'emmagatzema mitjançant els símbols "<span style="color: #0000ff;"><strong>0</strong></span>" y "<span style="color: #0000ff;"><strong>1</strong></span>". Així, la següent seqüència de zeros i uns:             <br />      <strong><span style="color: #808000;">01000001</span></strong><br />ha de ser interpretada per l'ordinador. Si la interpreta com un nombre enter, serà el valor <strong>65</strong>, si la interpreta com un caràcter serà la lletra "<strong>A</strong>", si la interpreta com un valor real serà <strong>65.0</strong>. Així, encara que al final tot són zeros i uns dins de la memòria del nostre ordinador, <strong>és la manera d'interpretar-los </strong>el que marca la diferència, tant en emmagatzemar-los com en recuperar-los.</p>
+<p>Aquest és el motiu pel qual els llenguatges de programació compten amb el concepte de <span style="color: #0000ff;"><strong>tipus de dades</strong></span>: es tracta de <span style="text-decoration: underline;">diferents maneres d'interpretar eixos "zeros i uns" en funció d'unes certes configuracions que estableixen l'espai utilitzat així com la representació aplicada per a codificar i descodificar eixa informació</span>.</p>
+<p style="background-color: cyan; padding: 6px; border: 1 solid black;">En programació, un <span style="color: #0000ff;"><strong>tipus de dades</strong></span> es refereix a una <span style="text-decoration: underline;">categoria o conjunt de valors que una variable o expressió pot tindre</span>. Cada <span style="color: #0000ff;">tipus de dades</span> s'identifica per un <strong>nom</strong> i és capaç d'emmagatzemar una determinada classe d'informació així com un rang de valors concret.</p>
+<p>Java compta amb un xicotet conjunt de <span style="color: #0000ff;"><strong>tipus de dades primitius</strong></span>. Podríem considerar-los <strong>fonamentals</strong>, ja que la major part dels altres tipus (<em>estructurats o complexos</em>), són composicions a partir d'aquests més bàsics. Aquests tipus de dades primitius serveixen per a gestionar els tipus d'informació més bàsics, com a nombres de diverses classes o dades de tipus vertader/fals (<em>també coneguts com a "valors booleans" o simplement "booleans"</em>). </p>
+<p style="text-align: center;"><img src="tipos01.png" alt="" width="1046" height="561" /></p>
+<h2>Tipus de dades primitius</h2>
+<ul>
+<li>
+<h3>Lògic o Booleano</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">Només existeix un tipus, <strong><span style="color: #0000ff;">boolean</span></strong>, i té la finalitat de facilitar el treball amb valors "<strong>vertader/fals</strong>" resultants, per regla general, d'avaluar expressions. Els dos valors possibles d'aquest tipus són <strong><span style="color: #0000ff;">true</span></strong> i <strong><span style="color: #0000ff;">false</span></strong> (<em>en minúscules</em>).</p>
+<ul>
+<li>
+<h3>Numèrics enters</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">A Java existeixen <strong>quatre tipus</strong> destinats a emmagatzemar <strong>nombres enters</strong>. L'única diferència entre ells és el <span style="text-decoration: underline;">nombre de bytes usats per al seu emmagatzematge</span> i, en conseqüència, el <span style="text-decoration: underline;">rang de valors que és possible representar amb ells</span>. Tots ells empren una representació que permet l'emmagatzematge de números negatius i positius. El nom i característiques d'aquests tipus són els següents:</p>
+<ul>
+<li><span style="color: #0000ff;"><strong>byte</strong></span>:  empra un sol byte (<em>8 bits</em>) d'emmagatzematge. Això permet emmagatzemar valors en el rang [-128, 127].</li>
+<li><span style="color: #0000ff;"><strong>short</strong></span>: usa el doble d'emmagatzematge que l'anterior, la qual cosa fa possible representar qualsevol valor en el rang [-32.768, 32.767].</li>
+<li><span style="color: #0000ff;"><strong>int</strong><strong>:</strong></span>  empra <strong>4 bytes</strong> d'emmagatzematge i és el tipus de dada sencera més emprada. El rang de valors que pot representar va de -2<sup>31</sup>  a  2<sup>31</sup>-1. es a dir [ -2.147.483.648 a  2.147.483.647].</li>
+<li><span style="color: #0000ff;"><strong>long</strong></span>: es el tipus enter de major grandaria,<strong> 8 bytes</strong> (64 bits), amb un rang de valors des de -2<sup>63</sup> a 2<sup>63</sup>-1;  [–9,223,372,036,854,775,808  a   9,223,372,036,854,775,807]. Per a especificar que un literal serà un enter de tipus <strong>long</strong> es finalitzarà amb el caràcter '<span style="color: #0000ff;"><strong>L</strong></span>'.  Així tenim que     <strong>63  </strong> serà un <strong>enter</strong> (<em>ocuparà 4 bytes</em>)  i <strong>63L</strong> serà un <strong>enter llarg</strong> (<em>ocuparà 8 bytes</em>).</li>
+<li>
+<h3>Numèrics reals o en punt flotant</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">Permeten representar números tant <strong>molt grans</strong> com <strong>molt xicotets</strong> a més de nombres decimals. Java disposa de <strong>2 tipus</strong> concrets en aquesta categoria:</p>
+<ul>
+<li><span style="color: #0000ff;"><strong>float</strong></span>: conegut com a tipus de <strong>precisió simple</strong>, empra un total de <strong>32 bits</strong>. Amb aquesta mena de dades és possible representar números en el rang de  1.4x10<sup>-45</sup> a 3.4028235x10<sup>38</sup>. Per a especificar que un literal serà de tipus <span style="color: #0000ff;">float</span> ha d'anar seguit del caràcter '<strong>F'</strong>. Així 25F,    2.3F seran literals de tipus <span style="color: #0000ff;">float</span>.</li>
+<li><span style="color: #0000ff;"><strong>double</strong></span>: segueix un esquema d'emmagatzematge similar a l'anterior, però usant <strong>64 bits</strong> en lloc de 32. Això li permet representar valors en el rang de 4.9x10<sup>-324</sup> a 1.7976931348623157x10<sup>308</sup>.</li>
+</ul>
+<p style="padding-left: 30px;">Si bé amb tots dos tipus de dades es representen números amb valors decimals, el tipus de dades <strong>double</strong> ofereix la possibilitat de representar un major nombre de valors decimals (<em>major precisió</em>), entre 15 i 16, mentre que <strong>float</strong>, sol treballar amb<span style="text-decoration: underline;"> 6 o 7 decimals</span>.</p>
+<p style="padding-left: 30px;">Els valors numèrics reals són molt més lents de processar que els valors sencers, a més de que ocupen major espai en memòria.</p>
+<ul>
+<li>
+<h3>Caràcter</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">Només existeix un tipus, <strong><span style="color: #0000ff;">char</span></strong>, i s'utilitza per a <span style="text-decoration: underline;">emmagatzemar caràcters individuals</span> (<em>lletres, símbols numèrics, signes d'expressió i altres símbols: *, \, &amp;, ~,</em> ...). En realitat és considerat també un tipus numèric, si bé la seua representació habitual és la del caràcter associat  codi que emmagatzema. Utilitza 16 bits i s'usa la <span style="text-decoration: underline;">codificació UTF-16 de Unicode</span>. Els caràcters van <span style="text-decoration: underline;">delimitats per cometes simples</span>: 'a'; '7'.</p>
+<p style="padding-left: 30px;">És important tindre en compte que el tipus de dades <span style="color: #0000ff;">char</span> <span style="text-decoration: underline;">emmagatzema el valor del caràcter en la seua forma numèrica</span>, segons la taula de <span style="color: #0000ff;">codis Unicode</span> (<em>epacio -&gt; 32; ' A' -&gt; 65;  'b' -&gt; 98; ' 0' -&gt; 48;  '9' -&gt; 57;  etc</em>). Existeixen dos valors especials que són: <span style="color: #008080;"><strong>0x0000</strong></span> -&gt; que s'utilitza per al <strong>caràcter null</strong>;<span style="color: #008080;"> 0xFFFF</span> -&gt; que s'està reservat per al codi especial "<em><span style="color: #0000ff;"><strong>not a character</strong></span></em>".</p>
+<p style="padding-left: 30px;"></p>
+<p style="padding-left: 30px; text-align: center;"><img src="primitivos.png" alt="" width="800" height="453" /></p>
+<h2>Tipus de dades estructurats</h2>
+<p>Els tipus de dades primitius que acabem de veure es caracteritzen per poder emmagatzemar un únic valor. Excepte aquest reduït conjunt de tipus de dades primitius, que faciliten el treball amb números, caràcters i valors booleans, tots els altres tipus de Java són objectes, també anomenats <span style="color: #0000ff;">tipus estructurats</span> o "<span style="color: #0000ff;">Classes</span>".</p>
+<p>Els tipus de dades estructurats es denominen així perquè en la seua major part estan <strong>destinats a contindre múltiples valors</strong> de tipus més simples, primitius. També se'n diu moltes vegades "<strong>tipus objecte</strong>" perquè s'usen per a representar objectes. Pot ser que et sone més aquest nom.</p>
+<p>Los tipos de datos estructurados se denominan así porque en su mayor parte están <strong>destinados a contener múltiples valores</strong> de tipos más simples, primitivos. También se les llama muchas veces "<strong>tipos objeto</strong>" porque se usan para representar objetos. Puede que te suene más ese nombre.</p>
+<ul>
+<li>
+<h3>Cadenes de caràcters</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">Encara que les cadenes de caràcters no són un tipus simple a Java, sinó una instància de la <strong>classe <span style="color: #0000ff;">String</span></strong>, el llenguatge atorga un tractament bastant especial a aquest tipus de dades, la qual cosa provoca que, a vegades, ens semble estar treballant amb un tipus primitiu, especialment en la manera de declarar les variables.</p>
+<pre style="padding-left: 30px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">    int</span> edat = 25;                                 <span style="color: #808000;">// declaració de variable tipus int</span></span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">    String</span> nom = "Candela Miralles Serret";</span>     <span style="font-size: 10pt; color: #808000;">    // declaració de variable tipus cadena de caràcters</span></pre>
+<p style="padding-left: 30px;">Les cadenes de caràcters <strong>es delimiten entre cometes dobles</strong>, en lloc de simples com els caràcters individuals.</p>
+<ul>
+<li>
+<h3>Vectors o arrays</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">Són col·<strong>leccions de dades d'un mateix tipus</strong>. També són coneguts popularment com <span style="color: #0000ff;"><strong>arrays</strong></span>.</p>
+<p style="padding-left: 30px;">Un <strong>vector</strong> és una estructura de dades en la qual a cada element li correspon una posició identificada per un o més índexs numèrics sencers. També és habitual dir <strong><span style="color: #0000ff;">matrius</span></strong> als vectors que treballen amb dues dimensions.</p>
+<p style="padding-left: 30px; text-align: center;"><img src="arrays01.jpg" alt="" width="1200" height="630" /></p>
+<ul>
+<li>
+<h3>Tipus definits per l'usuari</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">A Java existeixen infinitat de classes en la plataforma, i de tercers, per a realitzar quasi qualsevol operació o tasca que es puga ocórrer: llegir i escriure arxius, enviar correus electrònics, executar altres aplicacions o crear cadenes de text més especialitzades, entre un milió de coses més. Totes eixes classes són tipus estructurats també.</p>
+<p style="padding-left: 30px;">I per descomptat pots crear les teues pròpies classes per a fer tot tipus de tasques o emmagatzemar la informació que desitges i del tipus que desitges. Serien <span style="color: #0000ff;"><strong>tipus estructurats definits per l'usuari</strong></span>.</p>
+<p style="padding-left: 30px;"><img src="arrays02.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="396" height="186" /></p>
+<ul>
+<li>
+<h3>Tipus envoltori o wrapper</h3>
+</li>
+</ul>
+<p style="padding-left: 30px;">Java compta amb tipus de dades estructurades equivalents a cadascun dels tipus primitius que hem vist.</p>
+<p style="padding-left: 30px;">Així, per exemple, per a representar un enter de 32 bits (<strong>int</strong>) dels quals hem vist al principi, Java defineix una classe anomenada <strong><span style="color: #0000ff;">Integer</span></strong> que representa i "<em>embolica</em>" a la mateixa dada però li <span style="text-decoration: underline;">afig</span> uns certs <span style="text-decoration: underline;">mètodes i propietats</span> útils per damunt. A més, una altra de les finalitats d'aquests tipus "envoltori" és <span style="text-decoration: underline;">facilitar l'ús d'aquesta classe de valors allí on s'espera un objecte en lloc d'un tipus primitiu</span>.</p>
+<p style="padding-left: 30px;">Aquests tipus equivalents als primitius però en forma d'objectes són: <span style="color: #0000ff;">Byte</span>, <span style="color: #0000ff;">Short</span>, <span style="color: #0000ff;">Integer</span>, <span style="color: #0000ff;">Long</span>, <span style="color: #0000ff;">Float</span>, <span style="color: #0000ff;">Double</span>, <span style="color: #0000ff;">Boolean</span> i <span style="color: #0000ff;">Character</span> (<em>8 igualment</em>).</p>
+<p style="padding-left: 30px;"></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="1_estructura_dun_programa_java.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="21_variables0.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

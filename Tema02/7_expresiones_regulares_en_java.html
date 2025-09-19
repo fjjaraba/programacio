@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>7. Expresiones regulares en Java | tema2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-13"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">tema2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació</a></li>
+   <li class="current-page-parent"><a href="estructura_de_un_programa_datos_e__s.html" class="current-page-parent daddy">Estructura de un programa. Datos. E / S</a>
+   <ul>
+      <li><a href="1_estructura_de_un_programa.html" class="no-ch">1. Estructura de un programa</a></li>
+      <li><a href="2_tipos_de_datos_variables_y_constantes.html" class="daddy">2. Tipos de datos, variables y constantes</a>
+      <ul class="other-section">
+         <li><a href="21_variables.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constantes.html" class="no-ch">2.2. Constantes</a></li>
+         <li><a href="23_conversin_de_tipos.html" class="no-ch">2.3. Conversión de tipos</a></li>
+         <li><a href="24_variables_y_objetos_valores_primitivos_y_referencia.html" class="no-ch">2.4. Variables y objetos. Valores Primitivos y Referencia</a></li>
+         <li><a href="25_clases_de_envoltura.html" class="no-ch">2.5. Clases de envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expresiones_y_operadores.html" class="no-ch">3. Expresiones y operadores</a></li>
+      <li><a href="4_clases_y_objetos.html" class="daddy">4. Clases y Objetos</a>
+      <ul class="other-section">
+         <li><a href="41_la_clase_principal_y_el_mtodo_main.html" class="no-ch">4.1. La clase principal y el método main</a></li>
+         <li><a href="42_librera_de_clases_java.html" class="no-ch">4.2. Librería de clases Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__salida.html" class="no-ch">5. Entrada / Salida</a></li>
+      <li><a href="6_cadenas.html" class="no-ch">6. Cadenas</a></li>
+      <li id="active"><a href="7_expresiones_regulares_en_java.html" class="active no-ch">7. Expresiones regulares en Java</a></li>
+      <li><a href="8_otras_clases_de_inters.html" class="no-ch">8. Otras clases de interés</a></li>
+   </ul>
+   </li>
+   <li><a href="estructura_dun_programa_dades_e__s.html" class="daddy">Estructura d'un Programa. Dades. E / S</a>
+   <ul class="other-section">
+      <li><a href="1_estructura_dun_programa_java.html" class="no-ch">1. Estructura d'un programa Java</a></li>
+      <li><a href="2_tipus_de_dades_variables_i_constants.html" class="daddy">2. Tipus de dades, variables i constants</a>
+      <ul class="other-section">
+         <li><a href="21_variables0.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constants.html" class="no-ch">2.2. Constants</a></li>
+         <li><a href="23_conversi_de_tipus.html" class="no-ch">2.3. Conversió de tipus</a></li>
+         <li><a href="24_variables_i_objectes_valors_primitius_i_referncia.html" class="no-ch">2.4. Variables i objectes. Valors Primitius i Referència</a></li>
+         <li><a href="25_classes_denvoltura.html" class="no-ch">2.5. Classes d'envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expressions_i_operadors.html" class="no-ch">3. Expressions i operadors</a></li>
+      <li><a href="4_classes_i_objectes.html" class="daddy">4. Classes i Objectes</a>
+      <ul class="other-section">
+         <li><a href="41_la_classe_principal_i_el_mtode_main.html" class="no-ch">4.1. La classe principal i el métode main</a></li>
+         <li><a href="42_llibreria_de_classes_java.html" class="no-ch">4.2. Llibreria de classes Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__eixida.html" class="no-ch">5. Entrada / Eixida</a></li>
+      <li><a href="6_cadenes.html" class="no-ch">6. Cadenes</a></li>
+      <li><a href="7_expressions_regulars_a_java.html" class="no-ch">7. Expressions regulars a Java</a></li>
+      <li><a href="8_altres_classes_dinters.html" class="no-ch">8. Altres classes d'interès</a></li>
+   </ul>
+   </li>
+   <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="6_cadenas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="8_otras_clases_de_inters.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">7. Expresiones regulares en Java</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id13">
+<div class="iDevice emphasis0" >
+<div id="ta13_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Una expresión regular es un patrón para encontrar una cadena en el texto. En Java, la representación original de este patrón es siempre una cadena, es decir, un objeto de la String. Debe cumplir una serie de reglas para ser una expresión regular válida. Se escriben con letras y números, así como con <strong>metacaracteres</strong>, que son caracteres que tienen un significado especial en la sintaxis de las expresiones regulares. Por ejemplo:</p>
+<pre style="padding-left: 30px;"><span style="font-size: 10pt;">String regex = "java";   <span style="color: #808000;">// el modelo es "java";</span></span><br /><span style="font-size: 10pt;">String regex = "\\d{3}"; <span style="color: #808000;">// el modelo es tres dígitos;</span></span></pre>
+<p>La creación de una expresión regular en Java implica dos pasos simples:</p>
+<ol>
+<li>escríbalo como una cadena que cumpla con la sintaxis de expresiones regulares;</li>
+<li>compilar la cadena en una expresión regular;</li>
+</ol>
+<p>Primero se crea un objeto patrón (Pattern) mediante el método  .<span style="color: #0000ff;">compile</span>(cadena).</p>
+<p>La sintaxis de las expresiones regulares se basa en los caracteres    <span style="color: #0000ff;">&lt;([{\^-=$!|]})?*+.&gt;</span>, que se pueden combinar con letras. Dependiendo de su función, se pueden dividir en varios grupos:</p>
+<p>1. <strong>Metacaracteres para hacer coincidir los límites de líneas o texto</strong></p>
+<pre><br /><br /><strong><span style="font-size: 10pt;">   Metacarácter     Descripción</span></strong><br /><span style="font-size: 10pt;">       ^         principio de una linea</span><br /><span style="font-size: 10pt;">      ps         final de una línea</span><br /><span style="font-size: 10pt;">      \b         límite de palabras</span><br /><span style="font-size: 10pt;">      \B         límite de no palabra</span><br /><span style="font-size: 10pt;">      \A         comienzo de la entrada</span><br /><span style="font-size: 10pt;">    \GRAMO       final del partido anterior</span><br /><span style="font-size: 10pt;">      \Z         final de la entrada</span><br /><span style="font-size: 10pt;">      \z         final de la entrada</span></pre>
+<p>2. <strong>Metacaracteres para emparejar clases de caracteres predefinidas</strong></p>
+<pre><strong><span style="font-size: 10pt;">   Metacarácter    Descripción</span></strong><br /><span style="font-size: 10pt;">      \d           dígito</span><br /><span style="font-size: 10pt;">      \D           sin dígitos</span><br /><span style="font-size: 10pt;">      \s           carácter de espacio en blanco</span><br /><span style="font-size: 10pt;">      \S           carácter sin espacio en blanco</span><br /><span style="font-size: 10pt;">      \w           carácter alfanumérico o guión bajo</span><br /><span style="font-size: 10pt;">      \W           cualquier carácter excepto letras, números y guiones bajos</span><br /><span style="font-size: 10pt;">      .            cualquier carácter</span></pre>
+<p>3. <strong>Metacaracteres para emparejar caracteres de control</strong></p>
+<pre style="padding-left: 30px;"><strong><span style="font-size: 10pt;">Metacarácter Descripción</span></strong><br /><span style="font-size: 10pt;">   \t        carácter de tabulación</span><br /><span style="font-size: 10pt;">   \n        carácter de nueva línea</span><br /><span style="font-size: 10pt;">   \r        retorno de carro</span><br /><span style="font-size: 10pt;">   \F        carácter de avance de línea</span><br /><span style="font-size: 10pt;"> \u0085      carácter de la siguiente línea</span><br /><span style="font-size: 10pt;"> \u2028      separador de linea</span><br /><span style="font-size: 10pt;"> \u2029      separador de párrafo</span></pre>
+<p>4. <strong>Metacaracteres para clases de personajes</strong></p>
+<pre style="padding-left: 30px;"><strong><span style="font-size: 10pt;">Metacarácter     Descripción</span></strong><br /><span style="font-size: 10pt;">   [a B C]       cualquiera de los caracteres enumerados (a, b o c)</span><br /><span style="font-size: 10pt;">   [^ abc]       cualquier carácter distinto de los enumerados (no a, b, o c)</span><br /><span style="font-size: 10pt;">   [a-zA-Z]      rangos combinados (caracteres latinos de la a a la z, sin distinción entre mayúsculas y minúsculas)</span><br /><span style="font-size: 10pt;"> [anuncio[mp]]   unión de caracteres (de la a a la d y de la m a la p)</span><br /><span style="font-size: 10pt;"> [az&amp;&amp;[def]]     intersección de caracteres (d, e, f)</span><br /><span style="font-size: 10pt;"> [az&amp;&amp;[^bc]]     resta de caracteres (a, dz)</span></pre>
+<p>5. <strong>Metacaracteres para indicar el número de caracteres</strong> (cuantificadores). Un cuantificador siempre va precedido de un carácter o grupo de caracteres.</p>
+<pre style="padding-left: 30px;"><strong><span style="font-size: 10pt;">Metacarácter     Descripción</span></strong><br /><span style="font-size: 10pt;">     ?           uno o ninguno</span><br /><span style="font-size: 10pt;">     *           cero o más veces</span><br /><span style="font-size: 10pt;">     +           una o más veces</span><br /><span style="font-size: 10pt;">    {n}          n veces</span><br /><span style="font-size: 10pt;">    {n,}         n o más veces</span><br /><span style="font-size: 10pt;">    {N M}        al menos n veces y no más de m veces</span></pre>
+<p><span style="text-decoration: underline;"><strong>Cuantificadores codiciosos</strong></span></p>
+<p style="padding-left: 30px;">Buscan la coincidencia más larga de la cadena. Por defecto los cuantificadores son codiciosos.</p>
+<pre style="padding-left: 60px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">public static void</span> main(String[] args) {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">   String</span> text = "Fred Anna Alexander";</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">   Pattern</span> pattern = Pattern.<span style="color: #0000ff;">compile</span>("A.+a");</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">   Matcher</span> matcher = pattern.<span style="color: #0000ff;">matcher</span>(text);</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">   while</span> (matcher.find()) {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      System.out.println</span>(text.substring(matcher.start(), matcher.end()));</span><br /><span style="font-size: 10pt;">   }</span><br /><span style="font-size: 10pt;">}</span></pre>
+<p style="padding-left: 30px;">Obtenemos la salida:   <span style="color: #008000;">Anna Alexa</span></p>
+<p style="padding-left: 30px;">Para la expresión regular " A.+a", la coincidencia de patrones se realiza de la siguiente manera:</p>
+<ol>
+<li>El primer carácter del patrón especificado es la letra latina A. Matcher lo compara con cada carácter del texto, comenzando desde el índice cero. El carácter F está en el índice cero en nuestro texto, por lo que Matcher itera a través de los caracteres hasta que coincida con el patrón. En nuestro ejemplo, este carácter se encuentra en el índice 5.<br /><img src="i_o_06.png" alt="" width="400" height="125" /></li>
+<li>Una vez que se encuentra una coincidencia con el primer carácter del patrón, Matcher busca una coincidencia con su segundo carácter. En nuestro caso, es el caracter "<span style="color: #0000ff;"><strong>.</strong></span>" , que representa cualquier carácter.<br /><img src="i_o_07.png" alt="" width="400" height="134" /><br />El caracter n está en la sexta posición. Ciertamente califica como una coincidencia para "cualquier caracter".<br /><br /></li>
+<li>Matcher procede a comprobar el siguiente carácter del patrón. En nuestro patrón, se incluye en el cuantificador que se aplica al carácter anterior: " .+". Debido a que el número de repeticiones de "cualquier carácter" en nuestro patrón es una o más veces, Matcher toma repetidamente el siguiente carácter de la cadena y lo compara con el patrón siempre que coincida con "cualquier carácter". En nuestro ejemplo, hasta el final de la cadena (<em>del índice 7 al índice 18</em>).<br /><img src="i_o_08.png" alt="" width="400" height="125" /><br />Básicamente, Matcher engulle la cadena hasta el final; esto es precisamente lo que significa "<strong>codicioso</strong>".<br /><br /></li>
+<li>Después de que Matcher llega al final del texto y finaliza la verificación de la parte "A.+" del patrón, comienza a verificar el resto del patrón: "a". No hay más texto avanzando, por lo que la verificación continúa "retrocediendo", comenzando desde el último carácter:<br /><img src="i_o_09.png" alt="" width="400" height="139" /><br /><br /></li>
+<li>Matcher "recuerda" el número de repeticiones en la parte ".+" del patrón. En este punto, reduce el número de repeticiones en una y compara el patrón más grande con el texto hasta que encuentra una coincidencia:<br /><img src="i_o_10.png" alt="" width="400" height="131" /><br /><br /></li>
+</ol>
+<p><span style="text-decoration: underline;"><strong>Cuantificadores posesivos</strong></span></p>
+<p style="padding-left: 30px;">Un cuantificador se convierte en posesivo agregando un carácter "+" después del cuantificador.</p>
+<p style="padding-left: 30px;">"A.+a" // codicioso<br />"A.++a" // posesivo</p>
+<p style="padding-left: 30px;">Se parecen mucho a los codiciosos. La diferencia es que cuando el texto se ha capturado hasta el final de la cadena, no hay coincidencia de patrones mientras se "retrocede". En otras palabras, las primeras tres etapas son las mismas que para los cuantificadores codiciosos. Después de capturar toda la cadena, el comparador agrega el resto del patrón a lo que está considerando y lo compara con la cadena capturada. En nuestro ejemplo, usando la expresión regular "A.++a", el método principal no encuentra ninguna coincidencia.</p>
+<p style="padding-left: 30px;"><img src="i_o_11.png" alt="" width="400" height="117" /></p>
+<p><span style="text-decoration: underline;"><strong>Cuantificadores reacios</strong></span></p>
+<p style="padding-left: 30px;">Un cuantificador se convierte en reacio agregando un carácter "?" después del cuantificador.</p>
+<p style="padding-left: 30px;">"A.+a"    // codicioso<br />"A.+?a"  // reacio</p>
+<p style="padding-left: 30px;"><strong>1.</strong> Para estos cuantificadores, al igual que con la variedad codiciosa, el código busca una coincidencia basada en el primer carácter del patrón:</p>
+<p style="text-align: center;"><img src="i_o_12.png" alt="" width="400" height="129" /></p>
+<p style="padding-left: 30px;"><strong>2.</strong> Luego busca una coincidencia con el siguiente carácter del patrón (<em>cualquier carácter</em>):</p>
+<p><img src="i_o_13.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="126" /></p>
+<p style="padding-left: 30px;"><strong>3.</strong> A diferencia de la coincidencia de patrones codiciosos, la coincidencia más corta se busca en la coincidencia de patrones reacia. Esto significa que después de encontrar una coincidencia con el segundo carácter del patrón (<em>un punto, que corresponde al carácter en la posición 6 del texto</em>), Matcher comprueba si el texto coincide con el resto del patrón: el carácter " a"</p>
+<p><img src="i_o_14.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="132" /></p>
+<p style="padding-left: 30px;"><strong>4.</strong> El texto no coincide con el patrón (<em>es decir, contiene el carácter " n" en el índice 7</em>), por lo que Matcher agrega más un "<em>cualquier carácter</em>", porque el cuantificador indica uno o más. Luego vuelve a comparar el patrón con el texto en las posiciones 5 a 8:</p>
+<p><img src="i_o_15.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="130" /></p>
+<p style="padding-left: 30px;">En nuestro caso, se encuentra una coincidencia, pero aún no hemos llegado al final del texto. Por lo tanto, la coincidencia de patrones se reinicia desde la posición 9, es decir, se busca el primer carácter del patrón usando un algoritmo similar y esto se repite hasta el final del texto.</p>
+<p><img src="i_o_16.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="128" /></p>
+<p style="padding-left: 30px;">En consecuencia, el método main obtiene el siguiente resultado cuando usa el patrón " A.+?a": Anna Alexa Como puede ver en nuestro ejemplo, diferentes tipos de cuantificadores producen resultados diferentes para el mismo patrón. Así que ten esto en cuenta y elige la variedad adecuada según lo que estés buscando.</p>
+<pre style="padding-left: 30px;"><span style="font-size: 10pt;"><span style="color: #0000ff;">import</span> java.util.regex.Matcher;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">import</span> java.util.regex.Pattern;</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">public class</span> ExpresionRegularJava {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">   public static void</span> main(String[] args) {</span><br /><span style="font-size: 10pt; color: #808000;">      // Definir el patrón de la expresión regular</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      String</span> patron = "\\b\\d{3}\\b";</span><br /><span style="font-size: 10pt; color: #808000;">      // Crear el objeto Pattern</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      Pattern</span> pattern = Pattern.<span style="color: #0000ff;">compile</span>(patron);</span><br /><span style="font-size: 10pt; color: #808000;">      // Definir la cadena de texto en la que buscar</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      String</span> texto = "123 456 789";</span><br /><span style="font-size: 10pt; color: #808000;">      // Crear el objeto Matcher</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      Matcher</span> matcher = pattern.<span style="color: #0000ff;">matcher</span>(texto);</span><br /><span style="font-size: 10pt; color: #808000;">      // Realizar la búsqueda y encontrar coincidencias</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">      while</span> (matcher.<span style="color: #0000ff;">find</span>()) {</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         String</span> coincidencia = <span style="color: #0000ff;">matcher</span>.group();</span><br /><span style="font-size: 10pt;"><span style="color: #0000ff;">         System.out.println</span>("Coincidencia encontrada: " + coincidencia);</span><br /><span style="font-size: 10pt;">      }</span><br /><span style="font-size: 10pt;">   }</span><br /><span style="font-size: 10pt;">}</span></pre>
+<p>En este ejemplo, la expresión regular "<span style="color: #008000;">\b\d{3}\b</span>" busca secuencias de tres dígitos completas en una cadena de texto. El metacaracter "<span style="color: #008000;">\b</span>" representa un límite de palabra, lo que asegura que solo se consideren secuencias de tres dígitos completas y no partes de secuencias más largas. El metacaracter "<span style="color: #008000;">\d"</span> representa cualquier dígito del 0 al 9, y "<span style="color: #008000;">{3}</span>" indica que debe haber exactamente tres dígitos en la secuencia.</p>
+<p>La cadena de texto en este caso es "<span style="color: #ff6600;">123 456 789</span>". Al ejecutar el código, se encontrarán tres coincidencias de tres dígitos: "<span style="color: #ff6600;">123</span>", "<span style="color: #ff6600;">456</span>" y "<span style="color: #ff6600;">789</span>".  Cada coincidencia se imprimirá en la salida.</p>
+<p>https://regex101.com/ --&gt; validar expresiones regulares</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="6_cadenas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="8_otras_clases_de_inters.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

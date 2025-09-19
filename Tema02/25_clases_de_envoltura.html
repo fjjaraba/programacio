@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.5. Clases de envoltura | tema2 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-29"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">tema2</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programació</a></li>
+   <li class="current-page-parent"><a href="estructura_de_un_programa_datos_e__s.html" class="current-page-parent daddy">Estructura de un programa. Datos. E / S</a>
+   <ul>
+      <li><a href="1_estructura_de_un_programa.html" class="no-ch">1. Estructura de un programa</a></li>
+      <li class="current-page-parent"><a href="2_tipos_de_datos_variables_y_constantes.html" class="current-page-parent daddy">2. Tipos de datos, variables y constantes</a>
+      <ul>
+         <li><a href="21_variables.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constantes.html" class="no-ch">2.2. Constantes</a></li>
+         <li><a href="23_conversin_de_tipos.html" class="no-ch">2.3. Conversión de tipos</a></li>
+         <li><a href="24_variables_y_objetos_valores_primitivos_y_referencia.html" class="no-ch">2.4. Variables y objetos. Valores Primitivos y Referencia</a></li>
+         <li id="active"><a href="25_clases_de_envoltura.html" class="active no-ch">2.5. Clases de envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expresiones_y_operadores.html" class="no-ch">3. Expresiones y operadores</a></li>
+      <li><a href="4_clases_y_objetos.html" class="daddy">4. Clases y Objetos</a>
+      <ul class="other-section">
+         <li><a href="41_la_clase_principal_y_el_mtodo_main.html" class="no-ch">4.1. La clase principal y el método main</a></li>
+         <li><a href="42_librera_de_clases_java.html" class="no-ch">4.2. Librería de clases Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__salida.html" class="no-ch">5. Entrada / Salida</a></li>
+      <li><a href="6_cadenas.html" class="no-ch">6. Cadenas</a></li>
+      <li><a href="7_expresiones_regulares_en_java.html" class="no-ch">7. Expresiones regulares en Java</a></li>
+      <li><a href="8_otras_clases_de_inters.html" class="no-ch">8. Otras clases de interés</a></li>
+   </ul>
+   </li>
+   <li><a href="estructura_dun_programa_dades_e__s.html" class="daddy">Estructura d'un Programa. Dades. E / S</a>
+   <ul class="other-section">
+      <li><a href="1_estructura_dun_programa_java.html" class="no-ch">1. Estructura d'un programa Java</a></li>
+      <li><a href="2_tipus_de_dades_variables_i_constants.html" class="daddy">2. Tipus de dades, variables i constants</a>
+      <ul class="other-section">
+         <li><a href="21_variables0.html" class="no-ch">2.1. Variables</a></li>
+         <li><a href="22_constants.html" class="no-ch">2.2. Constants</a></li>
+         <li><a href="23_conversi_de_tipus.html" class="no-ch">2.3. Conversió de tipus</a></li>
+         <li><a href="24_variables_i_objectes_valors_primitius_i_referncia.html" class="no-ch">2.4. Variables i objectes. Valors Primitius i Referència</a></li>
+         <li><a href="25_classes_denvoltura.html" class="no-ch">2.5. Classes d'envoltura</a></li>
+      </ul>
+      </li>
+      <li><a href="3_expressions_i_operadors.html" class="no-ch">3. Expressions i operadors</a></li>
+      <li><a href="4_classes_i_objectes.html" class="daddy">4. Classes i Objectes</a>
+      <ul class="other-section">
+         <li><a href="41_la_classe_principal_i_el_mtode_main.html" class="no-ch">4.1. La classe principal i el métode main</a></li>
+         <li><a href="42_llibreria_de_classes_java.html" class="no-ch">4.2. Llibreria de classes Java</a></li>
+      </ul>
+      </li>
+      <li><a href="5_entrada__eixida.html" class="no-ch">5. Entrada / Eixida</a></li>
+      <li><a href="6_cadenes.html" class="no-ch">6. Cadenes</a></li>
+      <li><a href="7_expressions_regulars_a_java.html" class="no-ch">7. Expressions regulars a Java</a></li>
+      <li><a href="8_altres_classes_dinters.html" class="no-ch">8. Altres classes d'interès</a></li>
+   </ul>
+   </li>
+   <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="24_variables_y_objetos_valores_primitivos_y_referencia.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_expresiones_y_operadores.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.5. Clases de envoltura</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id42">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Class Integer</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta42_120_2" class="block iDevice_content">
+<div class="exe-text"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html">https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html</a></p>
+<p>La clase Integer <strong>envuelve</strong> un valor del tipo primitivo <span style="color: #0000ff;">int</span> en un <strong>objeto</strong>. Un objeto de tipo <strong>Integer</strong> contiene <strong>un único campo</strong> cuyo tipo es <span style="color: #0000ff;">int</span>. Además, esta clase proporciona varios <strong>métodos para convertir</strong> un int en una cadena y una cadena en un int, así como otras constantes y métodos útiles cuando se trabaja con un int.</p>
+<p><span style="text-decoration: underline;"><strong>Atributos</strong></span>:</p>
+<ul>
+<li>static int <span style="color: #0000ff;">BYTES</span>   --&gt;  Número de bytes utilizados para almacenar el número en binario.</li>
+<li>static int <span style="color: #0000ff;">MAX_VALUE</span>  --&gt;  valor máximo que puede tomar:   2<sup>31</sup>-1.</li>
+<li>static int <span style="color: #0000ff;">MIN_VALUE</span>  --&gt;  valor mínimo que puede tomar:    -2<sup>31</sup>.</li>
+<li>static int <span style="color: #0000ff;">SIZE</span>  --&gt;  número de bits usados para almacenar el número en binario.</li>
+<li>static Class&lt;Integer&gt; <span style="color: #0000ff;">TYPE</span>  --&gt;  La instancia de clase que representa el tipo primitivo int</li>
+</ul>
+<p><span style="text-decoration: underline;"><strong>Instanciación</strong></span>:</p>
+<p style="padding-left: 30px;">Boolean objeto = <span style="color: #0000ff;">new</span> Integer( valorint);<br />Boolean objeto = <span style="color: #0000ff;">new</span> Integer("345");</p>
+<p><span style="text-decoration: underline;"><strong>Constructor</strong></span>:</p>
+<ul>
+<li><span style="color: #0000ff;">Integer</span>(int value)  --&gt;  crea un objeto Integer a partir de un tipo primitivo int.</li>
+<li><span style="color: #0000ff;">Integer</span>(String s)  --&gt;  crea un objeto Integer a partir de un String que contiene caracteres numéricos.</li>
+</ul>
+<p><span style="text-decoration: underline;"><strong>Métodos</strong></span>:</p>
+<ul>
+<li>static int <span style="color: #0000ff;">bitCount</span>(int i)  --&gt;  devuelve el número de bits a 1 en binario de i.</li>
+<li>byte <span style="color: #0000ff;">byteValue</span>()  --&gt;  convierte a byte.</li>
+<li>static int <span style="color: #0000ff;">compare</span>(int x, int y) --&gt;  compara 2 valores int. Devuelve 0 si x es igual a y; -1 si x &lt; y;  1 si x &gt; y.</li>
+<li>int <span style="color: #0000ff;">compareTo</span>(Integer anotherInteger)  --&gt;  compara el objeto actual con el argumento pasado.</li>
+<li>static int <span style="color: #0000ff;">compareUnsigned</span>(int x, int y)  --&gt;  compara tratando los valores como enteros sin signo.</li>
+<li>static Integer <span style="color: #0000ff;">decode</span>(String nm)  --&gt;  convierte un String con contenido un entero a Integer.</li>
+<li>static int <span style="color: #0000ff;">divideUnsigned</span>(int dividend, int divisor)  --&gt;  divide dos enteros sin signo.</li>
+<li>double <span style="color: #0000ff;">doubleValue</span>()  --&gt;  convierte a  double.</li>
+<li>boolean <span style="color: #0000ff;">equals</span>(Object obj)  --&gt;  compara el objeto actual con el argumento.</li>
+<li>float <span style="color: #0000ff;">floatValue</span>()  --&gt;  convierte a float.</li>
+<li>int <span style="color: #0000ff;">hashCode</span>()  --&gt;  devuelve el código hash del Integer.</li>
+<li>static int <span style="color: #0000ff;">hashCode</span>(int value)  --&gt;  devuelve el código hash de value.</li>
+<li>int <span style="color: #0000ff;">intValue</span>()  --&gt;  convierte a int</li>
+<li>long <span style="color: #0000ff;">longValue</span>()  --&gt;  convierte a long.</li>
+<li>static int <span style="color: #0000ff;">max</span>(int a, int b)  --&gt;  devuelve el mayor de 2 int.</li>
+<li>static int <span style="color: #0000ff;">min</span>(int a, int b)  --&gt;  devuelve el menor de 2 int.</li>
+<li>static int <span style="color: #0000ff;">parseInt</span>(String s)  --&gt;  convierte el argumento s en un int.</li>
+<li>static int <span style="color: #0000ff;">remainderUnsigned</span>(int dividend, int divisor)  --&gt;  devuelve un entero sin signo resultante de la división de los argumentos.</li>
+<li>static int <span style="color: #0000ff;">reverse</span>(int i)  --&gt;  Devuelve el valor obtenido al invertir el orden de los bits en la representación binaria de complemento a dos del valor int especificado.</li>
+<li>static int <span style="color: #0000ff;">reverseBytes</span>(int i)  --&gt;  Devuelve el valor obtenido al invertir el orden de los bytes en la representación del complemento a dos del valor int especificado.</li>
+<li>static int <span style="color: #0000ff;">rotateLeft</span>(int i, int distance)  --&gt;  Devuelve el valor obtenido al rotar la representación binaria de complemento a dos del argumento "i" a la izquierda por el número especificado de bits indicado en distance.</li>
+<li>static int <span style="color: #0000ff;">rotateRight</span>(int i, int distance)  --&gt;  rota a la derecha los bits indicados en distance.</li>
+<li>short <span style="color: #0000ff;">shortValue</span>()  --&gt;  convierte a short.</li>
+<li>static int <span style="color: #0000ff;">sum</span>(int a, int b)  --&gt;  devuelve la suma de dos int.</li>
+<li>static String <strong><span style="color: #0000ff;">toBinaryString</span></strong>(int i)  --&gt;  devuelve una cadena con la representación del entero en complemento a 2.</li>
+<li>static String <span style="color: #0000ff;">toHexString</span>(int i)  --&gt;  devuelve una cadena con la representación de "i" en hexadecimal.</li>
+<li>static String <span style="color: #0000ff;">toOctalString</span>(int i)  --&gt;  devuelve una cadena con la representación de "i" en octal.</li>
+<li>String <span style="color: #0000ff;">toString</span>()  --&gt;  convierte a String.</li>
+<li>static String <span style="color: #0000ff;">toString</span>(int i)  --&gt;  convierte "i" a String.</li>
+<li>static String <span style="color: #0000ff;">toString</span>(int i, int radix)  --&gt;  devuelve un String resultado de convertir "i" a la base indicada por radix.</li>
+<li>static long <span style="color: #0000ff;">toUnsignedLong</span>(int x)   --&gt;  convierte x a long sin signo.</li>
+<li>static String <span style="color: #0000ff;">toUnsignedString</span>(int i)  --&gt;  devuelve una cadena que representa un valor sin signo.</li>
+<li>static Integer <span style="color: #0000ff;">valueOf</span>(int i)  --&gt;   convierte int a Integer.</li>
+<li>static Integer <span style="color: #0000ff;">valueOf</span>(String s)  --&gt;  convierte String a Integer. El contenido de s deben ser caracteres numéricos.</li>
+<li>static Integer <span style="color: #0000ff;">valueOf</span>(String s, int radix)  --&gt;  convierte el String  en base radix a Integer.</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id43">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Byte, Short, Long</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta43_120_2" class="block iDevice_content">
+<div class="exe-text"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html" target="_blank" rel="noopener">https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html</a></p>
+<p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html">https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html</a></p>
+<p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html">https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html</a></p>
+<p></p>
+<p>La clase Byte envuelve un valor de tipo primitivo byte en un objeto. Un objeto de tipo Byte contiene un único campo cuyo tipo es byte.</p>
+<p>La clase Short envuelve un valor de tipo primitivo short en un objeto. Un objeto de tipo Short contiene un único campo cuyo tipo es short.</p>
+<p>La clase Long envuelve un valor de tipo primitivo long en un objeto. Un objeto de tipo Short contiene un único campo cuyo tipo es short.</p>
+<p><span style="text-decoration: underline;"><strong>Atributos</strong></span>:</p>
+<ul>
+<li>static int <span style="color: #0000ff;">BYTES</span>  --&gt;  números de bytes utilizados para la representación en binario.</li>
+<li>static byte <span style="color: #0000ff;">MAX_VALUE</span>  --&gt; valor máximo</li>
+<li>static byte <span style="color: #0000ff;">MIN_VALUE</span>  --&gt;  mínimo</li>
+<li>static int <span style="color: #0000ff;">SIZE</span>  --&gt;  número de bits.</li>
+<li>static Class&lt;Byte&gt; TYPE  --&gt;  instancia de la clase que representa al tipo primitivo byte, short, long.</li>
+</ul>
+<p><span style="text-decoration: underline;"><strong>Constructor </strong></span></p>
+<table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 33.3333%; background-color: #a8f9ff; text-align: center;"><strong>Byte</strong></td>
+<td style="width: 33.3333%; background-color: #a8f9ff; text-align: center;"><strong>Short</strong></td>
+<td style="width: 33.3333%; background-color: #a8f9ff; text-align: center;"><strong>Long</strong></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">
+<ul>
+<li>Byte(byte value) </li>
+<li>Byte(String s)</li>
+</ul>
+</td>
+<td style="width: 33.3333%;">
+<ul>
+<li>Short(short value) </li>
+<li>Short(String s)</li>
+</ul>
+</td>
+<td style="width: 33.3333%;">
+<ul>
+<li>Long(long value) </li>
+<li>Long(String s)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="text-decoration: underline;"><strong>Métodos</strong></span>:</p>
+<p style="padding-left: 30px;">Muy parecidos a Integer</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id44">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Double / Float</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta44_121_2" class="block iDevice_content">
+<div class="exe-text"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html">https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html</a></p>
+<p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html">https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html</a></p>
+<p>La clase Double envuelve un valor del tipo primitivo double en un objeto. Un objeto de tipo Double contiene un único campo cuyo tipo es double.</p>
+<p>La clase Float envuelve un valor de tipo primitivo float en un objeto. Un objeto de tipo Float contiene un único campo cuyo tipo es float.</p>
+<p><span style="text-decoration: underline;"><strong>Atributos</strong></span>:</p>
+<ul>
+<li>static int <span style="color: #0000ff;">BYTES</span>  --&gt;  número de bytes utilizados pra representar el valor double.</li>
+<li>static int <span style="color: #0000ff;">MAX_EXPONENT</span>  --&gt;  Exponente máximo</li>
+<li>static double/float <span style="color: #0000ff;">MAX_VALUE</span>  --&gt;  valor positivo máximo.</li>
+<li>static int <span style="color: #0000ff;">MIN_EXPONENT</span>  --&gt;  exponente mínimo.</li>
+<li>static double/float <span style="color: #0000ff;">MIN_NORMAL</span>  --&gt;  valor positivo más pequeño.</li>
+<li>static double/float <span style="color: #0000ff;">MIN_VALUE</span>  --&gt;  valor positivo más pequeño distinto de cero.</li>
+<li>static double/float <span style="color: #0000ff;">NaN</span>  --&gt;  constante que almacena el valor NaN (Not-a-Nuber) de tipo double/float.</li>
+<li>static double/float <span style="color: #0000ff;">NEGATIVE_INFINITY</span>  --&gt;  constante que almacena el infinito negativo.</li>
+<li>static double/float <span style="color: #0000ff;">POSITIVE_INFINITY</span>  --&gt;  infinito positivo.</li>
+<li>static int <span style="color: #0000ff;">SIZE</span>  --&gt;  número de bits utilizado para representar el valor.</li>
+</ul>
+<p><span style="text-decoration: underline;"><strong>Constructores</strong></span>:</p>
+<table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%; background-color: #bcf5f4; text-align: center;"><strong>Double</strong></td>
+<td style="width: 50%; background-color: #bcf5f4; text-align: center;"><strong>Float</strong></td>
+</tr>
+<tr>
+<td style="width: 50%;">
+<ul>
+<li>Double(double value)</li>
+<li>Double(String s)</li>
+</ul>
+</td>
+<td style="width: 50%;">
+<ul>
+<li>Float(double value)</li>
+<li>Float(float value)</li>
+<li>Float(String s)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><span style="text-decoration: underline;"><strong>Métodos</strong></span>:</p>
+<p style="padding-left: 30px;">Muy parecidos a Integer. Además podemos encontrar:</p>
+<ul>
+<li>static boolean <span style="color: #0000ff;">isFinite</span>(double d)  --&gt;  Devuelve true si el argumento es un valor de punto flotante finito; devuelve <span style="color: #0000ff;">false</span> en caso contrario (para argumentos NaN e infinito).</li>
+<li>boolean <span style="color: #0000ff;">isInfinite</span>()  --&gt;  true si el objeto es una magnitud infinita, false en caso contrario.</li>
+<li>static boolean <span style="color: #0000ff;">isInfinite</span>(double v)  --&gt;  true si v es infinita, false en caso contrario.</li>
+<li>boolean <span style="color: #0000ff;">isNaN</span>()  --&gt;  true si el objeto es un valor NaN.</li>
+<li>static boolean <span style="color: #0000ff;">isNaN</span>(double v)  --&gt;  true si v es un valor NaN.</li>
+</ul>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id46">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Boolean</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta46_123_2" class="block iDevice_content">
+<div class="exe-text"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html</a></p>
+<p>La clase Boolean envuelve un valor del tipo primitivo boolean en un objeto. Un objeto de tipo Boolean contiene un único campo cuyo tipo es boolean.</p>
+<p>Atributos:</p>
+<ul>
+<li>static Boolean <span style="color: #0000ff;">FALSE</span>  --&gt;  equivale a false.</li>
+<li>static Boolean <span style="color: #0000ff;">TRUE</span>  --&gt;  equivale a true.</li>
+</ul>
+<p><span style="text-decoration: underline;"><strong>Constructores</strong></span>:</p>
+<ul>
+<li>Boolean(boolean value)</li>
+<li>Boolean(String s)</li>
+</ul>
+<p><span style="text-decoration: underline;"><strong>Instanciación</strong></span>:</p>
+<ul>
+<li>Boolean objeto = new constructor;</li>
+</ul>
+<p><span style="text-decoration: underline;"><strong>Métodos</strong></span>:</p>
+<p style="padding-left: 30px;">Algunos métodos son similares a Integer. Además tiene:</p>
+<ul>
+<li>boolean <span style="color: #0000ff;">booleanValue</span>()  --&gt;  convierte a boolean.</li>
+<li>static int <span style="color: #0000ff;">compare</span>(boolean x, boolean y)  --&gt;  compara 2 boolean y devuelve 0, -1, o 1.</li>
+<li>int <span style="color: #0000ff;">compareTo</span>(Boolean b)  --&gt;  compara el objeto actual con el objeto pasado como parámetro.</li>
+<li>boolean <span style="color: #0000ff;">equals</span>(Object obj)</li>
+<li>static boolean <span style="color: #0000ff;">logicalAnd</span>(boolean a, boolean b)  --&gt;  devuelve el resultado de aplicar a los parámetros el operador AND.</li>
+<li>static boolean <span style="color: #0000ff;">logicalOr</span>(boolean a, boolean b)  --&gt; devuelve el resultado de aplicar a los parámetros el operador OR.</li>
+<li>static boolean <span style="color: #0000ff;">logicalXor</span>(boolean a, boolean b)  --&gt;  devuelve el resultado de aplicar a los parámetros el operador XOR.</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="24_variables_y_objetos_valores_primitivos_y_referencia.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_expresiones_y_operadores.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
